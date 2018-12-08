@@ -12,17 +12,17 @@ $color_dark: #1D2024;
 $color_rect-bg: #24272B;
 $color_darc-bg:#1B1D21;
 
-                            $color_darc-bg: red;
+                            // $color_darc-bg: red;
 
 $color-border-1: #2A2B31;
 
-                            $color-border-1: green;
+                            // $color-border-1: green;
 
 
 $text-color-main: #ffffff;
 $text-color-altern: #797A7C;
 
-                            $text-color-altern: rgb(0, 225, 255);
+                            // $text-color-altern: rgb(0, 225, 255);
 
 $text-color-2: rgba(255, 255, 255, 0.41);           
 $text-color-warning: #f9be16;
@@ -49,7 +49,7 @@ html {
         * {
             box-sizing: border-box;
         }
-        ul, li {
+        ul, li, input {
             margin: 0;
             padding: 0;
         }
@@ -72,7 +72,7 @@ html {
             width: 99.4vw;
             min-height: 100vh;
             
-            // background: url(../images/wrapper-bg-img_2.png) no-repeat;
+            background: url(../images/wrapper-bg-img_2.png) no-repeat;
             position: relative;
             //transform: matrix(-1, 0, 0, 1, 0, 0);
             
@@ -101,10 +101,6 @@ html {
                     display: flex;
                     justify-content: center;
                     align-items: center;
-
-                    a {
-                        
-                    }
                     
                 }
                 .info {
@@ -126,7 +122,6 @@ html {
                     background: #{$color_dark};
                     display: flex;
                     flex-wrap: wrap;
-                   // height: 100%;
 
                     ul {
                         width: 100%;
@@ -139,7 +134,7 @@ html {
                             border-bottom: 2px solid #ffffff;
                             //background: linear-gradient(90deg, #F4AC26 5.13%, #FDCB0C 100%);
                             //box-shadow: 0px 0px 20px #F8BA19;
-                                                //background: yellow;
+                            
                         
                             a {
 
@@ -178,6 +173,7 @@ html {
                         backdrop-filter: blur(20px);
                         /* Note: backdrop-filter has minimal browser support */
                         border-radius: 3px;
+                        border: 1px solid #{$color-border-1};
                     }
 
                     .dark-bg {
@@ -193,9 +189,9 @@ html {
                         .QWERTY {
                             width: 3vw;
                             height: 2.5vw;
-                            background: yellowgreen;
                             margin: 0 auto;
                         }
+
                         .header {
                             display: flex;
 
@@ -207,12 +203,12 @@ html {
                             }
                         }
 
-                        .select-game-mode {
-                            padding: 0 1.1vw 0 1.3vw;
+                        .game-variet-subheader {
+                            margin: 0 0 2.1rem 0;
+                        }
 
-                            .select-header {
-                                margin: 2rem 0 2rem 0;
-                            }
+                        .select-game-mode {
+                            padding: 1vw 1.1vw 1vw 1.3vw;
 
                             .mode-options {
                                 display: grid;
@@ -245,14 +241,39 @@ html {
                                                 flex-wrap: wrap;
                                                 justify-content: center;
                                                 width: 5vw;
-                                                border: 1px solid yellow;
+
+                                                .avatar-wthis-line {
+                                                    display: flex;
+                                                    flex-wrap: nowrap;
+
+                                                    .line-between-avatars {
+                                                        width: 1vw;
+                                                        height: 1px;
+                                                        margin-top: 1.2vw;
+                                                    }
+
+                                                    .left {
+                                                        background: linear-gradient(to left, rgba(77, 77, 81, 0) 0%, rgba(77, 77, 81, 1) 100%);
+                                                    }
+
+                                                    .right {
+                                                        background: linear-gradient(to left, rgba(77, 77, 81, 1) 0%, rgba(77, 77, 81, 0) 100%);
+                                                    }
+                                                }
+
+                                                &:first-child {
+                                                    .left {
+                                                        background: rgba(0, 0, 0, 0);
+                                                    }
+                                                }
+
+                                                &:last-child {
+                                                    .right {
+                                                        background: rgba(0, 0, 0, 0);
+                                                    }
+                                                }
                                             }
-                                            .line-between-avatars {
-                                                width: 2vw;
-                                                height: 1px;
-                                                background: linear-gradient(to left, rgba(77, 77, 81, 0) 0%, rgba(77, 77, 81, 1) 50%, rgba(77, 77, 81, 0) 100%);
-                                                margin-top: 1.2vw;
-                                            }
+                                            
                                             .line-between-avatars.short {
                                                 width: 2vw;
                                             }
@@ -265,6 +286,69 @@ html {
                                     }
                                 }
                             }   
+                        }
+
+                        .rate-place {
+                            padding: 1vw 1.1vw 1vw 1.3vw;
+
+                            .rate-info {
+                                display: grid;
+                                grid-template-columns: 42.6% 55.1%;
+                                grid-template-rows: auto;
+                                grid-gap: 2.3%;
+
+                                .rate-values {
+                                    display: grid;
+                                    grid-template-columns: repeat(4, 1fr);
+                                    grid-template-rows: auto;
+                                    grid-gap: 6%;
+
+                                    a {
+                                        .item-rate {
+                                            display: flex;
+                                            justify-content: center;
+                                            align-items: center;
+                                            height: 2vw;
+                                            padding: 2.55rem 0;
+                                            font-size: #{$f-s-sm};
+                                        }
+                                    }
+                                }
+
+                                .rate-input {
+                                    display: grid;
+                                    grid-template-columns: 0.4% 47.77% 0.4% 37.45%;
+                                    grid-template-rows: auto;
+                                    grid-gap: 4.66%;
+
+                                    .rate-line-vert {
+                                        width: 2px;
+                                        background:  linear-gradient(0deg, #FFD128 -38.68%, #FFAE25 100%), #1B1D21;
+                                    }
+
+                                    .you-rate {
+                                        input {
+                                            font-size: #{$f-s-sm};
+                                            letter-spacing: 0.02em;
+                                            color: rgba(121, 122, 124, 0.5);
+                                            width: 100%;
+                                            border: none;
+                                            background: none;
+                                            padding: 1.7rem 0 0 2rem;
+                                        }
+                                    }
+
+                                    button {
+                                        color: #1C1E23;
+                                        background: linear-gradient(0deg, #FFD128 -38.68%, #FFAE25 100%), #1B1D21;
+                                        box-shadow: 1px 1px 20px rgba(255, 194, 38, 0.3);
+                                        border-radius: 3px;
+                                        border: none;
+                                    }
+                                }
+                                
+                            }
+                            
                         }
                         
                     }

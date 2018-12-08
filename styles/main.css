@@ -22,7 +22,7 @@ html body * {
           box-sizing: border-box;
 }
 
-html body ul, html body li {
+html body ul, html body li, html body input {
   margin: 0;
   padding: 0;
 }
@@ -33,7 +33,7 @@ html body li {
 
 html body a {
   text-decoration: none;
-  color: #00e1ff;
+  color: #797A7C;
 }
 
 html body .link-block {
@@ -45,6 +45,7 @@ html body .link-block {
 html body .wrapper {
   width: 99.4vw;
   min-height: 100vh;
+  background: url(../images/wrapper-bg-img_2.png) no-repeat;
   position: relative;
 }
 
@@ -160,11 +161,12 @@ html body .wrapper .main .main-info .main-info-box {
           backdrop-filter: blur(20px);
   /* Note: backdrop-filter has minimal browser support */
   border-radius: 3px;
+  border: 1px solid #2A2B31;
 }
 
 html body .wrapper .main .main-info .dark-bg {
-  background: red;
-  border: 1px solid green;
+  background: #1B1D21;
+  border: 1px solid #2A2B31;
   border-radius: 3px;
 }
 
@@ -176,7 +178,6 @@ html body .wrapper .main .main-info .game-varieties {
 html body .wrapper .main .main-info .game-varieties .QWERTY {
   width: 3vw;
   height: 2.5vw;
-  background: yellowgreen;
   margin: 0 auto;
 }
 
@@ -189,16 +190,16 @@ html body .wrapper .main .main-info .game-varieties .header {
 html body .wrapper .main .main-info .game-varieties .header a {
   width: 50%;
   text-align: center;
-  border-bottom: 2px solid green;
+  border-bottom: 2px solid #2A2B31;
   padding: 1.9rem 0 1.6rem;
 }
 
-html body .wrapper .main .main-info .game-varieties .select-game-mode {
-  padding: 0 1.1vw 0 1.3vw;
+html body .wrapper .main .main-info .game-varieties .game-variet-subheader {
+  margin: 0 0 2.1rem 0;
 }
 
-html body .wrapper .main .main-info .game-varieties .select-game-mode .select-header {
-  margin: 2rem 0 2rem 0;
+html body .wrapper .main .main-info .game-varieties .select-game-mode {
+  padding: 1vw 1.1vw 1vw 1.3vw;
 }
 
 html body .wrapper .main .main-info .game-varieties .select-game-mode .mode-options {
@@ -249,15 +250,38 @@ html body .wrapper .main .main-info .game-varieties .select-game-mode .mode-opti
       -ms-flex-pack: center;
           justify-content: center;
   width: 5vw;
-  border: 1px solid yellow;
 }
 
-html body .wrapper .main .main-info .game-varieties .select-game-mode .mode-options a .content .partners .line-between-avatars {
-  width: 2vw;
+html body .wrapper .main .main-info .game-varieties .select-game-mode .mode-options a .content .partners .partner .avatar-wthis-line {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+}
+
+html body .wrapper .main .main-info .game-varieties .select-game-mode .mode-options a .content .partners .partner .avatar-wthis-line .line-between-avatars {
+  width: 1vw;
   height: 1px;
-  background: -webkit-gradient(linear, right top, left top, from(rgba(77, 77, 81, 0)), color-stop(50%, #4d4d51), to(rgba(77, 77, 81, 0)));
-  background: linear-gradient(to left, rgba(77, 77, 81, 0) 0%, #4d4d51 50%, rgba(77, 77, 81, 0) 100%);
   margin-top: 1.2vw;
+}
+
+html body .wrapper .main .main-info .game-varieties .select-game-mode .mode-options a .content .partners .partner .avatar-wthis-line .left {
+  background: -webkit-gradient(linear, right top, left top, from(rgba(77, 77, 81, 0)), to(#4d4d51));
+  background: linear-gradient(to left, rgba(77, 77, 81, 0) 0%, #4d4d51 100%);
+}
+
+html body .wrapper .main .main-info .game-varieties .select-game-mode .mode-options a .content .partners .partner .avatar-wthis-line .right {
+  background: -webkit-gradient(linear, right top, left top, from(#4d4d51), to(rgba(77, 77, 81, 0)));
+  background: linear-gradient(to left, #4d4d51 0%, rgba(77, 77, 81, 0) 100%);
+}
+
+html body .wrapper .main .main-info .game-varieties .select-game-mode .mode-options a .content .partners .partner:first-child .left {
+  background: rgba(0, 0, 0, 0);
+}
+
+html body .wrapper .main .main-info .game-varieties .select-game-mode .mode-options a .content .partners .partner:last-child .right {
+  background: rgba(0, 0, 0, 0);
 }
 
 html body .wrapper .main .main-info .game-varieties .select-game-mode .mode-options a .content .partners .line-between-avatars.short {
@@ -267,6 +291,81 @@ html body .wrapper .main .main-info .game-varieties .select-game-mode .mode-opti
 html body .wrapper .main .main-info .game-varieties .select-game-mode .mode-options a .content .partners .gamer-name {
   font-size: 0.66vw;
   margin: 0.8rem 0 2.4rem 0;
+}
+
+html body .wrapper .main .main-info .game-varieties .rate-place {
+  padding: 1vw 1.1vw 1vw 1.3vw;
+}
+
+html body .wrapper .main .main-info .game-varieties .rate-place .rate-info {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 42.6% 55.1%;
+      grid-template-columns: 42.6% 55.1%;
+  -ms-grid-rows: auto;
+      grid-template-rows: auto;
+  grid-gap: 2.3%;
+}
+
+html body .wrapper .main .main-info .game-varieties .rate-place .rate-info .rate-values {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  -ms-grid-rows: auto;
+      grid-template-rows: auto;
+  grid-gap: 6%;
+}
+
+html body .wrapper .main .main-info .game-varieties .rate-place .rate-info .rate-values a .item-rate {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 2vw;
+  padding: 2.55rem 0;
+  font-size: 0.66vw;
+}
+
+html body .wrapper .main .main-info .game-varieties .rate-place .rate-info .rate-input {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 0.4% 47.77% 0.4% 37.45%;
+      grid-template-columns: 0.4% 47.77% 0.4% 37.45%;
+  -ms-grid-rows: auto;
+      grid-template-rows: auto;
+  grid-gap: 4.66%;
+}
+
+html body .wrapper .main .main-info .game-varieties .rate-place .rate-info .rate-input .rate-line-vert {
+  width: 2px;
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(-38.68%, #FFD128), to(#FFAE25)), #1B1D21;
+  background: linear-gradient(0deg, #FFD128 -38.68%, #FFAE25 100%), #1B1D21;
+}
+
+html body .wrapper .main .main-info .game-varieties .rate-place .rate-info .rate-input .you-rate input {
+  font-size: 0.66vw;
+  letter-spacing: 0.02em;
+  color: rgba(121, 122, 124, 0.5);
+  width: 100%;
+  border: none;
+  background: none;
+  padding: 1.7rem 0 0 2rem;
+}
+
+html body .wrapper .main .main-info .game-varieties .rate-place .rate-info .rate-input button {
+  color: #1C1E23;
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(-38.68%, #FFD128), to(#FFAE25)), #1B1D21;
+  background: linear-gradient(0deg, #FFD128 -38.68%, #FFAE25 100%), #1B1D21;
+  -webkit-box-shadow: 1px 1px 20px rgba(255, 194, 38, 0.3);
+          box-shadow: 1px 1px 20px rgba(255, 194, 38, 0.3);
+  border-radius: 3px;
+  border: none;
 }
 
 html body .wrapper .main .main-info .gamer-profile {
