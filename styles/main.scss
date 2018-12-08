@@ -12,19 +12,19 @@ $color_dark: #1D2024;
 $color_rect-bg: #24272B;
 $color_darc-bg:#1B1D21;
 
-$color_darc-bg: red;
+                            $color_darc-bg: red;
 
 $color-border-1: #2A2B31;
 
-$color-border-1: green;
+                            $color-border-1: green;
 
 
 $text-color-main: #ffffff;
 $text-color-altern: #797A7C;
 
-$text-color-altern: red;
+                            $text-color-altern: rgb(0, 225, 255);
 
-$text-color-2: rgba(255, 255, 255, 0.41);
+$text-color-2: rgba(255, 255, 255, 0.41);           
 $text-color-warning: #f9be16;
 
 $font-size-base: 0.55vw;
@@ -59,6 +59,7 @@ html {
 
         a {
             text-decoration: none;
+            color: #{$text-color-altern};
         }
 
         .link-block {
@@ -191,8 +192,9 @@ html {
 
                         .QWERTY {
                             width: 3vw;
-                            height:3vw;
+                            height: 2.5vw;
                             background: yellowgreen;
+                            margin: 0 auto;
                         }
                         .header {
                             display: flex;
@@ -201,7 +203,6 @@ html {
                                 width: 50%;
                                 text-align: center;
                                 border-bottom: 2px solid #{$color-border-1};
-                                color: #{$text-color-altern};
                                 padding: 1.9rem 0 1.6rem;
                             }
                         }
@@ -219,15 +220,49 @@ html {
                                 grid-template-rows: auto;
                                 grid-gap: 2.3%;
 
-                                
-
-                                .mode-item {
-                                    font-size: #{$f-s-norm};
-                                    
-                                    // .mode-name {
-                                    //     color: #{$text-color-warning};
+                                a {
+                                   
+                                    .content {
+                                        margin: 0 auto;
                                         
-                                    // }
+                                        .mode-name {
+                                            color: #{$text-color-warning};    
+                                            text-align: center;
+                                        }
+                                        .line-name {
+                                            width: 100%;
+                                            height: 1px;
+                                            background: linear-gradient(to left, rgba(79, 79, 83, 0) 0%, rgba(79, 79, 83, 1) 50%, rgba(79, 79, 83, 0) 100%);
+                                        }
+                                        .partners {
+                                            display: flex;
+                                            flex-wrap: nowrap;
+                                            justify-content: center;
+                                            padding-top: 1.7rem;
+
+                                            .partner {
+                                                display: flex;
+                                                flex-wrap: wrap;
+                                                justify-content: center;
+                                                width: 5vw;
+                                                border: 1px solid yellow;
+                                            }
+                                            .line-between-avatars {
+                                                width: 2vw;
+                                                height: 1px;
+                                                background: linear-gradient(to left, rgba(77, 77, 81, 0) 0%, rgba(77, 77, 81, 1) 50%, rgba(77, 77, 81, 0) 100%);
+                                                margin-top: 1.2vw;
+                                            }
+                                            .line-between-avatars.short {
+                                                width: 2vw;
+                                            }
+
+                                            .gamer-name {
+                                                font-size: #{$f-s-sm};
+                                                margin: 0.8rem 0 2.4rem 0;
+                                            }
+                                        }
+                                    }
                                 }
                             }   
                         }

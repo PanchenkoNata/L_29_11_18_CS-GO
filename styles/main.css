@@ -33,6 +33,7 @@ html body li {
 
 html body a {
   text-decoration: none;
+  color: #00e1ff;
 }
 
 html body .link-block {
@@ -174,8 +175,9 @@ html body .wrapper .main .main-info .game-varieties {
 
 html body .wrapper .main .main-info .game-varieties .QWERTY {
   width: 3vw;
-  height: 3vw;
+  height: 2.5vw;
   background: yellowgreen;
+  margin: 0 auto;
 }
 
 html body .wrapper .main .main-info .game-varieties .header {
@@ -188,7 +190,6 @@ html body .wrapper .main .main-info .game-varieties .header a {
   width: 50%;
   text-align: center;
   border-bottom: 2px solid green;
-  color: red;
   padding: 1.9rem 0 1.6rem;
 }
 
@@ -210,8 +211,62 @@ html body .wrapper .main .main-info .game-varieties .select-game-mode .mode-opti
   grid-gap: 2.3%;
 }
 
-html body .wrapper .main .main-info .game-varieties .select-game-mode .mode-options .mode-item {
-  font-size: 0.77vw;
+html body .wrapper .main .main-info .game-varieties .select-game-mode .mode-options a .content {
+  margin: 0 auto;
+}
+
+html body .wrapper .main .main-info .game-varieties .select-game-mode .mode-options a .content .mode-name {
+  color: #f9be16;
+  text-align: center;
+}
+
+html body .wrapper .main .main-info .game-varieties .select-game-mode .mode-options a .content .line-name {
+  width: 100%;
+  height: 1px;
+  background: -webkit-gradient(linear, right top, left top, from(rgba(79, 79, 83, 0)), color-stop(50%, #4f4f53), to(rgba(79, 79, 83, 0)));
+  background: linear-gradient(to left, rgba(79, 79, 83, 0) 0%, #4f4f53 50%, rgba(79, 79, 83, 0) 100%);
+}
+
+html body .wrapper .main .main-info .game-varieties .select-game-mode .mode-options a .content .partners {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 1.7rem;
+}
+
+html body .wrapper .main .main-info .game-varieties .select-game-mode .mode-options a .content .partners .partner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 5vw;
+  border: 1px solid yellow;
+}
+
+html body .wrapper .main .main-info .game-varieties .select-game-mode .mode-options a .content .partners .line-between-avatars {
+  width: 2vw;
+  height: 1px;
+  background: -webkit-gradient(linear, right top, left top, from(rgba(77, 77, 81, 0)), color-stop(50%, #4d4d51), to(rgba(77, 77, 81, 0)));
+  background: linear-gradient(to left, rgba(77, 77, 81, 0) 0%, #4d4d51 50%, rgba(77, 77, 81, 0) 100%);
+  margin-top: 1.2vw;
+}
+
+html body .wrapper .main .main-info .game-varieties .select-game-mode .mode-options a .content .partners .line-between-avatars.short {
+  width: 2vw;
+}
+
+html body .wrapper .main .main-info .game-varieties .select-game-mode .mode-options a .content .partners .gamer-name {
+  font-size: 0.66vw;
+  margin: 0.8rem 0 2.4rem 0;
 }
 
 html body .wrapper .main .main-info .gamer-profile {
