@@ -12,8 +12,9 @@ html {
 }
 
 html body {
+  margin: 0;
+  padding: 0;
   font-size: 0.77vw;
-  background: #1D2024;
 }
 
 html body * {
@@ -43,7 +44,6 @@ html body .link-block {
 html body .wrapper {
   width: 99.4vw;
   min-height: 100vh;
-  background: url(../images/wrapper-bg-img_2.png) no-repeat;
   position: relative;
 }
 
@@ -55,7 +55,6 @@ html body .wrapper::after {
   position: absolute;
   top: 0;
   left: 0;
-  background: rgba(24, 25, 29, 0.64);
 }
 
 html body .wrapper .container-xl {
@@ -144,7 +143,7 @@ html body .wrapper .main .nav ul li a div p {
 }
 
 html body .wrapper .main .main-info {
-  padding: 2.1vw;
+  padding: 2.1vw 2.1vw 2.1vw 2.1vw;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 49.27vw 18.85vw;
@@ -154,19 +153,29 @@ html body .wrapper .main .main-info {
   grid-gap: 2.2vw;
 }
 
-html body .wrapper .main .main-info div {
+html body .wrapper .main .main-info .main-info-box {
   mix-blend-mode: normal;
   -webkit-backdrop-filter: blur(20px);
           backdrop-filter: blur(20px);
   /* Note: backdrop-filter has minimal browser support */
-  border: 1px solid #212327;
+  border-radius: 3px;
+}
+
+html body .wrapper .main .main-info .dark-bg {
+  background: red;
+  border: 1px solid green;
   border-radius: 3px;
 }
 
 html body .wrapper .main .main-info .game-varieties {
-  grid-area: "game-varieties";
   background: -webkit-gradient(linear, left top, left bottom, color-stop(45.23%, rgba(29, 32, 36, 0.6)), to(rgba(29, 32, 36, 0)));
   background: linear-gradient(180deg, rgba(29, 32, 36, 0.6) 45.23%, rgba(29, 32, 36, 0) 100%);
+}
+
+html body .wrapper .main .main-info .game-varieties .QWERTY {
+  width: 3vw;
+  height: 3vw;
+  background: yellowgreen;
 }
 
 html body .wrapper .main .main-info .game-varieties .header {
@@ -178,15 +187,31 @@ html body .wrapper .main .main-info .game-varieties .header {
 html body .wrapper .main .main-info .game-varieties .header a {
   width: 50%;
   text-align: center;
-  border-bottom: 2px solid #2A2B31;
-  color: #797A7C;
-  margin: 1rem 0;
+  border-bottom: 2px solid green;
+  color: red;
+  padding: 1.9rem 0 1.6rem;
 }
 
-html body .wrapper .main .main-info .game-varieties a .dark-bg {
-  background: #1B1D21;
-  border: 1px solid #2A2B31;
-  border-radius: 3px;
+html body .wrapper .main .main-info .game-varieties .select-game-mode {
+  padding: 0 1.1vw 0 1.3vw;
+}
+
+html body .wrapper .main .main-info .game-varieties .select-game-mode .select-header {
+  margin: 2rem 0 2rem 0;
+}
+
+html body .wrapper .main .main-info .game-varieties .select-game-mode .mode-options {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 15.8% 24.5% 55.1%;
+      grid-template-columns: 15.8% 24.5% 55.1%;
+  -ms-grid-rows: auto;
+      grid-template-rows: auto;
+  grid-gap: 2.3%;
+}
+
+html body .wrapper .main .main-info .game-varieties .select-game-mode .mode-options .mode-item {
+  font-size: 0.77vw;
 }
 
 html body .wrapper .main .main-info .gamer-profile {
