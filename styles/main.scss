@@ -1,26 +1,72 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700|Open+Sans:300,400,700&subset=cyrillic');
+@font-face{
+    font-family: 'Google Sans';
+    src: url('../fonts/Google-Sans-Font/GoogleSans-Regular.ttf ');
+    font-weight: normal;
+    font-style: normal;
+}
+
 
 $left-col-xl: 7.03vw;
 
 $color_dark: #1D2024;
+$color_rect-bg: #24272B;
+$color_darc-bg:#1B1D21;
+$color-border-1: #2A2B31;
+
+
+$text-color-main: #ffffff;
+$text-color-1: #797A7C;
+$text-color-altern: #797A7C;
+$text-color-2: rgba(255, 255, 255, 0.41);
+$text-color-warning: #f9be16;
+
+$font-size-base: 0.55vw;
+$f-s-sm: $font-size-base * 1.2;
+$f-s-norm: $font-size-base * 1.4;
+$f-s-l: $font-size-base * 1.8;
+$f-s-xl: $font-size-base * 2;
+$f-s-xxl: $font-size-base * 2.2;
+$f-s-xxxl: $font-size-base * 2.8;
 
 html {
     font-size: 10px;
+    font-family: 'Google Sans', sans-serif;
+    color: #{$text-color-main};
 
     body {
+
+        font-size: #{$f-s-norm};
+        background: #{$color_dark};
 
         * {
             box-sizing: border-box;
         }
-        
+        ul, li {
+            margin: 0;
+            padding: 0;
+        }
+        li {
+            list-style-type: none;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .link-block {
+            display: block;
+            height: 100%;
+            width: 100%;
+        }
+
         .wrapper {
             width: 99.4vw;
             min-height: 100vh;
-            background: url(../images/wrapper-bg-img_2.png);
+            
+            background: url(../images/wrapper-bg-img_2.png) no-repeat;
             position: relative;
             //transform: matrix(-1, 0, 0, 1, 0, 0);
             
-            //background-color: #E5E5E5;
             &::after {
                 display: block;
                 content: " ";
@@ -33,12 +79,13 @@ html {
             }
         
             .container-xl {
+                display: grid;
                 grid-template-columns: 7.03vw 75.83vw 16.54vw;
             }
         
             .header {
                 display: grid;
-                grid-template-rows: 5.02vw auto;
+                grid-template-rows: 5.02vw;
         
                 .logo {
                     background: linear-gradient(90deg, #{$color_dark} 0%, #18191D 100%);
@@ -63,13 +110,196 @@ html {
             } //header
 
             .main {
+                display: grid;
+                grid-template-rows: auto;
 
                 .nav {
                     background: #{$color_dark};
                     display: flex;
+                    flex-wrap: wrap;
+                   // height: 100%;
+
+                    ul {
+                        width: 100%;
+                        padding-top: 0.9rem;
+
+                        li {
+                            width: 100%;
+                            height: 102px;
+                            border-bottom: 2px solid #1B1D21;
+                            border-bottom: 2px solid #ffffff;
+                            //background: linear-gradient(90deg, #F4AC26 5.13%, #FDCB0C 100%);
+                            //box-shadow: 0px 0px 20px #F8BA19;
+                                                //background: yellow;
+                        
+                            a {
+
+                                div {
+                                    display: flex;
+                                    flex-direction: column;
+                                    //justify-content: center;
+                                    align-items: center;
+                                    
+                                    padding-top: 2.3rem;
+
+                                    svg {
+                                        
+                                    }
+                                    p {
+                                        //text-align: center;
+                                        margin-top: 1.1rem;
+                                    }
+                                }
+                            }
+                        }
+                    }
 
                 }
-            }
+
+
+                .main-info {
+                    padding: 2.1vw;
+                    display: grid;
+                    grid-template-columns: 49.27vw 18.85vw;
+                    grid-template-rows: 21.88vw 20.68vw;;
+                    grid-gap: 2.2vw;
+
+                    div {
+                        mix-blend-mode: normal;
+                        backdrop-filter: blur(20px);
+                        /* Note: backdrop-filter has minimal browser support */
+                        border: 1px solid #212327;
+                        border-radius: 3px;
+
+                    }
+
+                    .game-varieties {
+                        grid-area: "game-varieties";
+
+                        background: linear-gradient(180deg, rgba(29, 32, 36, 0.6) 45.23%, rgba(29, 32, 36, 0) 100%);
+
+                        .header {
+                            display: flex;
+
+                            a {
+                                width: 50%;
+                                text-align: center;
+                                border-bottom: 2px solid #{$color-border-1};
+                                color: #{$text-color-altern};
+                                margin: 1rem 0;
+                            }
+                        }
+                        a {
+                            .dark-bg {
+                                
+                                background: #{$color_darc-bg};
+                                border: 1px solid #{$color-border-1};
+                                border-radius: 3px;
+                            }
+                        }
+                    }
+                    .gamer-profile {
+                        grid-area: "gamer-profile";
+
+                        background: rgba(29, 32, 36, 0.6);
+
+                        p {
+                            
+                        }
+                    }
+                    .player-rating {
+                        grid-area: "player-rating";
+
+                        background: rgba(29, 32, 36, 0.5);
+                    }
+                    .daily-rate {
+                        grid-area: "daily-rate";
+
+                        background: rgba(29, 32, 36, 0.6);
+                        
+                    }
+                }
+
+
+
+                .result-of-games {
+                    padding-top: 2.5rem;
+                    padding-right: 0.2rem;
+
+                    .content {
+                        // display: grid;
+                        // grid-template-columns: 100%;
+                        // grid-template-rows:  6.62vw;
+                        // grid-row-gap: 2vw;
+
+                        .game-rezult {
+                            width: 100%;
+                            height: 6.62vw;
+                            margin: 2rem 0;
+                            background: #{$color_rect-bg};
+
+                            a {
+                                .content {
+                                    display: flex;
+                                    justify-content: space-between;
+                                    padding: 1vw 1vw;
+                                    text-align: center;
+
+                                    
+                                    .gamer-info {
+                                        width: 5vw;
+                                        
+                                        .avatar {
+                                            width: 3.2vw;
+                                            height: 2.4vw;
+                                            background: green;
+                                            margin: 0 auto; 
+
+                                            svg {
+                                                // padding: 1rem;
+
+                                                // background-image: url(../images/avatars/VanyaKiller.png);
+                                                // background-size: cover;
+                                                // background-repeat: no-repeat;
+                                            }
+    
+                                        }
+                                        
+                                        p {
+                                            margin: 0.7rem 0 0.3rem;
+                                        }
+                                        .points {
+                                            font-size: #{$f-s-sm};
+                                            color: #{$text-color-warning};
+                                            margin: 0.3rem 0;
+                                        }
+                                    }
+
+                                    .result-of-game {
+                                        p {
+                                            margin: 2rem 0 0;
+                                            color: #{$text-color-2};
+                                        }
+                                        .score {
+                                            margin: 0;
+                                            font-size: #{$f-s-xxl}; 
+                                            color: #{$text-color-main};
+                                        }
+                                    }
+                                }
+                                
+                            }
+                        }
+
+
+                    }
+                }
+            } //main
+
+
+
+
+
 
         }
     }
