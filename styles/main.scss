@@ -67,6 +67,11 @@ html {
             height: 100%;
             width: 100%;
         }
+        .dark-bg {
+            background: #{$color_darc-bg};
+            border: 1px solid #{$color-border-1};
+            border-radius: 3px;
+        }
 
         .wrapper {
             width: 99.4vw;
@@ -176,10 +181,11 @@ html {
                         border: 1px solid #{$color-border-1};
                     }
 
-                    .dark-bg {
-                        background: #{$color_darc-bg};
-                        border: 1px solid #{$color-border-1};
-                        border-radius: 3px;
+                    
+                    .line-horiz {
+                        width: 100%;
+                        height: 1px;
+                        background: linear-gradient(to left, rgba(79, 79, 83, 0) 0%, rgba(79, 79, 83, 1) 50%, rgba(79, 79, 83, 0) 100%);
                     }
                     .header-info {
                         padding: 0;
@@ -192,17 +198,16 @@ html {
                     .align-r {
                         text-align: right;
                     }
+                    .QWERTY {
+                        width: 3vw;
+                        height: 2.5vw;
+                        margin: 0 auto;
+                        background: rgba(166, 184, 35, 0.5);
+                    }
 
                     .game-varieties {
                         //grid-area: _game-varieties;
                         background: linear-gradient(180deg, rgba(29, 32, 36, 0.6) 45.23%, rgba(29, 32, 36, 0) 100%);
-
-                        .QWERTY {
-                            width: 3vw;
-                            height: 2.5vw;
-                            margin: 0 auto;
-                            background: yellowgreen;
-                        }
 
                         .header {
                             display: flex;
@@ -211,10 +216,6 @@ html {
                                 width: 50%;
                                 border-bottom: 2px solid #{$color-border-1};
                             }
-                        }
-
-                        .game-variet-subheader {
-                            
                         }
 
                         .select-game-mode {
@@ -239,11 +240,7 @@ html {
                                             color: #{$text-color-warning};    
                                             text-align: center;
                                         }
-                                        .line-name {
-                                            width: 100%;
-                                            height: 1px;
-                                            background: linear-gradient(to left, rgba(79, 79, 83, 0) 0%, rgba(79, 79, 83, 1) 50%, rgba(79, 79, 83, 0) 100%);
-                                        }
+                                        
                                         .partners {
                                             display: flex;
                                             flex-wrap: nowrap;
@@ -375,6 +372,92 @@ html {
                         grid-area: "gamer-profile";
 
                         background: rgba(29, 32, 36, 0.6);
+                        
+                        .player {
+                            display: flex;
+                            //justify-content: space-between;
+                            padding: 1.1vw 1.3vw 0;
+                            background: rgba(42, 43, 49, 0.25);
+                            
+                            .avatar-big {
+                                margin: 0;
+                                width: 5.68vw;
+                                height: 5vw;
+
+                                .QWERTY {
+                                    
+                                }
+                            }
+
+                            .about-player {
+                                margin-left: 1vw;
+
+                                .name {
+                                    font-size: #{$f-s-xl};
+                                    margin-top: 0.4rem;
+                                    margin-bottom: 1rem;
+                                    
+                                }
+                                .status {
+                                    display: flex;
+
+                                    .circle {
+                                        box-sizing: content-box;
+                                        width: 0.4em;
+                                        height: 0.4em;
+                                        background-color: rgba(51, 207, 116, 1);
+                                        border: 0.2em solid rgb(4, 77, 34);
+                                        border-radius: 50%;
+                                        margin: 0.2em 0.3em;
+                                    }
+                                }
+
+                                .rank {
+                                    padding-top: 1.5rem;
+                                    display: flex;
+
+                                    .rank-points {
+                                        height: 1.62vw;
+                                        width: 4.5vw;
+                                        position: relative;
+                                        background: #{$color_darc-bg};
+                                        border: 1px solid #{$color-border-1};
+                                        border-right-color: #{$color_darc-bg};
+                                        border-left-color: #{$color_darc-bg};;
+                                        z-index: 200;
+                                        
+                                        &::after, &::before {
+                                            width: 1.18vw;
+                                            height: 1.18vw;
+                                            transform: rotate(45deg);
+                                            box-sizing: border-box;
+                                            display: block;
+                                            content: " ";
+                                            background: #{$color_darc-bg};
+                                            border: 1px solid #{$color-border-1};
+                                            border-right-color: #{$color_darc-bg};
+                                            border-left-color: #{$color_darc-bg};
+                                            position: absolute;
+                                            top: 11.538%;
+                                            z-index: 100;
+                                        }
+
+                                        &::after {
+                                            right: -16%;
+                                            // border-top-color: red;                                            
+                                            // border-right-color: 1px solid red;
+                                        }
+                                        &::before {
+                                            left: -16%;
+                                        }
+
+
+                                    }
+
+                                }
+                            }
+
+                        }
 
                         p {
                             
