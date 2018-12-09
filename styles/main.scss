@@ -190,6 +190,7 @@ html {
                             width: 3vw;
                             height: 2.5vw;
                             margin: 0 auto;
+                            background: yellowgreen;
                         }
 
                         .header {
@@ -311,6 +312,7 @@ html {
                                             height: 2vw;
                                             padding: 2.55rem 0;
                                             font-size: #{$f-s-sm};
+                                            color: #{$text-color-main};
                                         }
                                     }
                                 }
@@ -352,7 +354,7 @@ html {
                         }
                         
                     }
-                    .gamer-profile {
+                    .player-profile {
                         grid-area: "gamer-profile";
 
                         background: rgba(29, 32, 36, 0.6);

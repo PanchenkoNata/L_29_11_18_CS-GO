@@ -179,6 +179,7 @@ html body .wrapper .main .main-info .game-varieties .QWERTY {
   width: 3vw;
   height: 2.5vw;
   margin: 0 auto;
+  background: yellowgreen;
 }
 
 html body .wrapper .main .main-info .game-varieties .header {
@@ -330,6 +331,7 @@ html body .wrapper .main .main-info .game-varieties .rate-place .rate-info .rate
   height: 2vw;
   padding: 2.55rem 0;
   font-size: 0.66vw;
+  color: #ffffff;
 }
 
 html body .wrapper .main .main-info .game-varieties .rate-place .rate-info .rate-input {
@@ -368,7 +370,7 @@ html body .wrapper .main .main-info .game-varieties .rate-place .rate-info .rate
   border: none;
 }
 
-html body .wrapper .main .main-info .gamer-profile {
+html body .wrapper .main .main-info .player-profile {
   grid-area: "gamer-profile";
   background: rgba(29, 32, 36, 0.6);
 }
