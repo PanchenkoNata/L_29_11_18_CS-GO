@@ -5,6 +5,13 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'Google Sans';
+  src: url("../fonts/Google-Sans-Font/GoogleSans-Bold.ttf ");
+  font-weight: bold;
+  font-style: normal;
+}
+
 html {
   font-size: 10px;
   font-family: 'Google Sans', sans-serif;
@@ -46,6 +53,31 @@ html body .dark-bg {
   background: #1B1D21;
   border: 1px solid #2A2B31;
   border-radius: 3px;
+}
+
+html body .header-info {
+  padding: 0;
+  margin: 1.9rem 0 1.6rem;
+  text-align: center;
+}
+
+html body .align-c {
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+html body .align-l {
+  text-align: left;
+}
+
+html body .align-r {
+  text-align: right;
+}
+
+html body .text-bold {
+  font-weight: bold;
 }
 
 html body .wrapper {
@@ -177,20 +209,6 @@ html body .wrapper .main .main-info .line-horiz {
   background: linear-gradient(to left, rgba(79, 79, 83, 0) 0%, #4f4f53 50%, rgba(79, 79, 83, 0) 100%);
 }
 
-html body .wrapper .main .main-info .header-info {
-  padding: 0;
-  margin: 1.9rem 0 1.6rem;
-  text-align: center;
-}
-
-html body .wrapper .main .main-info .align-l {
-  text-align: left;
-}
-
-html body .wrapper .main .main-info .align-r {
-  text-align: right;
-}
-
 html body .wrapper .main .main-info .QWERTY {
   width: 3vw;
   height: 2.5vw;
@@ -310,8 +328,10 @@ html body .wrapper .main .main-info .game-varieties .rate-place {
   padding: 1vw 1.1vw 1vw 1.3vw;
 }
 
-html body .wrapper .main .main-info .game-varieties .rate-place .header-info {
+html body .wrapper .main .main-info .game-varieties .rate-place .header-info-left {
+  padding: 0;
   margin: 0 0 2.1rem;
+  text-align: left;
 }
 
 html body .wrapper .main .main-info .game-varieties .rate-place .rate-info {
@@ -513,9 +533,132 @@ html body .wrapper .main .main-info .player-rating {
   background: rgba(29, 32, 36, 0.5);
 }
 
+html body .wrapper .main .main-info .player-rating .header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+html body .wrapper .main .main-info .player-rating .header a {
+  width: 50%;
+  border-bottom: 2px solid #2A2B31;
+}
+
+html body .wrapper .main .main-info .player-rating .list-rating {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 6.02% 25.80% 8% 44.20% 15.98%;
+      grid-template-columns: 6.02% 25.80% 8% 44.20% 15.98%;
+  -ms-grid-rows: 1.5vw auto (2.5vw)[5] auto 2.4vw auto auto;
+      grid-template-rows: 1.5vw auto repeat(5, 2.5vw) auto 2.4vw auto auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 0.66vw;
+}
+
+html body .wrapper .main .main-info .player-rating .list-rating .light-row {
+  background: rgba(42, 43, 49, 0.39);
+}
+
+html body .wrapper .main .main-info .player-rating .list-rating .line-horiz, html body .wrapper .main .main-info .player-rating .list-rating .footer {
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+  grid-column-end: 6;
+}
+
+html body .wrapper .main .main-info .player-rating .list-rating .item-list {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+html body .wrapper .main .main-info .player-rating .list-rating .item-list:nth-child(2) {
+  margin-left: 1.2vw;
+}
+
+html body .wrapper .main .main-info .player-rating .list-rating .item-list .gamer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+}
+
+html body .wrapper .main .main-info .player-rating .list-rating .item-list .gamer .QWERTY {
+  height: 1.4vw;
+  width: 1.4vw;
+  background: red;
+}
+
+html body .wrapper .main .main-info .player-rating .list-rating .item-list .gamer .gamer-name {
+  padding-left: 0.6vw;
+}
+
+html body .wrapper .main .main-info .player-rating .list-rating .item-list .rank-points {
+  margin-left: 0.2vw;
+}
+
+html body .wrapper .main .main-info .player-rating .list-rating .item-list .win-points {
+  margin-left: 0.2vw;
+}
+
+html body .wrapper .main .main-info .player-rating .list-rating .item-list .footer {
+  padding-top: 0.2vw;
+}
+
 html body .wrapper .main .main-info .daily-rate {
   grid-area: "daily-rate";
   background: rgba(29, 32, 36, 0.6);
+}
+
+html body .wrapper .main .main-info .daily-rate .gift-container {
+  background-image: url(../images/daily-rate/bg_1.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 0 auto;
+}
+
+html body .wrapper .main .main-info .daily-rate .gift-container .info1 {
+  color: rgba(255, 255, 255, 0.78);
+  letter-spacing: -0.03em;
+  margin: 1.6rem 0 0;
+}
+
+html body .wrapper .main .main-info .daily-rate .gift-container .timer {
+  font-size: 1.54vw;
+  letter-spacing: 0.07em;
+  margin: 0.7rem 0 0;
+}
+
+html body .wrapper .main .main-info .daily-rate .gift-container img {
+  width: 61.33%;
+  height: auto;
+  margin: 0.6rem 0 0;
+}
+
+html body .wrapper .main .main-info .daily-rate .gift-container .gift-name {
+  font-size: 0.99vw;
+  letter-spacing: -0.03em;
+  color: #EB5757;
+  margin: 0.4rem 0 0;
+}
+
+html body .wrapper .main .main-info .daily-rate .gift-container .info2 {
+  letter-spacing: -0.03em;
+  margin: 1rem 0 0;
+}
+
+html body .wrapper .main .main-info .daily-rate .gift-container .info2 span {
+  color: #f9be16;
 }
 
 html body .wrapper .main .result-of-games {

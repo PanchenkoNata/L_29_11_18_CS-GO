@@ -4,6 +4,12 @@
     font-weight: normal;
     font-style: normal;
 }
+@font-face{
+    font-family: 'Google Sans';
+    src: url('../fonts/Google-Sans-Font/GoogleSans-Bold.ttf ');
+    font-weight: bold;
+    font-style: normal;
+}
 
 
 $left-col-xl: 7.03vw;
@@ -71,6 +77,24 @@ html {
             background: #{$color_darc-bg};
             border: 1px solid #{$color-border-1};
             border-radius: 3px;
+        }
+        .header-info {
+            padding: 0;
+            margin: 1.9rem 0 1.6rem;
+            text-align: center;
+        }
+        .align-c {
+            text-align: center;
+            justify-content: center;
+        }
+        .align-l {
+            text-align: left;
+        }
+        .align-r {
+            text-align: right;
+        }
+        .text-bold {
+            font-weight: bold;
         }
 
         .wrapper {
@@ -187,17 +211,8 @@ html {
                         height: 1px;
                         background: linear-gradient(to left, rgba(79, 79, 83, 0) 0%, rgba(79, 79, 83, 1) 50%, rgba(79, 79, 83, 0) 100%);
                     }
-                    .header-info {
-                        padding: 0;
-                        margin: 1.9rem 0 1.6rem;
-                        text-align: center;
-                    }
-                    .align-l {
-                        text-align: left;
-                    }
-                    .align-r {
-                        text-align: right;
-                    }
+                    
+                    
                     .QWERTY {
                         width: 3vw;
                         height: 2.5vw;
@@ -302,8 +317,11 @@ html {
                         .rate-place {
                             padding: 1vw 1.1vw 1vw 1.3vw;
 
-                            .header-info {
+                            .header-info-left {
+                                padding: 0;
                                 margin: 0 0 2.1rem;
+                                // font-size: #{$f-s-sm};
+                                text-align: left;
                             }
 
                             .rate-info {
@@ -481,11 +499,110 @@ html {
                         grid-area: "player-rating";
 
                         background: rgba(29, 32, 36, 0.5);
+
+                        .header {
+                            display: flex;
+
+                            a {
+                                width: 50%;
+                                border-bottom: 2px solid #{$color-border-1};
+                            }
+                        }
+
+                        .list-rating {
+                            display: grid;
+                            grid-template-columns: 6.02% 25.80% 8% 44.20% 15.98%;
+                            grid-template-rows: 1.5vw auto repeat(5, 2.5vw) auto 2.4vw auto auto;
+                            align-items: center;
+                            font-size: #{$f-s-sm};
+                            
+                            .light-row {
+                                background:  rgba(42, 43, 49, 0.39);
+                                
+                            }
+                            .line-horiz, .footer {
+                                grid-column-start: 1;
+                                grid-column-end: 6;
+                            }
+
+                            .item-list {
+                                height: 100%;
+                                display: flex;
+                                align-items: center;
+                                
+                                &:nth-child(2) {
+                                    margin-left: 1.2vw;
+                                }
+
+                                .gamer {
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: start;
+                                     
+                                    .QWERTY {
+                                        height: 1.4vw;
+                                        width: 1.4vw;
+                                        background: red
+                                    }
+                                    .gamer-name {
+                                        padding-left: 0.6vw;
+                                    }
+                                }
+
+                                .rank-points {
+                                    margin-left: 0.2vw;
+                                }
+                                .win-points {
+                                    margin-left: 0.2vw;
+                                }
+
+                                .footer {
+                                    padding-top: 0.2vw;
+                                }
+                            }
+                        }
                     }
                     .daily-rate {
                         grid-area: "daily-rate";
 
                         background: rgba(29, 32, 36, 0.6);
+
+                        .gift-container {
+                            background-image: url(../images/daily-rate/bg_1.png);
+                            background-size: cover;
+                            background-repeat: no-repeat;
+                            margin: 0 auto;
+
+                            .info1 {
+                                color: rgba(255, 255, 255, 0.78);
+                                letter-spacing: -0.03em;
+                                margin: 1.6rem 0 0;
+                            }
+                            .timer {
+                                font-size: #{$f-s-xxxl};
+                                letter-spacing: 0.07em;
+                                margin: 0.7rem 0 0;
+                            }
+
+                            img {
+                                width: 61.33%;
+                                height: auto;
+                                margin: 0.6rem 0 0;
+                            }
+                            .gift-name {
+                                font-size: #{$f-s-l};
+                                letter-spacing: -0.03em;
+                                color: #EB5757;
+                                margin: 0.4rem 0 0;
+                            }
+                            .info2 {
+                                letter-spacing: -0.03em;
+                                margin: 1rem 0 0;
+                                span {
+                                    color: #{$text-color-warning};
+                                }
+                            }
+                        }
                         
                     }
                 }
