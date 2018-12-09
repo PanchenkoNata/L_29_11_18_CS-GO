@@ -376,7 +376,7 @@ html {
                         .player {
                             display: flex;
                             //justify-content: space-between;
-                            padding: 1.1vw 1.3vw 0;
+                            padding: 1.25vw 1.3vw 1.1vw;
                             background: rgba(42, 43, 49, 0.25);
                             
                             .avatar-big {
@@ -413,45 +413,28 @@ html {
                                 }
 
                                 .rank {
-                                    padding-top: 1.5rem;
+                                    margin-top: 1rem;
                                     display: flex;
+                                    align-items: center;
 
                                     .rank-points {
                                         height: 1.62vw;
-                                        width: 4.5vw;
-                                        position: relative;
-                                        background: #{$color_darc-bg};
-                                        border: 1px solid #{$color-border-1};
-                                        border-right-color: #{$color_darc-bg};
-                                        border-left-color: #{$color_darc-bg};;
-                                        z-index: 200;
-                                        
-                                        &::after, &::before {
-                                            width: 1.18vw;
-                                            height: 1.18vw;
-                                            transform: rotate(45deg);
-                                            box-sizing: border-box;
-                                            display: block;
-                                            content: " ";
-                                            background: #{$color_darc-bg};
-                                            border: 1px solid #{$color-border-1};
-                                            border-right-color: #{$color_darc-bg};
-                                            border-left-color: #{$color_darc-bg};
-                                            position: absolute;
-                                            top: 11.538%;
-                                            z-index: 100;
-                                        }
+                                        width: 7.3vw;
+                                        background-image: url(../images/avatars/rank-points.svg);
+                                        background-size: cover;
+                                        background-repeat: no-repeat;
+                                        margin-left: 0.4vw;
+                                        display: flex;
+                                        align-items: center;
 
-                                        &::after {
-                                            right: -16%;
-                                            // border-top-color: red;                                            
-                                            // border-right-color: 1px solid red;
+                                        img {
+                                            height: 100%;
+                                            margin-left: 0.5vw;
                                         }
-                                        &::before {
-                                            left: -16%;
+                                        span {
+                                            font-size: #{$f-s-sm};
+                                            margin-left: 0.2vw;
                                         }
-
-
                                     }
 
                                 }
