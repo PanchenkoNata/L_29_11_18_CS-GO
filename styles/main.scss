@@ -181,7 +181,18 @@ html {
                         border: 1px solid #{$color-border-1};
                         border-radius: 3px;
                     }
-                    
+                    .header-info {
+                        padding: 0;
+                        margin: 1.9rem 0 1.6rem;
+                        text-align: center;
+                    }
+                    .align-l {
+                        text-align: left;
+                    }
+                    .align-r {
+                        text-align: right;
+                    }
+
                     .game-varieties {
                         //grid-area: _game-varieties;
                         background: linear-gradient(180deg, rgba(29, 32, 36, 0.6) 45.23%, rgba(29, 32, 36, 0) 100%);
@@ -198,18 +209,20 @@ html {
 
                             a {
                                 width: 50%;
-                                text-align: center;
                                 border-bottom: 2px solid #{$color-border-1};
-                                padding: 1.9rem 0 1.6rem;
                             }
                         }
 
                         .game-variet-subheader {
-                            margin: 0 0 2.1rem 0;
+                            
                         }
 
                         .select-game-mode {
                             padding: 1vw 1.1vw 1vw 1.3vw;
+
+                            .header-info {
+                                margin: 0 0 2.1rem;
+                            }
 
                             .mode-options {
                                 display: grid;
@@ -291,6 +304,10 @@ html {
 
                         .rate-place {
                             padding: 1vw 1.1vw 1vw 1.3vw;
+
+                            .header-info {
+                                margin: 0 0 2.1rem;
+                            }
 
                             .rate-info {
                                 display: grid;
