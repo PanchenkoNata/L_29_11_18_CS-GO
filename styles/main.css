@@ -117,6 +117,23 @@ html body .wrapper .header {
       grid-template-rows: 5.02vw;
 }
 
+html body .wrapper .header .drop-down-list-btn {
+  width: 1.4vw;
+  height: 1.3vw;
+  background-image: url(../images/header/list-games-btn.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 html body .wrapper .header .logo {
   background: -webkit-gradient(linear, left top, right top, from(#1D2024), to(#18191D));
   background: linear-gradient(90deg, #1D2024 0%, #18191D 100%);
@@ -155,23 +172,6 @@ html body .wrapper .header .info .game {
 
 html body .wrapper .header .info .game .game-logo {
   margin: 0.7vw 0 0 1.6vw;
-}
-
-html body .wrapper .header .info .game .list-of-games-btn {
-  width: 1.4vw;
-  height: 1.3vw;
-  background-image: url(../images/header/list-games-btn.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
 }
 
 html body .wrapper .header .info .search {

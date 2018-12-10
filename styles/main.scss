@@ -131,6 +131,25 @@ html {
             .header {
                 display: grid;
                 grid-template-rows: 5.02vw;
+
+                .drop-down-list-btn  {
+                    width: 1.4vw;
+                    height: 1.3vw;
+                    background-image: url(../images/header/list-games-btn.png);
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+
+                    // &:after {
+                    //     display: flex;
+                    //     text-align: center;
+                    //     align-items: center;
+                    //     content: "\003C";
+                    //     transform: rotate(-90deg);
+                    // }
+                }
         
                 .logo {
                     background: linear-gradient(90deg, #{$color_dark} 0%, #18191D 100%);
@@ -156,24 +175,7 @@ html {
                             margin: 0.7vw 0 0 1.6vw;            
                         }
     
-                        .list-of-games-btn {
-                            width: 1.4vw;
-                            height: 1.3vw;
-                            background-image: url(../images/header/list-games-btn.png);
-                            background-size: cover;
-                            background-repeat: no-repeat;
-                            display: flex;
-                            align-items: center;
-                            justify-content: center;
-    
-                            // &:after {
-                            //     display: flex;
-                            //     text-align: center;
-                            //     align-items: center;
-                            //     content: "\003C";
-                            //     transform: rotate(-90deg);
-                            // }
-                        }
+                        
                     }
 
                     .search {
