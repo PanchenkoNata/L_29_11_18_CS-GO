@@ -43,6 +43,12 @@ html body a {
   color: #797A7C;
 }
 
+html body input {
+  width: 100%;
+  border: none;
+  background: none;
+}
+
 html body .link-block {
   display: block;
   height: 100%;
@@ -128,7 +134,85 @@ html body .wrapper .header .logo {
 html body .wrapper .header .info {
   background: -webkit-gradient(linear, left top, right top, from(#1D2024), to(#18191D));
   background: linear-gradient(90deg, #1D2024 0%, #18191D 100%);
-  background: #ffffaa;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 53% 33.7% 13.3%;
+      grid-template-columns: 53% 33.7% 13.3%;
+  grid-gap: 0%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+html body .wrapper .header .info .game {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+html body .wrapper .header .info .game .game-logo {
+  margin: 0.7vw 0 0 1.6vw;
+}
+
+html body .wrapper .header .info .game .list-of-games-btn {
+  width: 1.4vw;
+  height: 1.3vw;
+  background-image: url(../images/header/list-games-btn.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+html body .wrapper .header .info .search {
+  background: #1D2024;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #717278;
+  width: 22.1vw;
+  height: 2.5vw;
+}
+
+html body .wrapper .header .info .search input {
+  letter-spacing: 0.02em;
+  padding: 0 0 0 2rem;
+}
+
+html body .wrapper .header .info .search button {
+  border: none;
+  background: #1D2024;
+  color: #717278;
+  padding: 0 2rem 0 0;
+}
+
+html body .wrapper .header .info .gamers-counter {
+  border-left: 3px solid #2A2B31;
+  height: 2.5vw;
+}
+
+html body .wrapper .header .info .gamers-counter p {
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+html body .wrapper .header .info .gamers-counter .count {
+  font-size: 0.99vw;
+  color: #f9be16;
 }
 
 html body .wrapper .header .profile {
@@ -328,10 +412,8 @@ html body .wrapper .main .main-info .game-varieties .rate-place {
   padding: 1vw 1.1vw 1vw 1.3vw;
 }
 
-html body .wrapper .main .main-info .game-varieties .rate-place .header-info-left {
-  padding: 0;
+html body .wrapper .main .main-info .game-varieties .rate-place .header-info {
   margin: 0 0 2.1rem;
-  text-align: left;
 }
 
 html body .wrapper .main .main-info .game-varieties .rate-place .rate-info {
@@ -380,7 +462,7 @@ html body .wrapper .main .main-info .game-varieties .rate-place .rate-info .rate
   grid-gap: 4.66%;
 }
 
-html body .wrapper .main .main-info .game-varieties .rate-place .rate-info .rate-input .rate-line-vert {
+html body .wrapper .main .main-info .game-varieties .rate-place .rate-info .rate-input .line-vert {
   width: 2px;
   background: -webkit-gradient(linear, left bottom, left top, color-stop(-38.68%, #FFD128), to(#FFAE25)), #1B1D21;
   background: linear-gradient(0deg, #FFD128 -38.68%, #FFAE25 100%), #1B1D21;
