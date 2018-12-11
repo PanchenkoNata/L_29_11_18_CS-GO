@@ -66,6 +66,11 @@ html {
         a {
             text-decoration: none;
             color: #{$text-color-altern};
+
+            &:hover {
+                // border: 3px solid #FFD128;
+                background: #FFD128;
+            }
         }
         input {
             width: 100%;
@@ -77,6 +82,11 @@ html {
             display: block;
             height: 100%;
             width: 100%;
+
+            &:hover {
+                // border: 3px solid #FFD128;
+                background: #FFD128;
+            }
         }
         .dark-bg {
             background: #{$color_darc-bg};
@@ -103,12 +113,55 @@ html {
             font-weight: bold;
         }
 
+        .avatar-wrap {
+            width: 3vw;
+            height: 2.5vw;
+            margin: 0 auto;
+            // background: rgba(166, 184, 35, 0.5);
+
+            .hexagon {
+                width: 100%;
+                height: 100%;
+                overflow: hidden;
+                visibility: hidden;
+                transform: rotate(120deg);
+
+                .hex-in1 {
+                    width: 100%;
+                    height: 100%;
+                    overflow: hidden;
+                    transform: rotate(-60deg);
+
+                    .hex-in2 {
+                        width: 100%;
+                        height: 100%;
+                        background-repeat: no-repeat;
+                        background-position: 50%;
+                        background-image: url("../images/polygon_base.png");
+                        background-size: 58%;
+                        visibility: visible;
+                        transform: rotate(-60deg);
+                    }
+
+                    .av-1 {
+                        background-image: url("../images/avatars/av-1.png");
+                    }
+                }
+            }
+        }
+        .avatar-big {
+            width: 3vw;
+            height: 2.5vw;
+        }
+
+        
 
         .wrapper {
             width: 99.4vw;
             min-height: 100vh;
             
             background: url(../images/wrapper-bg-img_2.png) no-repeat;
+            background-size: cover;
             position: relative;
             //transform: matrix(-1, 0, 0, 1, 0, 0);
             
@@ -293,12 +346,38 @@ html {
                     }
                     
                     
-                    .QWERTY {
-                        width: 3vw;
-                        height: 2.5vw;
-                        margin: 0 auto;
-                        background: rgba(166, 184, 35, 0.5);
-                    }
+                    // .avatar-wrap {
+                    //     width: 3vw;
+                    //     height: 2.5vw;
+                    //     margin: 0 auto;
+                    //     background: rgba(166, 184, 35, 0.5);
+
+                    //     .hexagon {
+                    //         width: 100%;
+                    //         height: 100%;
+                    //         overflow: hidden;
+                    //         visibility: hidden;
+                    //         transform: rotate(120deg);
+
+                    //         .hex-in1 {
+                    //             width: 100%;
+                    //             height: 100%;
+                    //             overflow: hidden;
+                    //             transform: rotate(-60deg);
+
+                    //             .hex-in2 {
+                    //                 width: 100%;
+                    //                 height: 100%;
+                    //                 background-repeat: no-repeat;
+                    //                 background-position: 50%;
+                    //                 background-image: url("../images/polygon_base.png");
+                    //                 background-size: 58%;
+                    //                 visibility: visible;
+                    //                 transform: rotate(-60deg);
+                    //             }
+                    //         }
+                    //     }
+                    // }
 
                     .game-varieties {
                         //grid-area: _game-varieties;
@@ -310,6 +389,11 @@ html {
                             a {
                                 width: 50%;
                                 border-bottom: 2px solid #{$color-border-1};
+
+                                &:hover {
+                                    // border: 3px solid #FFD128;
+                                    background: #FFD128;
+                                }
                             }
                         }
 
