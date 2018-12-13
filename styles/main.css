@@ -94,45 +94,6 @@ html body .text-bold {
   font-weight: bold;
 }
 
-html body .avatar-wrap {
-  width: 3vw;
-  height: 2.5vw;
-  margin: 0 auto;
-}
-
-html body .avatar-wrap .hexagon {
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-  visibility: hidden;
-  -webkit-transform: rotate(120deg);
-          transform: rotate(120deg);
-}
-
-html body .avatar-wrap .hexagon .hex-in1 {
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-  -webkit-transform: rotate(-60deg);
-          transform: rotate(-60deg);
-}
-
-html body .avatar-wrap .hexagon .hex-in1 .hex-in2 {
-  width: 100%;
-  height: 100%;
-  background-repeat: no-repeat;
-  background-position: 50%;
-  background-image: url("../images/polygon_base.png");
-  background-size: 58%;
-  visibility: visible;
-  -webkit-transform: rotate(-60deg);
-          transform: rotate(-60deg);
-}
-
-html body .avatar-wrap .hexagon .hex-in1 .av-1 {
-  background-image: url("../images/avatars/av-1.png");
-}
-
 html body .avatar-big {
   width: 3vw;
   height: 2.5vw;
@@ -805,14 +766,22 @@ html body .wrapper .main .result-of-games .content .game-rezult {
   -webkit-box-sizing: padding-box;
           box-sizing: padding-box;
   border: 1px solid #2A2B31;
+  border: 1px solid red;
   background: #24272B;
 }
 
-html body .wrapper .main .result-of-games .content .game-rezult a {
+html body .wrapper .main .result-of-games .content .game-rezult .bg-link-1 {
   background: url(../images/result-of-games/Rectangle_bg-img_1.png) no-repeat;
+}
+
+html body .wrapper .main .result-of-games .content .game-rezult .bg-link-2 {
+  background: url(../images/result-of-games/Rectangle_bg-img_2.png) no-repeat;
+}
+
+html body .wrapper .main .result-of-games .content .game-rezult a {
+  border: 1px solid yellow;
   background-size: containe;
   background-position-x: right;
-  border: 1px solid transparent;
 }
 
 html body .wrapper .main .result-of-games .content .game-rezult a:hover {
@@ -845,40 +814,51 @@ html body .wrapper .main .result-of-games .content .game-rezult a .content .game
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  position: relative;
   width: 57px;
   height: 57px;
   margin: 0 auto;
 }
 
-html body .wrapper .main .result-of-games .content .game-rezult a .content .gamer-info .border-av::before {
-  width: 100%;
-  height: 100%;
-  display: block;
-  content: " ";
-  position: absolute;
-  background-size: contain;
-  background-position: center center;
-}
-
 html body .wrapper .main .result-of-games .content .game-rezult a .content .gamer-info .border-av .avatar {
   width: 80%;
   height: 80%;
-  background: url("../images/avatars/av_VanyaKiller.png") no-repeat;
-  background-size: cover;
   -webkit-clip-path: polygon(0% 50%, 25% 10%, 75% 10%, 100% 50%, 75% 90%, 25% 90%);
           clip-path: polygon(0% 50%, 25% 10%, 75% 10%, 100% 50%, 75% 90%, 25% 90%);
 }
 
-html body .wrapper .main .result-of-games .content .game-rezult a .content .gamer-info .border-av .av-2 {
+html body .wrapper .main .result-of-games .content .game-rezult a .content .gamer-info .border-av .av-OceanD {
+  background: url("../images/avatars/av_OceanD.png") no-repeat;
+  background-size: cover;
+}
+
+html body .wrapper .main .result-of-games .content .game-rezult a .content .gamer-info .border-av .av-VanyaKiller {
   background: url("../images/avatars/av_VanyaKiller.png") no-repeat;
+  background-size: cover;
 }
 
-html body .wrapper .main .result-of-games .content .game-rezult a .content .gamer-info .border-av .av-3 {
+html body .wrapper .main .result-of-games .content .game-rezult a .content .gamer-info .border-av .av-F1stM4n {
   background: url("../images/avatars/av_F1stM4n.png") no-repeat;
+  background-size: cover;
 }
 
-html body .wrapper .main .result-of-games .content .game-rezult a .content .gamer-info .br-av-col-1::before {
+html body .wrapper .main .result-of-games .content .game-rezult a .content .gamer-info .border-av .av-SaWyer {
+  background: url("../images/avatars/av_SaWyer.png") no-repeat;
+  background-size: cover;
+}
+
+html body .wrapper .main .result-of-games .content .game-rezult a .content .gamer-info .border-av .av-le4oz22 {
+  background: url("../images/avatars/av_le4oz22") no-repeat;
+  background-size: cover;
+}
+
+html body .wrapper .main .result-of-games .content .game-rezult a .content .gamer-info .border-av .av-Shadow52 {
+  background: url("../images/avatars/av_Shadow52.png") no-repeat;
+  background-size: cover;
+}
+
+html body .wrapper .main .result-of-games .content .game-rezult a .content .gamer-info .br-av-col-1 {
+  background-size: contain;
+  background-position: center center;
   background: url("../images/avatars/av-bg-yellow.svg") no-repeat;
 }
 

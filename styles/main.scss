@@ -113,42 +113,44 @@ html {
             font-weight: bold;
         }
 
-        .avatar-wrap {
-            width: 3vw;
-            height: 2.5vw;
-            margin: 0 auto;
-            // background: rgba(166, 184, 35, 0.5);
+        
 
-            .hexagon {
-                width: 100%;
-                height: 100%;
-                overflow: hidden;
-                visibility: hidden;
-                transform: rotate(120deg);
+        // .avatar-wrap {
+        //     width: 3vw;
+        //     height: 2.5vw;
+        //     margin: 0 auto;
+        //     // background: rgba(166, 184, 35, 0.5);
 
-                .hex-in1 {
-                    width: 100%;
-                    height: 100%;
-                    overflow: hidden;
-                    transform: rotate(-60deg);
+        //     .hexagon {
+        //         width: 100%;
+        //         height: 100%;
+        //         overflow: hidden;
+        //         visibility: hidden;
+        //         transform: rotate(120deg);
 
-                    .hex-in2 {
-                        width: 100%;
-                        height: 100%;
-                        background-repeat: no-repeat;
-                        background-position: 50%;
-                        background-image: url("../images/polygon_base.png");
-                        background-size: 58%;
-                        visibility: visible;
-                        transform: rotate(-60deg);
-                    }
+        //         .hex-in1 {
+        //             width: 100%;
+        //             height: 100%;
+        //             overflow: hidden;
+        //             transform: rotate(-60deg);
 
-                    .av-1 {
-                        background-image: url("../images/avatars/av-1.png");
-                    }
-                }
-            }
-        }
+        //             .hex-in2 {
+        //                 width: 100%;
+        //                 height: 100%;
+        //                 background-repeat: no-repeat;
+        //                 background-position: 50%;
+        //                 background-image: url("../images/polygon_base.png");
+        //                 background-size: 58%;
+        //                 visibility: visible;
+        //                 transform: rotate(-60deg);
+        //             }
+
+        //             .av-1 {
+        //                 background-image: url("../images/avatars/av-1.png");
+        //             }
+        //         }
+        //     }
+        // }
         .avatar-big {
             width: 3vw;
             height: 2.5vw;
@@ -780,6 +782,7 @@ html {
                             margin: 2rem 0;
                             box-sizing: padding-box;
                             border: 1px solid $color-border-1;
+                            border: 1px solid red;
                             background: #{$color_rect-bg};
 
                             // .game-rezult-bg {
@@ -787,22 +790,26 @@ html {
                             // }
 
                             
-
-                            a {
+                            .bg-link-1 {
                                 background: url(../images/result-of-games/Rectangle_bg-img_1.png) no-repeat;
+                            }
+                            .bg-link-2 {
+                                background: url(../images/result-of-games/Rectangle_bg-img_2.png) no-repeat;
+                            }
+                            a {
+                                border: 1px solid yellow;
                                 background-size: containe;
                                 background-position-x: right;
-                                border: 1px solid transparent;
 
                                 &:hover {
                                     border: 2px solid yellow;
                                 }
+
                                 .content {
                                     display: flex;
                                     justify-content: space-between;
                                     padding: 0.8vw 0.1vw;
                                     text-align: center;
-                                    
                                     
                                     .gamer-info {
                                         margin: 0 auto;
@@ -812,40 +819,58 @@ html {
                                             display: flex;
                                             justify-content: center;
                                             align-items: center;
-                                            position: relative;
+                                            // position: relative;
                                             width: 57px;
                                             height: 57px;
                                             margin: 0 auto;
                                             
-                                            &::before {
-                                                width: 100%;
-                                                height: 100%;
-                                                display: block;
-                                                content: " ";
-                                                position: absolute;
-                                                background-size: contain;
-                                                background-position: center center;
-                                            }
+                                            // &::before {
+                                            //     width: 100%;
+                                            //     height: 100%;
+                                            //     display: block;
+                                            //     content: " ";
+                                            //     position: absolute;
+                                            // }
                                             
                                             .avatar {
                                                 width: 80%;
                                                 height: 80%;
-                                                background: url("../images/avatars/av_VanyaKiller.png") no-repeat;
-                                                background-size: cover;
+                                                // background: url("../images/avatars/av_VanyaKiller.png") no-repeat;
+                                                // background-size: cover;
                                                 clip-path: polygon(0% 50%, 25% 10%, 75% 10%, 100% 50%, 75% 90%, 25% 90%);  
                                             }
-                                            .av-2 {
+                                           
+                                            .av-OceanD {
+                                                background: url("../images/avatars/av_OceanD.png") no-repeat;
+                                                background-size: cover;
+                                            }
+                                            .av-VanyaKiller {
                                                 background: url("../images/avatars/av_VanyaKiller.png") no-repeat;
+                                                background-size: cover;
                                             }
-                                            .av-3 {
+                                            .av-F1stM4n {
                                                 background: url("../images/avatars/av_F1stM4n.png") no-repeat;
+                                                background-size: cover;
                                             }
+                                            .av-SaWyer {
+                                                background: url("../images/avatars/av_SaWyer.png") no-repeat;
+                                                background-size: cover;
+                                            }
+                                            .av-le4oz22 {
+                                                background: url("../images/avatars/av_le4oz22") no-repeat;
+                                                background-size: cover;
+                                            }
+                                            .av-Shadow52 {
+                                                background: url("../images/avatars/av_Shadow52.png") no-repeat;
+                                                background-size: cover;
+                                            }
+                                            
                                         }
                                         
                                         .br-av-col-1 {
-                                            &::before {
+                                                background-size: contain;
+                                                background-position: center center;
                                                 background: url("../images/avatars/av-bg-yellow.svg") no-repeat;
-                                            }
                                         }
                                         
                                         p {
