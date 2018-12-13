@@ -778,20 +778,31 @@ html {
                             width: 100%;
                             height: 6.62vw;
                             margin: 2rem 0;
+                            box-sizing: padding-box;
+                            border: 1px solid $color-border-1;
+                            background: #{$color_rect-bg};
 
-                            .game-rezult-bg {
-
-                            }
+                            // .game-rezult-bg {
+                                
+                            // }
 
                             
 
                             a {
+                                background: url(../images/result-of-games/Rectangle_bg-img_1.png) no-repeat;
+                                background-size: containe;
+                                background-position-x: right;
+                                border: 1px solid transparent;
+
+                                &:hover {
+                                    border: 2px solid yellow;
+                                }
                                 .content {
                                     display: flex;
                                     justify-content: space-between;
-                                    padding: 1vw 1vw;
+                                    padding: 0.8vw 0.1vw;
                                     text-align: center;
-                                    background: #{$color_rect-bg};
+                                    
                                     
                                     .gamer-info {
                                         margin: 0 auto;
@@ -837,29 +848,13 @@ html {
                                             }
                                         }
                                         
-                                        // .avatar {
-                                        //     width: 3.2vw;
-                                        //     height: 2.4vw;
-                                        //     background: green;
-                                        //     margin: 0 auto; 
-
-                                        //     svg {
-                                        //         // padding: 1rem;
-
-                                        //         // background-image: url(../images/avatars/VanyaKiller.png);
-                                        //         // background-size: cover;
-                                        //         // background-repeat: no-repeat;
-                                        //     }
-    
-                                        // }
-                                        
                                         p {
-                                            margin: 0.7rem 0 0.3rem;
+                                            margin: 0.1rem 0 0.3rem;
                                         }
                                         .points {
                                             font-size: #{$f-s-sm};
                                             color: #{$text-color-warning};
-                                            margin: 0.3rem 0;
+                                            margin: 0.1rem 0;
                                         }
                                     }
 
@@ -869,7 +864,7 @@ html {
                                             color: #{$text-color-2};
                                         }
                                         .score {
-                                            margin: 0;
+                                            margin: 0.5rem 0 0;
                                             font-size: #{$f-s-xxl}; 
                                             color: #{$text-color-main};
                                         }
