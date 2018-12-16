@@ -235,7 +235,7 @@ html body .wrapper .header .info .gamers-counter p {
 
 html body .wrapper .header .info .gamers-counter .count {
   font-size: 0.99vw;
-  color: #f9be16;
+  color: #F4AE26;
   margin: 0.25vw 0 0.1vw;
 }
 
@@ -355,7 +355,7 @@ html body .wrapper .header .short-profile .player-info .about-player .win-points
 
 html body .wrapper .header .short-profile .player-info .about-player .win-points-container .win-points {
   font-size: 0.99vw;
-  color: #f9be16;
+  color: #F4AE26;
   margin-left: 0.6rem;
 }
 
@@ -483,7 +483,7 @@ html body .wrapper .main .main-info .game-varieties .select-game-mode .mode-opti
 }
 
 html body .wrapper .main .main-info .game-varieties .select-game-mode .mode-options a .content .mode-name {
-  color: #f9be16;
+  color: #F4AE26;
   text-align: center;
 }
 
@@ -1147,7 +1147,7 @@ html body .wrapper .main .main-info .daily-rate .gift-container .info2 {
 }
 
 html body .wrapper .main .main-info .daily-rate .gift-container .info2 span {
-  color: #f9be16;
+  color: #F4AE26;
 }
 
 html body .wrapper .main .result-of-games {
@@ -1296,7 +1296,7 @@ html body .wrapper .main .result-of-games .content .game-rezult a .content .game
 
 html body .wrapper .main .result-of-games .content .game-rezult a .content .gamer-info .points {
   font-size: 0.66vw;
-  color: #f9be16;
+  color: #F4AE26;
   margin: 0.1rem 0;
 }
 
