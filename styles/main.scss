@@ -63,15 +63,19 @@ html {
             text-decoration: none;
             color: #{$text-color-altern};
 
-            &:hover {
-                border: 3px solid blue;
-                background: red;
-            }
+            // &:hover {
+            //     border: 3px solid blue;
+            //     background: red;
+            // }
         }
         input {
             width: 100%;
             border: none;
             background: none;
+
+            &::-moz-placeholder {
+                color: #717278; /* Цвет подсказывающего текста */
+               }
         }
 
         .link-block {
@@ -79,11 +83,12 @@ html {
             height: 100%;
             width: 100%;
 
-            &:hover {
-                border: 3px solid #FFD128;
-                background: #FFD128;
-            }
+            // &:hover {
+            //     border: 3px solid #FFD128;
+            //     background: #FFD128;
+            // }
         }
+
         .dark-bg {
             background: #{$color_darc-bg};
             border: 1px solid #{$color-border-1};
@@ -394,8 +399,8 @@ html {
 
                     .main-info-box {
                         mix-blend-mode: normal;
-                        backdrop-filter: blur(20px);
-                        /* Note: backdrop-filter has minimal browser support */
+                        // -webkit-filter: blur(1vw);
+                        //             filter: blur(1vw);
                         border-radius: 3px;
                         border: 1px solid #{$color-border-1};
                     }
@@ -417,11 +422,21 @@ html {
                             a {
                                 width: 50%;
                                 border-bottom: 2px solid #{$color-border-1};
-
+                                
                                 &:hover {
-                                    // border: 3px solid #FFD128;
-                                    background: #FFD128;
+                                    border-bottom: 2px solid #FFD128;
+                                    color: #{$text-color-main};
+                                    background: url("../images/hover/hover-bg-game-varieties.png") no-repeat;
+                                    background-size: contain;
+                                    background-position: bottom center;
                                 }
+                            }
+                            .active-link {
+                                border-bottom: 2px solid #FFD128;
+                                color: #{$text-color-main};
+                                background: url("../images/hover/hover-bg-game-varieties.png") no-repeat;
+                                background-size: contain;
+                                background-position: bottom center;
                             }
                         }
 
@@ -439,8 +454,22 @@ html {
                                 grid-template-rows: auto;
                                 grid-gap: 2.3%;
 
+                                .active-link {
+                                    border: 1px solid #FFD128;
+                                    color: #{$text-color-main};
+                                    background: url("../images/hover/hover-bg-mode-options.png") no-repeat;
+                                    background-size: contain;
+                                    background-position: bottom center;
+                                }
                                 a {
-                                   
+                                    &:hover {
+                                        border: 1px solid #FFD128;
+                                        color: #{$text-color-main};
+                                        background: url("../images/hover/hover-bg-mode-options.png") no-repeat;
+                                        background-size: contain;
+                                        background-position: bottom center;
+                                    }
+                                
                                     .content {
                                         margin: 0 auto;
                                         
@@ -496,7 +525,6 @@ html {
                                                         display: flex;
                                                         justify-content: center;
                                                         align-items: center;
-                                                        // position: relative;
                                                         width: 3vw;
                                                         height: 3vw;
                                                         margin: 0 auto;
@@ -509,7 +537,7 @@ html {
                                                             clip-path: polygon(0% 50%, 25% 7%, 75% 7%, 100% 50%, 75% 93%, 25% 93%);   
                                                         }
                                                         .invite {
-                                                            &::after {
+                                                            &:after {
                                                                 display: block;
                                                                 content: " ";
                                                                 width: 100%;
@@ -517,7 +545,6 @@ html {
                                                                 background: url("../images/avatars/plus.svg") no-repeat;
                                                                 background-size: 32%;
                                                                 background-position:  center center;
-
                                                             }
                                                         }
                                                        
@@ -552,7 +579,6 @@ html {
                                                             background-position: 0% 50%;
                                                         }
                                                     }
-                                                    
 
                                                     .line-between-avatars {
                                                         width: 1vw;
@@ -623,6 +649,10 @@ html {
                                             padding: 1.27vw 0;
                                             font-size: #{$f-s-sm};
                                             color: #{$text-color-main};
+                                        }
+
+                                        &:hover {
+                                            border: 1px solid #FFD128;
                                         }
                                     }
                                 }
@@ -833,8 +863,7 @@ html {
                     }//player-profile
 
                     .player-rating {
-                        grid-area: "player-rating";
-
+                        // grid-area: "player-rating";
                         background: rgba(29, 32, 36, 0.5);
 
                         .header {
@@ -843,6 +872,21 @@ html {
                             a {
                                 width: 50%;
                                 border-bottom: 2px solid #{$color-border-1};
+                                
+                                &:hover {
+                                    border-bottom: 2px solid #FFD128;
+                                    color: #{$text-color-main};
+                                    background: url("../images/hover/hover-bg-game-varieties.png") no-repeat;
+                                    background-size: contain;
+                                    background-position: bottom center;
+                                }
+                            }
+                            .active-link {
+                                border-bottom: 2px solid #FFD128;
+                                color: #{$text-color-main};
+                                background: url("../images/hover/hover-bg-game-varieties.png") no-repeat;
+                                background-size: contain;
+                                background-position: bottom center;
                             }
                         }
 

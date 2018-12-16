@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   font-family: 'Google Sans';
   src: url("../fonts/Google-Sans-Font/GoogleSans-Regular.ttf ");
@@ -43,26 +44,21 @@ html body a {
   color: #797A7C;
 }
 
-html body a:hover {
-  border: 3px solid blue;
-  background: red;
-}
-
 html body input {
   width: 100%;
   border: none;
   background: none;
 }
 
+html body input::-moz-placeholder {
+  color: #717278;
+  /* Цвет подсказывающего текста */
+}
+
 html body .link-block {
   display: block;
   height: 100%;
   width: 100%;
-}
-
-html body .link-block:hover {
-  border: 3px solid #FFD128;
-  background: #FFD128;
 }
 
 html body .dark-bg {
@@ -426,9 +422,6 @@ html body .wrapper .main .main-info {
 
 html body .wrapper .main .main-info .main-info-box {
   mix-blend-mode: normal;
-  -webkit-backdrop-filter: blur(20px);
-          backdrop-filter: blur(20px);
-  /* Note: backdrop-filter has minimal browser support */
   border-radius: 3px;
   border: 1px solid rgba(77, 77, 81, 0.5);
 }
@@ -457,7 +450,19 @@ html body .wrapper .main .main-info .game-varieties .header a {
 }
 
 html body .wrapper .main .main-info .game-varieties .header a:hover {
-  background: #FFD128;
+  border-bottom: 2px solid #FFD128;
+  color: #ffffff;
+  background: url("../images/hover/hover-bg-game-varieties.png") no-repeat;
+  background-size: contain;
+  background-position: bottom center;
+}
+
+html body .wrapper .main .main-info .game-varieties .header .active-link {
+  border-bottom: 2px solid #FFD128;
+  color: #ffffff;
+  background: url("../images/hover/hover-bg-game-varieties.png") no-repeat;
+  background-size: contain;
+  background-position: bottom center;
 }
 
 html body .wrapper .main .main-info .game-varieties .select-game-mode {
@@ -476,6 +481,22 @@ html body .wrapper .main .main-info .game-varieties .select-game-mode .mode-opti
   -ms-grid-rows: auto;
       grid-template-rows: auto;
   grid-gap: 2.3%;
+}
+
+html body .wrapper .main .main-info .game-varieties .select-game-mode .mode-options .active-link {
+  border: 1px solid #FFD128;
+  color: #ffffff;
+  background: url("../images/hover/hover-bg-mode-options.png") no-repeat;
+  background-size: contain;
+  background-position: bottom center;
+}
+
+html body .wrapper .main .main-info .game-varieties .select-game-mode .mode-options a:hover {
+  border: 1px solid #FFD128;
+  color: #ffffff;
+  background: url("../images/hover/hover-bg-mode-options.png") no-repeat;
+  background-size: contain;
+  background-position: bottom center;
 }
 
 html body .wrapper .main .main-info .game-varieties .select-game-mode .mode-options a .content {
@@ -576,7 +597,7 @@ html body .wrapper .main .main-info .game-varieties .select-game-mode .mode-opti
           clip-path: polygon(0% 50%, 25% 7%, 75% 7%, 100% 50%, 75% 93%, 25% 93%);
 }
 
-html body .wrapper .main .main-info .game-varieties .select-game-mode .mode-options a .content .partners .partner .avatar-with-line .av-border .invite::after {
+html body .wrapper .main .main-info .game-varieties .select-game-mode .mode-options a .content .partners .partner .avatar-with-line .av-border .invite:after {
   display: block;
   content: " ";
   width: 100%;
@@ -696,6 +717,10 @@ html body .wrapper .main .main-info .game-varieties .rate-place .rate-info .rate
   padding: 1.27vw 0;
   font-size: 0.66vw;
   color: #ffffff;
+}
+
+html body .wrapper .main .main-info .game-varieties .rate-place .rate-info .rate-values a:hover {
+  border: 1px solid #FFD128;
 }
 
 html body .wrapper .main .main-info .game-varieties .rate-place .rate-info .rate-input {
@@ -948,7 +973,6 @@ html body .wrapper .main .main-info .player-profile .win-rate .first-line {
 }
 
 html body .wrapper .main .main-info .player-rating {
-  grid-area: "player-rating";
   background: rgba(29, 32, 36, 0.5);
 }
 
@@ -961,6 +985,22 @@ html body .wrapper .main .main-info .player-rating .header {
 html body .wrapper .main .main-info .player-rating .header a {
   width: 50%;
   border-bottom: 2px solid rgba(77, 77, 81, 0.5);
+}
+
+html body .wrapper .main .main-info .player-rating .header a:hover {
+  border-bottom: 2px solid #FFD128;
+  color: #ffffff;
+  background: url("../images/hover/hover-bg-game-varieties.png") no-repeat;
+  background-size: contain;
+  background-position: bottom center;
+}
+
+html body .wrapper .main .main-info .player-rating .header .active-link {
+  border-bottom: 2px solid #FFD128;
+  color: #ffffff;
+  background: url("../images/hover/hover-bg-game-varieties.png") no-repeat;
+  background-size: contain;
+  background-position: bottom center;
 }
 
 html body .wrapper .main .main-info .player-rating .list-rating {
