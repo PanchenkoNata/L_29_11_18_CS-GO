@@ -361,12 +361,7 @@ html {
                         li {
                             width: 100%;
                             height:  5.31vw;
-                            // padding-top: 0.7vw;
-                            // border-bottom: 2px solid #1B1D21;
-                            // border-bottom: 2px solid #ffffff;
-                            //background: linear-gradient(90deg, #F4AC26 5.13%, #FDCB0C 100%);
-                            //box-shadow: 0px 0px 20px #F8BA19;
-                            
+                                                        
                             &:first-child {
                                 // height:  5.77vw;
                                 div {
@@ -409,10 +404,13 @@ html {
                                     background-size: contain;
                                     background-position: bottom center;
 
-                                    div {    
+                                    div { 
+                                        // position: relative;   
                                         svg {
                                             path {
                                                 fill: #{$text-color-warning};
+                                                filter: url("#filter0_d");
+                                                fill: url("#paint0_linear");
                                             }
                                         }
                                     }

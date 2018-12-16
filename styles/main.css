@@ -437,6 +437,9 @@ html body .wrapper .main .nav ul li a:hover {
 
 html body .wrapper .main .nav ul li a:hover div svg path {
   fill: #F4AE26;
+  -webkit-filter: url("#filter0_d");
+          filter: url("#filter0_d");
+  fill: url("#paint0_linear");
 }
 
 html body .wrapper .main .nav ul li a div {
