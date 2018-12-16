@@ -18,20 +18,11 @@ $color_dark: #1D2024;
 $color_rect-bg: #24272B;
 $color_darc-bg:#1B1D21;
 
-                            // $color_darc-bg: red;
-
 $color-border-2: #2A2B31;
-
 $color-border-1: rgba(77, 77, 81, 0.5);
-
-                            // $color-border-1: green;
-
 
 $text-color-main: #ffffff;
 $text-color-altern: #797A7C;
-
-                            // $text-color-altern: rgb(0, 225, 255);
-
 $text-color-2: rgba(255, 255, 255, 0.41);           
 $text-color-warning: #f9be16;
 
@@ -72,8 +63,8 @@ html {
             color: #{$text-color-altern};
 
             &:hover {
-                // border: 3px solid #FFD128;
-                background: #FFD128;
+                border: 3px solid blue;
+                background: red;
             }
         }
         input {
@@ -88,7 +79,7 @@ html {
             width: 100%;
 
             &:hover {
-                // border: 3px solid #FFD128;
+                border: 3px solid #FFD128;
                 background: #FFD128;
             }
         }
@@ -152,6 +143,8 @@ html {
                 display: grid;
                 grid-template-columns: 7.03vw 75.83vw 17.14vw;
                 grid-template-rows: 5.02vw;
+                background: linear-gradient(90deg, #1D2024 0%, #18191D 100%);
+                border-bottom: 1px solid #{$color-border-1};
 
                 .drop-down-list-btn  {
                     width: 1.4vw;
@@ -163,30 +156,30 @@ html {
                     align-items: center;
                     justify-content: center;
 
-                    // &:after {
-                    //     display: flex;
-                    //     text-align: center;
-                    //     align-items: center;
-                    //     content: "\003C";
-                    //     transform: rotate(-90deg);
-                    // }
+                    i {
+                        font-size: 0.5vw;
+                    }
                 }
         
                 .logo {
-                    background: linear-gradient(90deg, #{$color_dark} 0%, #18191D 100%);
+                    // background: linear-gradient(90deg, #{$color_dark} 0%, #18191D 100%);
                     display: flex;
                     justify-content: center;
                     align-items: center;
+
+                    img {
+                        width: 2.7vw;
+                        height: auto;
+                        margin-top: 0.3vw;
+                    }
                 }
 
                 .info {
-                    background: linear-gradient(90deg, #{$color_dark} 0%, #18191D 100%);
-                                            // background: #ffffaa;
-
                     display: grid;
                     grid-template-columns: 53% 33.7% 13.3%;
                     grid-gap: 0%;
                     align-items: center;
+                    background: linear-gradient(90deg, #{$color_dark} 0%, #18191D 100%);
                     // padding-left: 1.6vw;
                     
                     .game {
@@ -194,7 +187,12 @@ html {
                         align-items: center;
 
                         .game-logo {
-                            margin: 0.7vw 0 0 1.6vw;            
+                            margin: 0.65vw 0.1vw 0 1.6vw;
+
+                            img {
+                                width: 10.2vw;
+                                height: auto;
+                            }
                         }    
                     }
 
@@ -207,8 +205,7 @@ html {
                         height: 2.5vw;
 
                         input {
-                            letter-spacing: 0.02em;
-                            padding: 0 0 0 2rem;
+                            padding: 0.2vw 0 0 1.1vw
                         }
 
                         button {
@@ -233,7 +230,7 @@ html {
                         .count {
                             font-size: #{$f-s-l};
                             color: #{$text-color-warning};
-                            // margin: 0.1rem 0;
+                            margin: 0.25vw 0 0.1vw;
                         }
                     }
 
@@ -241,6 +238,7 @@ html {
                 
                 .short-profile {
                     background: #{$color_dark};
+                    border-left: 1px solid #{$color-border-1};
                     display: flex;
                     align-items: center;
                     

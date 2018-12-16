@@ -44,7 +44,8 @@ html body a {
 }
 
 html body a:hover {
-  background: #FFD128;
+  border: 3px solid blue;
+  background: red;
 }
 
 html body input {
@@ -60,6 +61,7 @@ html body .link-block {
 }
 
 html body .link-block:hover {
+  border: 3px solid #FFD128;
   background: #FFD128;
 }
 
@@ -121,6 +123,9 @@ html body .wrapper .header {
       grid-template-columns: 7.03vw 75.83vw 17.14vw;
   -ms-grid-rows: 5.02vw;
       grid-template-rows: 5.02vw;
+  background: -webkit-gradient(linear, left top, right top, from(#1D2024), to(#18191D));
+  background: linear-gradient(90deg, #1D2024 0%, #18191D 100%);
+  border-bottom: 1px solid rgba(77, 77, 81, 0.5);
 }
 
 html body .wrapper .header .drop-down-list-btn {
@@ -140,9 +145,11 @@ html body .wrapper .header .drop-down-list-btn {
           justify-content: center;
 }
 
+html body .wrapper .header .drop-down-list-btn i {
+  font-size: 0.5vw;
+}
+
 html body .wrapper .header .logo {
-  background: -webkit-gradient(linear, left top, right top, from(#1D2024), to(#18191D));
-  background: linear-gradient(90deg, #1D2024 0%, #18191D 100%);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -154,9 +161,13 @@ html body .wrapper .header .logo {
           align-items: center;
 }
 
+html body .wrapper .header .logo img {
+  width: 2.7vw;
+  height: auto;
+  margin-top: 0.3vw;
+}
+
 html body .wrapper .header .info {
-  background: -webkit-gradient(linear, left top, right top, from(#1D2024), to(#18191D));
-  background: linear-gradient(90deg, #1D2024 0%, #18191D 100%);
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 53% 33.7% 13.3%;
@@ -165,6 +176,8 @@ html body .wrapper .header .info {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  background: -webkit-gradient(linear, left top, right top, from(#1D2024), to(#18191D));
+  background: linear-gradient(90deg, #1D2024 0%, #18191D 100%);
 }
 
 html body .wrapper .header .info .game {
@@ -177,7 +190,12 @@ html body .wrapper .header .info .game {
 }
 
 html body .wrapper .header .info .game .game-logo {
-  margin: 0.7vw 0 0 1.6vw;
+  margin: 0.65vw 0.1vw 0 1.6vw;
+}
+
+html body .wrapper .header .info .game .game-logo img {
+  width: 10.2vw;
+  height: auto;
 }
 
 html body .wrapper .header .info .search {
@@ -194,8 +212,7 @@ html body .wrapper .header .info .search {
 }
 
 html body .wrapper .header .info .search input {
-  letter-spacing: 0.02em;
-  padding: 0 0 0 2rem;
+  padding: 0.2vw 0 0 1.1vw;
 }
 
 html body .wrapper .header .info .search button {
@@ -219,10 +236,12 @@ html body .wrapper .header .info .gamers-counter p {
 html body .wrapper .header .info .gamers-counter .count {
   font-size: 0.99vw;
   color: #f9be16;
+  margin: 0.25vw 0 0.1vw;
 }
 
 html body .wrapper .header .short-profile {
   background: #1D2024;
+  border-left: 1px solid rgba(77, 77, 81, 0.5);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
