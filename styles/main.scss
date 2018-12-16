@@ -356,36 +356,91 @@ html {
 
                     ul {
                         width: 100%;
-                        padding-top: 0.9rem;
+                        padding-top: 0.45vw;
 
                         li {
                             width: 100%;
-                            height: 102px;
-                            border-bottom: 2px solid #1B1D21;
-                            border-bottom: 2px solid #ffffff;
+                            height:  5.31vw;
+                            // padding-top: 0.7vw;
+                            // border-bottom: 2px solid #1B1D21;
+                            // border-bottom: 2px solid #ffffff;
                             //background: linear-gradient(90deg, #F4AC26 5.13%, #FDCB0C 100%);
                             //box-shadow: 0px 0px 20px #F8BA19;
-                                                    
-                            a {
-
+                            
+                            &:first-child {
+                                // height:  5.77vw;
                                 div {
-                                    display: flex;
-                                    flex-direction: column;
-                                    //justify-content: center;
-                                    align-items: center;
+                                    padding: 0;
+                                    p {
+                                        margin: -0.6vw 0 0;
+                                    }
+                                }
+                                
+                            }
+
+                            .active-link {
+                                border-bottom: 2px solid #FFD128;
+                                color: #{$text-color-main};
+                                background: url("../images/hover/hover-bg-game-varieties.png") no-repeat;
+                                background-size: contain;
+                                background-position: bottom center;
+
+                                div {    
+                                    svg {
+                                        path {
+                                            fill: #{$text-color-warning};
+                                        }
+                                    }
+                                }
+                            }
+                            
+                            a {
+                                border-bottom: 2px solid #{$color_darc-bg};
+                                display: flex;
+                                flex-direction: column;
+                                justify-content: center;
+                                align-items: center;
+                                text-align: center;
+                                
+                                &:hover {
+                                    border-bottom: 2px solid #FFD128;
+                                    color: #{$text-color-main};
+                                    background: url("../images/hover/hover-bg-game-varieties.png") no-repeat;
+                                    background-size: contain;
+                                    background-position: bottom center;
+
+                                    div {    
+                                        svg {
+                                            path {
+                                                fill: #{$text-color-warning};
+                                            }
+                                        }
+                                    }
+                                }
+                                div {
+                                    // height: 100%;
+                                    // display: flex;
+                                    // flex-direction: column;
+                                    // justify-content: center;
+                                    // align-items: center;
+                                    // text-align: center;
                                     
-                                    padding-top: 2.3rem;
+                                    padding-top: 0.3vw;
 
                                     svg {
-                                        
+                                        path {
+                                            fill: #{$text-color-altern};
+                                        }
                                     }
                                     p {
                                         //text-align: center;
-                                        margin-top: 1.1rem;
+                                        margin: 0.3vw 0 0;
                                     }
                                 }
                             }
                         }
+
+
                     }
                 }
 

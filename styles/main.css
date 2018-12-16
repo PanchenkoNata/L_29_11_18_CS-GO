@@ -381,17 +381,36 @@ html body .wrapper .main .nav {
 
 html body .wrapper .main .nav ul {
   width: 100%;
-  padding-top: 0.9rem;
+  padding-top: 0.45vw;
 }
 
 html body .wrapper .main .nav ul li {
   width: 100%;
-  height: 102px;
-  border-bottom: 2px solid #1B1D21;
-  border-bottom: 2px solid #ffffff;
+  height: 5.31vw;
 }
 
-html body .wrapper .main .nav ul li a div {
+html body .wrapper .main .nav ul li:first-child div {
+  padding: 0;
+}
+
+html body .wrapper .main .nav ul li:first-child div p {
+  margin: -0.6vw 0 0;
+}
+
+html body .wrapper .main .nav ul li .active-link {
+  border-bottom: 2px solid #FFD128;
+  color: #ffffff;
+  background: url("../images/hover/hover-bg-game-varieties.png") no-repeat;
+  background-size: contain;
+  background-position: bottom center;
+}
+
+html body .wrapper .main .nav ul li .active-link div svg path {
+  fill: #F4AE26;
+}
+
+html body .wrapper .main .nav ul li a {
+  border-bottom: 2px solid #1B1D21;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -399,14 +418,37 @@ html body .wrapper .main .nav ul li a div {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-top: 2.3rem;
+  text-align: center;
+}
+
+html body .wrapper .main .nav ul li a:hover {
+  border-bottom: 2px solid #FFD128;
+  color: #ffffff;
+  background: url("../images/hover/hover-bg-game-varieties.png") no-repeat;
+  background-size: contain;
+  background-position: bottom center;
+}
+
+html body .wrapper .main .nav ul li a:hover div svg path {
+  fill: #F4AE26;
+}
+
+html body .wrapper .main .nav ul li a div {
+  padding-top: 0.3vw;
+}
+
+html body .wrapper .main .nav ul li a div svg path {
+  fill: #797A7C;
 }
 
 html body .wrapper .main .nav ul li a div p {
-  margin-top: 1.1rem;
+  margin: 0.3vw 0 0;
 }
 
 html body .wrapper .main .main-info {
