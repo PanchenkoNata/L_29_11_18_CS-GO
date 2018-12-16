@@ -117,6 +117,8 @@ html body .wrapper .container-xl {
 html body .wrapper .header {
   display: -ms-grid;
   display: grid;
+  -ms-grid-columns: 7.03vw 75.83vw 17.14vw;
+      grid-template-columns: 7.03vw 75.83vw 17.14vw;
   -ms-grid-rows: 5.02vw;
       grid-template-rows: 5.02vw;
 }
@@ -219,9 +221,131 @@ html body .wrapper .header .info .gamers-counter .count {
   color: #f9be16;
 }
 
-html body .wrapper .header .profile {
+html body .wrapper .header .short-profile {
   background: #1D2024;
-  background: yellow;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+html body .wrapper .header .short-profile .avatar {
+  width: 31.4%;
+  text-align: center;
+  margin-left: 0.05vw;
+}
+
+html body .wrapper .header .short-profile .avatar .av-br-short-prof {
+  background: url("../images/avatars/av-bg-yellow.svg") no-repeat;
+  background-size: contain;
+  background-position: center center;
+}
+
+html body .wrapper .header .short-profile .avatar .av-border {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 3.7vw;
+  height: 3.7vw;
+  margin: 0 auto;
+}
+
+html body .wrapper .header .short-profile .avatar .av-border .avatar-short-prof {
+  width: 65%;
+  height: 56%;
+  background: url("../images/av3.png") no-repeat;
+  background-size: cover;
+  -webkit-clip-path: polygon(0% 50%, 25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%);
+          clip-path: polygon(0% 50%, 25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%);
+}
+
+html body .wrapper .header .short-profile .avatar .av-border .av-OceanD {
+  background: url("../images/avatars/av_OceanD.png") no-repeat;
+  background-size: 100%;
+  background-position: 0% 50%;
+}
+
+html body .wrapper .header .short-profile .avatar .av-border .av-VanyaKiller {
+  background: url("../images/avatars/av_VanyaKiller.png") no-repeat;
+  background-size: 100%;
+  background-position: 0% 50%;
+}
+
+html body .wrapper .header .short-profile .avatar .av-border .av-F1stM4n {
+  background: url("../images/avatars/av_F1stM4n.png") no-repeat;
+  background-size: 100%;
+  background-position: 0% 50%;
+}
+
+html body .wrapper .header .short-profile .avatar .av-border .av-SaWyer {
+  background: url("../images/avatars/av_SaWyer.png") no-repeat;
+  background-size: 100%;
+  background-position: 0% 50%;
+}
+
+html body .wrapper .header .short-profile .avatar .av-border .av-le4oz22 {
+  background: url("../images/avatars/av_le4oz22.png") no-repeat;
+  background-size: 100%;
+  background-position: 0% 50%;
+}
+
+html body .wrapper .header .short-profile .avatar .av-border .av-Shadow52 {
+  background: url("../images/avatars/av_Shadow52.png") no-repeat;
+  background-size: 100%;
+  background-position: 0% 50%;
+}
+
+html body .wrapper .header .short-profile .player-info {
+  width: 68.6%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+html body .wrapper .header .short-profile .player-info .about-player {
+  width: 75.55%;
+}
+
+html body .wrapper .header .short-profile .player-info .about-player p {
+  margin: 0;
+}
+
+html body .wrapper .header .short-profile .player-info .about-player .win-points-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 0.3vw;
+}
+
+html body .wrapper .header .short-profile .player-info .about-player .win-points-container .win-points {
+  font-size: 0.99vw;
+  color: #f9be16;
+  margin-left: 0.6rem;
+}
+
+html body .wrapper .header .short-profile .player-info .list-of-profile {
+  margin: 0 auto;
+}
+
+html body .wrapper .header .short-profile .player-info .list-of-profile .polygon-bullet {
+  width: 47.17%;
 }
 
 html body .wrapper .main {
@@ -827,8 +951,8 @@ html body .wrapper .main .result-of-games .content .game-rezult a .content .game
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 57px;
-  height: 57px;
+  width: 3vw;
+  height: 3vw;
   margin: 0 auto;
 }
 

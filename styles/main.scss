@@ -114,45 +114,6 @@ html {
         .text-bold {
             font-weight: bold;
         }
-
-        
-
-        // .avatar-wrap {
-        //     width: 3vw;
-        //     height: 2.5vw;
-        //     margin: 0 auto;
-        //     // background: rgba(166, 184, 35, 0.5);
-
-        //     .hexagon {
-        //         width: 100%;
-        //         height: 100%;
-        //         overflow: hidden;
-        //         visibility: hidden;
-        //         transform: rotate(120deg);
-
-        //         .hex-in1 {
-        //             width: 100%;
-        //             height: 100%;
-        //             overflow: hidden;
-        //             transform: rotate(-60deg);
-
-        //             .hex-in2 {
-        //                 width: 100%;
-        //                 height: 100%;
-        //                 background-repeat: no-repeat;
-        //                 background-position: 50%;
-        //                 background-image: url("../images/polygon_base.png");
-        //                 background-size: 58%;
-        //                 visibility: visible;
-        //                 transform: rotate(-60deg);
-        //             }
-
-        //             .av-1 {
-        //                 background-image: url("../images/avatars/av-1.png");
-        //             }
-        //         }
-        //     }
-        // }
         .avatar-big {
             width: 3vw;
             height: 2.5vw;
@@ -187,6 +148,7 @@ html {
         
             .header {
                 display: grid;
+                grid-template-columns: 7.03vw 75.83vw 17.14vw;
                 grid-template-rows: 5.02vw;
 
                 .drop-down-list-btn  {
@@ -276,9 +238,106 @@ html {
 
                 }
                 
-                .profile {
+                .short-profile {
                     background: #{$color_dark};
-                                             background: yellow;
+                    display: flex;
+                    align-items: center;
+                    
+                    .avatar {
+                        width: 31.4%;
+                        text-align: center;
+                        margin-left: 0.05vw;
+                    
+                        .av-br-short-prof {
+                            background: url("../images/avatars/av-bg-yellow.svg") no-repeat;
+                            background-size: contain;
+                            background-position: center center;
+                        }
+
+                        .av-border {
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            width: 3.7vw;
+                            height: 3.7vw;
+                            margin: 0 auto;
+
+                            .avatar-short-prof {
+                                width: 65%;
+                                height: 56%;
+                                background: url("../images/av3.png") no-repeat;
+                                background-size: cover;
+                                clip-path: polygon(0% 50%, 25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%);
+                            }
+                           
+                            .av-OceanD {
+                                background: url("../images/avatars/av_OceanD.png") no-repeat;
+                                background-size: 100%;
+                                background-position: 0% 50%;
+                            }
+                            .av-VanyaKiller {
+                                background: url("../images/avatars/av_VanyaKiller.png") no-repeat;
+                                background-size: 100%;
+                                background-position: 0% 50%;
+                            }
+                            .av-F1stM4n {
+                                background: url("../images/avatars/av_F1stM4n.png") no-repeat;
+                                background-size: 100%;
+                                background-position: 0% 50%;
+                            }
+                            .av-SaWyer {
+                                background: url("../images/avatars/av_SaWyer.png") no-repeat;
+                                background-size: 100%;
+                                background-position: 0% 50%;
+                            }
+                            .av-le4oz22 {
+                                background: url("../images/avatars/av_le4oz22.png") no-repeat;
+                                background-size: 100%;
+                                background-position: 0% 50%;
+                            }
+                            .av-Shadow52 {
+                                background: url("../images/avatars/av_Shadow52.png") no-repeat;
+                                background-size: 100%;
+                                background-position: 0% 50%;
+                            }
+                            
+                        }
+                    }
+
+                    .player-info {
+                        width: 68.6%;
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+
+                        .about-player {
+                            width: 75.55%;
+                            p {
+                                margin: 0;
+                            }
+
+                            .win-points-container {
+                                display: flex;
+                                align-items: center;
+                                margin-top: 0.3vw;
+                                
+                                .win-points {
+                                    font-size: #{$f-s-l};
+                                    color: #{$text-color-warning};
+                                    margin-left: 0.6rem;
+                                }
+                            }
+                        }
+
+                        .list-of-profile {
+                            // width: 24.45%;
+                            margin: 0 auto;
+                            
+                            .polygon-bullet {
+                                width: 47.17%;
+                            }
+                        }
+                    }
                 }
             } //header
 
@@ -349,40 +408,6 @@ html {
                         background: linear-gradient(to left, rgba(79, 79, 83, 0) 0%, rgba(79, 79, 83, 1) 50%, rgba(79, 79, 83, 0) 100%);
                     }
                     
-                    
-                    // .avatar-wrap {
-                    //     width: 3vw;
-                    //     height: 2.5vw;
-                    //     margin: 0 auto;
-                    //     background: rgba(166, 184, 35, 0.5);
-
-                    //     .hexagon {
-                    //         width: 100%;
-                    //         height: 100%;
-                    //         overflow: hidden;
-                    //         visibility: hidden;
-                    //         transform: rotate(120deg);
-
-                    //         .hex-in1 {
-                    //             width: 100%;
-                    //             height: 100%;
-                    //             overflow: hidden;
-                    //             transform: rotate(-60deg);
-
-                    //             .hex-in2 {
-                    //                 width: 100%;
-                    //                 height: 100%;
-                    //                 background-repeat: no-repeat;
-                    //                 background-position: 50%;
-                    //                 background-image: url("../images/polygon_base.png");
-                    //                 background-size: 58%;
-                    //                 visibility: visible;
-                    //                 transform: rotate(-60deg);
-                    //             }
-                    //         }
-                    //     }
-                    // }
-
                     .game-varieties {
                         //grid-area: _game-varieties;
                         background: linear-gradient(180deg, rgba(29, 32, 36, 0.6) 45.23%, rgba(29, 32, 36, 0) 100%);
@@ -805,7 +830,6 @@ html {
                                 border: 2px solid rgba(249, 190, 22, 0);
                                 position: relative;
                                 
-
                                 &:hover {
                                     border: 2px solid rgba(249, 190, 22, 1);
 
@@ -846,8 +870,8 @@ html {
                                             justify-content: center;
                                             align-items: center;
                                             // position: relative;
-                                            width: 57px;
-                                            height: 57px;
+                                            width: 3vw;
+                                            height: 3vw;
                                             margin: 0 auto;
                                             
                                             .avatar-rez-game {
