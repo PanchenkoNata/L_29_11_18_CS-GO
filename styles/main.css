@@ -724,14 +724,94 @@ html body .wrapper .main .main-info .player-profile .player {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 1.25vw 1.3vw 0.9vw;
+  padding: 0.7vw 1.3vw 0.9vw 1vw;
   background: rgba(42, 43, 49, 0.25);
 }
 
-html body .wrapper .main .main-info .player-profile .player .avatar-big {
-  margin: 0;
-  width: 5.68vw;
-  height: 5vw;
+html body .wrapper .main .main-info .player-profile .player .av-border-slim {
+  background: url("../images/avatars/av-bd-slim-yellow.svg") no-repeat;
+  background-size: 100%;
+  background-position: 0% 50%;
+}
+
+html body .wrapper .main .main-info .player-profile .player .av-border {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 auto;
+  width: 5.6vw;
+  height: 5.6vw;
+}
+
+html body .wrapper .main .main-info .player-profile .player .av-border .av-br-prof {
+  background: url("../images/avatars/av-bg-yellow.svg") no-repeat;
+  background-size: 100%;
+  background-position: 0% 50%;
+}
+
+html body .wrapper .main .main-info .player-profile .player .av-border .av-border-no-padding {
+  width: 97.5%;
+  height: 97.5%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 auto;
+}
+
+html body .wrapper .main .main-info .player-profile .player .av-border .av-border-no-padding .avatar {
+  width: 75.5%;
+  height: 81.5%;
+  background: #2A2B31;
+  -webkit-clip-path: polygon(0% 50%, 25% 10%, 75% 10%, 100% 50%, 75% 90%, 25% 90%);
+          clip-path: polygon(0% 50%, 25% 10%, 75% 10%, 100% 50%, 75% 90%, 25% 90%);
+}
+
+html body .wrapper .main .main-info .player-profile .player .av-border .av-border-no-padding .av-OceanD {
+  background: url("../images/avatars/av_OceanD.png") no-repeat;
+  background-size: 100%;
+  background-position: 0% 50%;
+}
+
+html body .wrapper .main .main-info .player-profile .player .av-border .av-border-no-padding .av-VanyaKiller {
+  background: url("../images/avatars/av_VanyaKiller.png") no-repeat;
+  background-size: 100%;
+  background-position: 0% 50%;
+}
+
+html body .wrapper .main .main-info .player-profile .player .av-border .av-border-no-padding .av-F1stM4n {
+  background: url("../images/avatars/av_F1stM4n.png") no-repeat;
+  background-size: 100%;
+  background-position: 0% 50%;
+}
+
+html body .wrapper .main .main-info .player-profile .player .av-border .av-border-no-padding .av-SaWyer {
+  background: url("../images/avatars/av_SaWyer.png") no-repeat;
+  background-size: 100%;
+  background-position: 0% 50%;
+}
+
+html body .wrapper .main .main-info .player-profile .player .av-border .av-border-no-padding .av-le4oz22 {
+  background: url("../images/avatars/av_le4oz22.png") no-repeat;
+  background-size: 100%;
+  background-position: 0% 50%;
+}
+
+html body .wrapper .main .main-info .player-profile .player .av-border .av-border-no-padding .av-Shadow52 {
+  background: url("../images/avatars/av_Shadow52.png") no-repeat;
+  background-size: 100%;
+  background-position: 0% 50%;
 }
 
 html body .wrapper .main .main-info .player-profile .player .about-player {
@@ -821,8 +901,19 @@ html body .wrapper .main .main-info .player-profile .win-rate .scale {
   grid-column-end: 4;
   height: 0.6rem;
   width: 103.29%;
-  background: red;
-  border: 1px solid red;
+  background: #1B1D21;
+  border: 1px solid #2A2B31;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 3px;
+}
+
+html body .wrapper .main .main-info .player-profile .win-rate .scale .scale-data {
+  width: 62%;
+  height: 100%;
+  background: -webkit-gradient(linear, right top, left top, from(#FFD128), to(#FFAE25)), #1B1D21;
+  background: linear-gradient(270deg, #FFD128 0%, #FFAE25 100%), #1B1D21;
+  border-radius: 3px;
 }
 
 html body .wrapper .main .main-info .player-profile .win-rate .scale-info {
