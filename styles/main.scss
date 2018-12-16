@@ -20,7 +20,9 @@ $color_darc-bg:#1B1D21;
 
                             // $color_darc-bg: red;
 
-$color-border-1: #2A2B31;
+$color-border-2: #2A2B31;
+
+$color-border-1: rgba(77, 77, 81, 0.5);
 
                             // $color-border-1: green;
 
@@ -269,7 +271,7 @@ html {
                                 background-size: cover;
                                 clip-path: polygon(0% 50%, 25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%);
                             }
-                           
+                        
                             .av-OceanD {
                                 background: url("../images/avatars/av_OceanD.png") no-repeat;
                                 background-size: 100%;
@@ -300,7 +302,6 @@ html {
                                 background-size: 100%;
                                 background-position: 0% 50%;
                             }
-                            
                         }
                     }
 
@@ -462,14 +463,102 @@ html {
                                                 justify-content: center;
                                                 width: 5vw;
 
-                                                .avatar-wthis-line {
+                                                .avatar-with-line {
                                                     display: flex;
                                                     flex-wrap: nowrap;
+                                                    align-items: center;
+
+                                                    .av-with-line-1 {
+                                                        background: url("../images/avatars/av-bg-yellow-grad_s.svg") no-repeat;
+                                                        background-size: contain;
+                                                        background-position: center center;
+                                                    }
+                                                    .av-with-line-2 {
+                                                        background: url("../images/avatars/av-bg-green-grad_s.svg") no-repeat;
+                                                        background-size: contain;
+                                                        background-position: center center;
+                                                    }
+                                                    .av-with-line-3 {
+                                                        background: url("../images/avatars/av-bg-purple-grad_s.svg") no-repeat;
+                                                        background-size: contain;
+                                                        background-position: center center;
+                                                    }
+                                                    .av-with-line-4 {
+                                                        background: url("../images/avatars/av-bg-blue-grad_s.svg") no-repeat;
+                                                        background-size: contain;
+                                                        background-position: center center;
+                                                    }
+                                                    .av-with-line-5 {
+                                                        background: url("../images/avatars/av-bg-red-grad_s.svg") no-repeat;
+                                                        background-size: contain;
+                                                        background-position: center center;
+                                                    }
+                                                    
+                                                    .av-border {
+                                                        display: flex;
+                                                        justify-content: center;
+                                                        align-items: center;
+                                                        // position: relative;
+                                                        width: 3vw;
+                                                        height: 3vw;
+                                                        margin: 0 auto;
+                                                        
+                                                        .avatar {
+                                                            width: 80%;
+                                                            height: 80%;
+                                                            background: #2A2B31;
+                                                            background-size: cover;
+                                                            clip-path: polygon(0% 50%, 25% 7%, 75% 7%, 100% 50%, 75% 93%, 25% 93%);   
+                                                        }
+                                                        .invite {
+                                                            &::after {
+                                                                display: block;
+                                                                content: " ";
+                                                                width: 100%;
+                                                                height: 100%;
+                                                                background: url("../images/avatars/plus.svg") no-repeat;
+                                                                background-size: 32%;
+                                                                background-position:  center center;
+
+                                                            }
+                                                        }
+                                                       
+                                                        .av-OceanD {
+                                                            background: url("../images/avatars/av_OceanD.png") no-repeat;
+                                                            background-size: 100%;
+                                                            background-position: 0% 50%;
+                                                        }
+                                                        .av-VanyaKiller {
+                                                            background: url("../images/avatars/av_VanyaKiller.png") no-repeat;
+                                                            background-size: 100%;
+                                                            background-position: 0% 50%;
+                                                        }
+                                                        .av-F1stM4n {
+                                                            background: url("../images/avatars/av_F1stM4n.png") no-repeat;
+                                                            background-size: 100%;
+                                                            background-position: 0% 50%;
+                                                        }
+                                                        .av-SaWyer {
+                                                            background: url("../images/avatars/av_SaWyer.png") no-repeat;
+                                                            background-size: 100%;
+                                                            background-position: 0% 50%;
+                                                        }
+                                                        .av-le4oz22 {
+                                                            background: url("../images/avatars/av_le4oz22.png") no-repeat;
+                                                            background-size: 100%;
+                                                            background-position: 0% 50%;
+                                                        }
+                                                        .av-Shadow52 {
+                                                            background: url("../images/avatars/av_Shadow52.png") no-repeat;
+                                                            background-size: 100%;
+                                                            background-position: 0% 50%;
+                                                        }
+                                                    }
+                                                    
 
                                                     .line-between-avatars {
                                                         width: 1vw;
                                                         height: 1px;
-                                                        margin-top: 1.2vw;
                                                     }
 
                                                     .left {

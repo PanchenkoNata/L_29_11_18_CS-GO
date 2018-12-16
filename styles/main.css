@@ -65,7 +65,7 @@ html body .link-block:hover {
 
 html body .dark-bg {
   background: #1B1D21;
-  border: 1px solid #2A2B31;
+  border: 1px solid rgba(77, 77, 81, 0.5);
   border-radius: 3px;
 }
 
@@ -411,7 +411,7 @@ html body .wrapper .main .main-info .main-info-box {
           backdrop-filter: blur(20px);
   /* Note: backdrop-filter has minimal browser support */
   border-radius: 3px;
-  border: 1px solid #2A2B31;
+  border: 1px solid rgba(77, 77, 81, 0.5);
 }
 
 html body .wrapper .main .main-info .line-horiz {
@@ -434,7 +434,7 @@ html body .wrapper .main .main-info .game-varieties .header {
 
 html body .wrapper .main .main-info .game-varieties .header a {
   width: 50%;
-  border-bottom: 2px solid #2A2B31;
+  border-bottom: 2px solid rgba(77, 77, 81, 0.5);
 }
 
 html body .wrapper .main .main-info .game-varieties .header a:hover {
@@ -492,26 +492,128 @@ html body .wrapper .main .main-info .game-varieties .select-game-mode .mode-opti
   width: 5vw;
 }
 
-html body .wrapper .main .main-info .game-varieties .select-game-mode .mode-options a .content .partners .partner .avatar-wthis-line {
+html body .wrapper .main .main-info .game-varieties .select-game-mode .mode-options a .content .partners .partner .avatar-with-line {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-html body .wrapper .main .main-info .game-varieties .select-game-mode .mode-options a .content .partners .partner .avatar-wthis-line .line-between-avatars {
+html body .wrapper .main .main-info .game-varieties .select-game-mode .mode-options a .content .partners .partner .avatar-with-line .av-with-line-1 {
+  background: url("../images/avatars/av-bg-yellow-grad_s.svg") no-repeat;
+  background-size: contain;
+  background-position: center center;
+}
+
+html body .wrapper .main .main-info .game-varieties .select-game-mode .mode-options a .content .partners .partner .avatar-with-line .av-with-line-2 {
+  background: url("../images/avatars/av-bg-green-grad_s.svg") no-repeat;
+  background-size: contain;
+  background-position: center center;
+}
+
+html body .wrapper .main .main-info .game-varieties .select-game-mode .mode-options a .content .partners .partner .avatar-with-line .av-with-line-3 {
+  background: url("../images/avatars/av-bg-purple-grad_s.svg") no-repeat;
+  background-size: contain;
+  background-position: center center;
+}
+
+html body .wrapper .main .main-info .game-varieties .select-game-mode .mode-options a .content .partners .partner .avatar-with-line .av-with-line-4 {
+  background: url("../images/avatars/av-bg-blue-grad_s.svg") no-repeat;
+  background-size: contain;
+  background-position: center center;
+}
+
+html body .wrapper .main .main-info .game-varieties .select-game-mode .mode-options a .content .partners .partner .avatar-with-line .av-with-line-5 {
+  background: url("../images/avatars/av-bg-red-grad_s.svg") no-repeat;
+  background-size: contain;
+  background-position: center center;
+}
+
+html body .wrapper .main .main-info .game-varieties .select-game-mode .mode-options a .content .partners .partner .avatar-with-line .av-border {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 3vw;
+  height: 3vw;
+  margin: 0 auto;
+}
+
+html body .wrapper .main .main-info .game-varieties .select-game-mode .mode-options a .content .partners .partner .avatar-with-line .av-border .avatar {
+  width: 80%;
+  height: 80%;
+  background: #2A2B31;
+  background-size: cover;
+  -webkit-clip-path: polygon(0% 50%, 25% 7%, 75% 7%, 100% 50%, 75% 93%, 25% 93%);
+          clip-path: polygon(0% 50%, 25% 7%, 75% 7%, 100% 50%, 75% 93%, 25% 93%);
+}
+
+html body .wrapper .main .main-info .game-varieties .select-game-mode .mode-options a .content .partners .partner .avatar-with-line .av-border .invite::after {
+  display: block;
+  content: " ";
+  width: 100%;
+  height: 100%;
+  background: url("../images/avatars/plus.svg") no-repeat;
+  background-size: 32%;
+  background-position: center center;
+}
+
+html body .wrapper .main .main-info .game-varieties .select-game-mode .mode-options a .content .partners .partner .avatar-with-line .av-border .av-OceanD {
+  background: url("../images/avatars/av_OceanD.png") no-repeat;
+  background-size: 100%;
+  background-position: 0% 50%;
+}
+
+html body .wrapper .main .main-info .game-varieties .select-game-mode .mode-options a .content .partners .partner .avatar-with-line .av-border .av-VanyaKiller {
+  background: url("../images/avatars/av_VanyaKiller.png") no-repeat;
+  background-size: 100%;
+  background-position: 0% 50%;
+}
+
+html body .wrapper .main .main-info .game-varieties .select-game-mode .mode-options a .content .partners .partner .avatar-with-line .av-border .av-F1stM4n {
+  background: url("../images/avatars/av_F1stM4n.png") no-repeat;
+  background-size: 100%;
+  background-position: 0% 50%;
+}
+
+html body .wrapper .main .main-info .game-varieties .select-game-mode .mode-options a .content .partners .partner .avatar-with-line .av-border .av-SaWyer {
+  background: url("../images/avatars/av_SaWyer.png") no-repeat;
+  background-size: 100%;
+  background-position: 0% 50%;
+}
+
+html body .wrapper .main .main-info .game-varieties .select-game-mode .mode-options a .content .partners .partner .avatar-with-line .av-border .av-le4oz22 {
+  background: url("../images/avatars/av_le4oz22.png") no-repeat;
+  background-size: 100%;
+  background-position: 0% 50%;
+}
+
+html body .wrapper .main .main-info .game-varieties .select-game-mode .mode-options a .content .partners .partner .avatar-with-line .av-border .av-Shadow52 {
+  background: url("../images/avatars/av_Shadow52.png") no-repeat;
+  background-size: 100%;
+  background-position: 0% 50%;
+}
+
+html body .wrapper .main .main-info .game-varieties .select-game-mode .mode-options a .content .partners .partner .avatar-with-line .line-between-avatars {
   width: 1vw;
   height: 1px;
-  margin-top: 1.2vw;
 }
 
-html body .wrapper .main .main-info .game-varieties .select-game-mode .mode-options a .content .partners .partner .avatar-wthis-line .left {
+html body .wrapper .main .main-info .game-varieties .select-game-mode .mode-options a .content .partners .partner .avatar-with-line .left {
   background: -webkit-gradient(linear, right top, left top, from(rgba(77, 77, 81, 0)), to(#4d4d51));
   background: linear-gradient(to left, rgba(77, 77, 81, 0) 0%, #4d4d51 100%);
 }
 
-html body .wrapper .main .main-info .game-varieties .select-game-mode .mode-options a .content .partners .partner .avatar-wthis-line .right {
+html body .wrapper .main .main-info .game-varieties .select-game-mode .mode-options a .content .partners .partner .avatar-with-line .right {
   background: -webkit-gradient(linear, right top, left top, from(#4d4d51), to(rgba(77, 77, 81, 0)));
   background: linear-gradient(to left, #4d4d51 0%, rgba(77, 77, 81, 0) 100%);
 }
@@ -748,7 +850,7 @@ html body .wrapper .main .main-info .player-rating .header {
 
 html body .wrapper .main .main-info .player-rating .header a {
   width: 50%;
-  border-bottom: 2px solid #2A2B31;
+  border-bottom: 2px solid rgba(77, 77, 81, 0.5);
 }
 
 html body .wrapper .main .main-info .player-rating .list-rating {
