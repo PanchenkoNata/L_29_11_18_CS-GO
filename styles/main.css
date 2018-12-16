@@ -13,7 +13,7 @@
 }
 
 html {
-  font-size: 10px;
+  font-size: 0.55vw;
   font-family: 'Google Sans', sans-serif;
   color: #ffffff;
 }
@@ -674,7 +674,7 @@ html body .wrapper .main .main-info .game-varieties .rate-place .rate-info .rate
       -ms-flex-align: center;
           align-items: center;
   height: 2vw;
-  padding: 2.55rem 0;
+  padding: 1.27vw 0;
   font-size: 0.66vw;
   color: #ffffff;
 }
@@ -902,14 +902,84 @@ html body .wrapper .main .main-info .player-rating .list-rating .item-list .game
           justify-content: start;
 }
 
-html body .wrapper .main .main-info .player-rating .list-rating .item-list .gamer .QWERTY {
-  height: 1.4vw;
-  width: 1.4vw;
-  background: red;
+html body .wrapper .main .main-info .player-rating .list-rating .item-list .gamer .av-border {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 auto;
+}
+
+html body .wrapper .main .main-info .player-rating .list-rating .item-list .gamer .av-border .avatar {
+  width: 80%;
+  height: 80%;
+  background: #2A2B31;
+  background-size: cover;
+  -webkit-clip-path: polygon(0% 50%, 25% 7%, 75% 7%, 100% 50%, 75% 93%, 25% 93%);
+          clip-path: polygon(0% 50%, 25% 7%, 75% 7%, 100% 50%, 75% 93%, 25% 93%);
+}
+
+html body .wrapper .main .main-info .player-rating .list-rating .item-list .gamer .av-border .invite::after {
+  display: block;
+  content: " ";
+  width: 100%;
+  height: 100%;
+  background: url("../images/avatars/plus.svg") no-repeat;
+  background-size: 32%;
+  background-position: center center;
+}
+
+html body .wrapper .main .main-info .player-rating .list-rating .item-list .gamer .av-border .av-OceanD {
+  background: url("../images/avatars/av_OceanD.png") no-repeat;
+  background-size: 100%;
+  background-position: 0% 50%;
+}
+
+html body .wrapper .main .main-info .player-rating .list-rating .item-list .gamer .av-border .av-VanyaKiller {
+  background: url("../images/avatars/av_VanyaKiller.png") no-repeat;
+  background-size: 100%;
+  background-position: 0% 50%;
+}
+
+html body .wrapper .main .main-info .player-rating .list-rating .item-list .gamer .av-border .av-F1stM4n {
+  background: url("../images/avatars/av_F1stM4n.png") no-repeat;
+  background-size: 100%;
+  background-position: 0% 50%;
+}
+
+html body .wrapper .main .main-info .player-rating .list-rating .item-list .gamer .av-border .av-SaWyer {
+  background: url("../images/avatars/av_SaWyer.png") no-repeat;
+  background-size: 100%;
+  background-position: 0% 50%;
+}
+
+html body .wrapper .main .main-info .player-rating .list-rating .item-list .gamer .av-border .av-le4oz22 {
+  background: url("../images/avatars/av_le4oz22.png") no-repeat;
+  background-size: 100%;
+  background-position: 0% 50%;
+}
+
+html body .wrapper .main .main-info .player-rating .list-rating .item-list .gamer .av-border .av-Shadow52 {
+  background: url("../images/avatars/av_Shadow52.png") no-repeat;
+  background-size: 100%;
+  background-position: 0% 50%;
+}
+
+html body .wrapper .main .main-info .player-rating .list-rating .item-list .gamer .av-list-rating {
+  width: 1.7vw;
+  height: 1.7vw;
+  background: url("../images/avatars/av-bg-red-grad_s.svg") no-repeat;
+  background-size: contain;
+  background-position: center center;
 }
 
 html body .wrapper .main .main-info .player-rating .list-rating .item-list .gamer .gamer-name {
-  padding-left: 0.6vw;
+  padding-left: 0.3vw;
 }
 
 html body .wrapper .main .main-info .player-rating .list-rating .item-list .rank-points {

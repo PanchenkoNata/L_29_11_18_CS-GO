@@ -44,7 +44,7 @@ $f-s-xxl: $font-size-base * 2.2;
 $f-s-xxxl: $font-size-base * 2.8;
 
 html {
-    font-size: 10px;
+    font-size: 0.55vw;
     font-family: 'Google Sans', sans-serif;
     color: #{$text-color-main};
 
@@ -622,7 +622,7 @@ html {
                                             justify-content: center;
                                             align-items: center;
                                             height: 2vw;
-                                            padding: 2.55rem 0;
+                                            padding: 1.27vw 0;
                                             font-size: #{$f-s-sm};
                                             color: #{$text-color-main};
                                         }
@@ -811,14 +811,77 @@ html {
                                     display: flex;
                                     align-items: center;
                                     justify-content: start;
-                                     
-                                    .QWERTY {
-                                        height: 1.4vw;
-                                        width: 1.4vw;
-                                        background: red
+                                                   
+                                    .av-border {
+                                        display: flex;
+                                        justify-content: center;
+                                        align-items: center;
+                                        // position: relative;
+                                        // width: 2vw;
+                                        // height: 2vw;
+                                        margin: 0 auto;
+                                        
+                                        .avatar {
+                                            width: 80%;
+                                            height: 80%;
+                                            background: #2A2B31;
+                                            background-size: cover;
+                                            clip-path: polygon(0% 50%, 25% 7%, 75% 7%, 100% 50%, 75% 93%, 25% 93%);   
+                                        }
+                                        .invite {
+                                            &::after {
+                                                display: block;
+                                                content: " ";
+                                                width: 100%;
+                                                height: 100%;
+                                                background: url("../images/avatars/plus.svg") no-repeat;
+                                                background-size: 32%;
+                                                background-position:  center center;
+
+                                            }
+                                        }
+                                        
+                                        .av-OceanD {
+                                            background: url("../images/avatars/av_OceanD.png") no-repeat;
+                                            background-size: 100%;
+                                            background-position: 0% 50%;
+                                        }
+                                        .av-VanyaKiller {
+                                            background: url("../images/avatars/av_VanyaKiller.png") no-repeat;
+                                            background-size: 100%;
+                                            background-position: 0% 50%;
+                                        }
+                                        .av-F1stM4n {
+                                            background: url("../images/avatars/av_F1stM4n.png") no-repeat;
+                                            background-size: 100%;
+                                            background-position: 0% 50%;
+                                        }
+                                        .av-SaWyer {
+                                            background: url("../images/avatars/av_SaWyer.png") no-repeat;
+                                            background-size: 100%;
+                                            background-position: 0% 50%;
+                                        }
+                                        .av-le4oz22 {
+                                            background: url("../images/avatars/av_le4oz22.png") no-repeat;
+                                            background-size: 100%;
+                                            background-position: 0% 50%;
+                                        }
+                                        .av-Shadow52 {
+                                            background: url("../images/avatars/av_Shadow52.png") no-repeat;
+                                            background-size: 100%;
+                                            background-position: 0% 50%;
+                                        }
                                     }
+                                    .av-list-rating {
+                                        width: 1.7vw;
+                                        height: 1.7vw;
+                                        background: url("../images/avatars/av-bg-red-grad_s.svg") no-repeat;
+                                        background-size: contain;
+                                        background-position: center center;
+                                    }
+
                                     .gamer-name {
-                                        padding-left: 0.6vw;
+                                        padding-left: 0.3vw;
                                     }
                                 }
 
