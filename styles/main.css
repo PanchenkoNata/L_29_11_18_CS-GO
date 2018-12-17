@@ -1,14 +1,14 @@
 @charset "UTF-8";
 @font-face {
   font-family: 'Google Sans';
-  src: url("../fonts/Google-Sans-Font/GoogleSans-Regular.ttf ");
+  src: url("../fonts/Google-Sans-Font/GoogleSans-Regular.ttf");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Google Sans';
-  src: url("../fonts/Google-Sans-Font/GoogleSans-Bold.ttf ");
+  src: url("../fonts/Google-Sans-Font/GoogleSans-Bold.ttf");
   font-weight: bold;
   font-style: normal;
 }
@@ -24,6 +24,7 @@ html body {
   padding: 0;
   font-size: 0.7vw;
   letter-spacing: 0.02em;
+  background: #1D2024;
 }
 
 html body * {
@@ -95,11 +96,6 @@ html body .text-bold {
   font-weight: bold;
 }
 
-html body .avatar-big {
-  width: 3vw;
-  height: 2.5vw;
-}
-
 html body .polygon-bullet {
   width: 0.45vw;
 }
@@ -139,6 +135,7 @@ html body .wrapper .header .drop-down-list-btn {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  position: relative;
 }
 
 html body .wrapper .header .drop-down-list-btn i {
@@ -192,10 +189,6 @@ html body .wrapper .header .info .game .game-logo {
 html body .wrapper .header .info .game .game-logo img {
   width: 10.2vw;
   height: auto;
-}
-
-html body .wrapper .header .info .game .drop-down-list-btn {
-  position: relative;
 }
 
 html body .wrapper .header .info .game .drop-down-list-btn .menu-games-chois {
@@ -704,11 +697,18 @@ html body .wrapper .main .main-info .game-varieties .select-game-mode .mode-opti
           clip-path: polygon(0% 50%, 25% 7%, 75% 7%, 100% 50%, 75% 93%, 25% 93%);
 }
 
+html body .wrapper .main .main-info .game-varieties .select-game-mode .mode-options a .content .partners .partner .avatar-with-line .av-border .invite {
+  position: relative;
+}
+
 html body .wrapper .main .main-info .game-varieties .select-game-mode .mode-options a .content .partners .partner .avatar-with-line .av-border .invite:after {
+  content: "";
   display: block;
-  content: " ";
+  position: absolute;
   width: 100%;
   height: 100%;
+  top: 0;
+  left: 0;
   background: url("../images/avatars/plus.svg") no-repeat;
   background-size: 32%;
   background-position: center center;
@@ -1211,16 +1211,6 @@ html body .wrapper .main .main-info .player-rating .list-rating .item-list .game
           clip-path: polygon(0% 50%, 25% 7%, 75% 7%, 100% 50%, 75% 93%, 25% 93%);
 }
 
-html body .wrapper .main .main-info .player-rating .list-rating .item-list .gamer .av-border .invite::after {
-  display: block;
-  content: " ";
-  width: 100%;
-  height: 100%;
-  background: url("../images/avatars/plus.svg") no-repeat;
-  background-size: 32%;
-  background-position: center center;
-}
-
 html body .wrapper .main .main-info .player-rating .list-rating .item-list .gamer .av-border .av-OceanD {
   background: url("../images/avatars/av_OceanD.png") no-repeat;
   background-size: 100%;
@@ -1385,11 +1375,11 @@ html body .wrapper .main .result-of-games .content .game-rezult a {
 }
 
 html body .wrapper .main .result-of-games .content .game-rezult a:hover::after {
+  content: "";
   display: block;
-  content: " ";
+  position: absolute;
   width: 100%;
   height: 100%;
-  position: absolute;
   top: 0;
   left: 0;
   border: 2px solid #FFD128;
@@ -1487,12 +1477,6 @@ html body .wrapper .main .result-of-games .content .game-rezult a .content .game
   background: url("../images/avatars/av_Shadow52.png") no-repeat;
   background-size: 100%;
   background-position: 0% 50%;
-}
-
-html body .wrapper .main .result-of-games .content .game-rezult a .content .gamer-info .br-av-col-1 {
-  background-size: contain;
-  background-position: center center;
-  background: url("../images/avatars/av-bg-yellow.svg") no-repeat;
 }
 
 html body .wrapper .main .result-of-games .content .game-rezult a .content .gamer-info .gamer-name {

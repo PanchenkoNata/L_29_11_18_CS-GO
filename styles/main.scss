@@ -1,31 +1,26 @@
 @font-face{
     font-family: 'Google Sans';
-    src: url('../fonts/Google-Sans-Font/GoogleSans-Regular.ttf ');
+    src: url('../fonts/Google-Sans-Font/GoogleSans-Regular.ttf');
     font-weight: normal;
     font-style: normal;
 }
 @font-face{
     font-family: 'Google Sans';
-    src: url('../fonts/Google-Sans-Font/GoogleSans-Bold.ttf ');
+    src: url('../fonts/Google-Sans-Font/GoogleSans-Bold.ttf');
     font-weight: bold;
     font-style: normal;
 }
 
-
-$left-col-xl: 7.03vw;
-
 $color_dark: #1D2024;
 $color_rect-bg: #24272B;
 $color_darc-bg:#1B1D21;
-
 $color-border-2: #2A2B31;
 $color-border-1: rgba(77, 77, 81, 0.5);
 
 $text-color-main: #ffffff;
 $text-color-altern: #797A7C;
-$text-color-2: rgba(255, 255, 255, 0.41);           
+$text-color-2: rgba(255, 255, 255, 0.41);
 $text-color-warning: #F4AE26;
-// $text-color-warning: linear-gradient(0deg, #FFD128 -38.68%, #FFAE25 100%), #1B1D21;
 
 $font-size-base: 0.5vw;
 $f-s-sm: $font-size-base * 1.2;
@@ -34,6 +29,13 @@ $f-s-l: $font-size-base * 1.8;
 $f-s-xl: $font-size-base * 2;
 $f-s-xxl: $font-size-base * 2.2;
 $f-s-xxxl: $font-size-base * 2.8;
+
+@mixin pseudo-element($display: block, $content: '', $pos: absolute) { 
+    content: $content;
+    display: $display;
+    position: $pos;
+}
+
 
 html {
     font-size: 0.55vw;
@@ -45,17 +47,19 @@ html {
         padding: 0;
         font-size: #{$f-s-norm};
         letter-spacing: 0.02em;
-        // background: #{$color_dark};
+        background: #{$color_dark};
 
         * {
             -moz-box-sizing: border-box;
             -webkit-box-sizing: border-box;
             box-sizing: border-box;
         }
+
         ul, li, input {
             margin: 0;
             padding: 0;
         }
+
         li {
             list-style-type: none;
         }
@@ -63,12 +67,8 @@ html {
         a {
             text-decoration: none;
             color: #{$text-color-altern};
-
-            // &:hover {
-            //     border: 3px solid blue;
-            //     background: red;
-            // }
         }
+
         input {
             width: 100%;
             border: none;
@@ -84,11 +84,6 @@ html {
             display: block;
             height: 100%;
             width: 100%;
-
-            // &:hover {
-            //     border: 3px solid #FFD128;
-            //     background: #FFD128;
-            // }
         }
 
         .dark-bg {
@@ -96,6 +91,7 @@ html {
             border: 1px solid #{$color-border-1};
             border-radius: 3px;
         }
+
         .header-info {
             padding: 0;
             margin: 0.95vw 0 0.8vw;
@@ -116,13 +112,11 @@ html {
         .text-bold {
             font-weight: bold;
         }
-        .avatar-big {
-            width: 3vw;
-            height: 2.5vw;
-        }
+        
         .polygon-bullet {
             width: 0.45vw;
         }
+        
         
         .wrapper {
             width: 100vw;
@@ -131,21 +125,7 @@ html {
             background: url(../images/wrapper-bg-img_2.png) no-repeat;
             background-size: cover;
             position: relative;
-            //transform: matrix(-1, 0, 0, 1, 0, 0);
             
-            // &::after {
-            //     display: block;
-            //     content: " ";
-            //     width: 100%;
-            //     height: 100%;
-            //     position: absolute;
-            //     top: 0;
-            //     left: 0;
-            //     // background: rgba(24, 25, 29, 0.64);
-            // }
-        
-            
-        
             .header {
                 display: grid;
                 grid-template-columns: 7.03vw 75.83vw 17.14vw;
@@ -162,6 +142,7 @@ html {
                     display: flex;
                     align-items: center;
                     justify-content: center;
+                    position: relative;
 
                     i {
                         font-size: 0.5vw;
@@ -201,8 +182,6 @@ html {
                         }
                         
                         .drop-down-list-btn {
-                            position: relative;
-
                             .menu-games-chois {
                                 display: none;
                                 position: absolute;
@@ -231,6 +210,7 @@ html {
                                         }
                                     }
                                 }
+
                                 .line-horiz {
                                     height: 3px;
                                 }
@@ -283,7 +263,6 @@ html {
                             letter-spacing: 0.05em;
                         }
                     }
-
                 }
                 
                 .short-profile {
@@ -379,7 +358,6 @@ html {
                         }
 
                         .list-of-profile {
-                            // width: 24.45%;
                             margin: 0 auto;
                             
                             .polygon-bullet {
@@ -451,8 +429,6 @@ html {
                                     div {  
                                         svg {
                                             path {
-                                                // fill: #{$text-color-warning};
-                                                // filter: url("#filter0_d");
                                                 fill: url("#SVGID_1_");
                                             }
                                         }
@@ -495,8 +471,6 @@ html {
 
                     .main-info-box {
                         mix-blend-mode: normal;
-                        // -webkit-filter: blur(1vw);
-                        //             filter: blur(1vw);
                         border-radius: 3px;
                         border: 1px solid #{$color-border-1};
                     }
@@ -509,7 +483,6 @@ html {
                     }
                     
                     .game-varieties {
-                        //grid-area: _game-varieties;
                         background: linear-gradient(180deg, rgba(29, 32, 36, 0.6) 45.23%, rgba(29, 32, 36, 0) 100%);
 
                         .header {
@@ -535,7 +508,6 @@ html {
                                 background-position: bottom center;
                             }
                         }
-
 
                         .select-game-mode {
                             padding: 1vw 1.1vw 1vw 1.3vw;
@@ -636,11 +608,14 @@ html {
                                                             clip-path: polygon(0% 50%, 25% 7%, 75% 7%, 100% 50%, 75% 93%, 25% 93%);   
                                                         }
                                                         .invite {
+                                                            position: relative;
+
                                                             &:after {
-                                                                display: block;
-                                                                content: " ";
+                                                                @include pseudo-element;
                                                                 width: 100%;
                                                                 height: 100%;
+                                                                top: 0;
+                                                                left: 0;
                                                                 background: url("../images/avatars/plus.svg") no-repeat;
                                                                 background-size: 32%;
                                                                 background-position:  center center;
@@ -929,8 +904,7 @@ html {
                             display: grid;
                             grid-template-columns: 46% 46%;
                             grid-template-rows: auto;
-                            grid-column-gap: 8%; 
-                            // grid-gap: ;
+                            grid-column-gap: 8%;
                            
                             .header-info {
                                 grid-column-start: 1;
@@ -940,8 +914,6 @@ html {
                             }
 
                             .scale {
-                                // grid-column-start: 1;
-                                // grid-column-end: 2;
                                 height: 6px;
                                 width: 182%;
                                 margin-top: 0.3vw;
@@ -957,14 +929,11 @@ html {
                                     border-radius: 3px;
                                 }
                             }
-                            .scale-info {
-                                // margin-top: -0.25vw;
-                            }
+                            
                             .col {
                                 display: flex;
                                 flex-wrap: wrap;
                                 align-items: center;
-                                // justify-content: space-between;
 
                                 .left {
                                     width: 70%;
@@ -995,7 +964,6 @@ html {
                     }//player-profile
 
                     .player-rating {
-                        // grid-area: "player-rating";
                         background: rgba(29, 32, 36, 0.5);
 
                         .header {
@@ -1050,7 +1018,7 @@ html {
                                     display: flex;
                                     align-items: center;
                                     justify-content: start;
-                                                   
+                                    
                                     .av-border {
                                         display: flex;
                                         justify-content: center;
@@ -1063,18 +1031,6 @@ html {
                                             background: #2A2B31;
                                             background-size: cover;
                                             clip-path: polygon(0% 50%, 25% 7%, 75% 7%, 100% 50%, 75% 93%, 25% 93%);   
-                                        }
-
-                                        .invite {
-                                            &::after {
-                                                display: block;
-                                                content: " ";
-                                                width: 100%;
-                                                height: 100%;
-                                                background: url("../images/avatars/plus.svg") no-repeat;
-                                                background-size: 32%;
-                                                background-position:  center center;
-                                            }
                                         }
                                         
                                         .av-OceanD {
@@ -1207,11 +1163,6 @@ html {
                     padding-right: 0.1vw;
 
                     .content {
-                        // display: grid;
-                        // grid-template-columns: 100%;
-                        // grid-template-rows:  6.62vw;
-                        // grid-row-gap: 2vw;
-
                         .game-rezult {
                             width: 100%;
                             height: 6.8vw;
@@ -1236,18 +1187,15 @@ html {
                                 background-size: contain;
                                 background-position: bottom center;
                             }
-                           
-                                
+                            
                             a {
                                 border: 2px solid rgba(249, 190, 22, 0);
                                 position: relative;
                                 
                                 &:hover::after {
-                                    display: block;
-                                    content: " ";
+                                    @include pseudo-element;
                                     width: 100%;
                                     height: 100%;
-                                    position: absolute;
                                     top: 0;
                                     left: 0;
                                     border: 2px solid #FFD128;
@@ -1326,13 +1274,7 @@ html {
                                                 background-position: 0% 50%;
                                             }
                                         }
-                                        
-                                        .br-av-col-1 {
-                                                background-size: contain;
-                                                background-position: center center;
-                                                background: url("../images/avatars/av-bg-yellow.svg") no-repeat;
-                                        }
-                                        
+
                                         .gamer-name {
                                             margin: 0.25vw 0 0.1vw;
                                             padding: 0;
@@ -1355,7 +1297,7 @@ html {
                                         }
                                         .score {
                                             margin: 0.15vw 0 0;
-                                            font-size: #{$f-s-xxl}; 
+                                            font-size: #{$f-s-xxl};
                                             color: #{$text-color-main};
                                             letter-spacing: 0.05em;
                                             font-weight: bold;
@@ -1368,11 +1310,9 @@ html {
                         .empty {
                             height: 2.7vw;
                         }
-                        
                     }
                 }//result-of-games
             } //main
         }//wrapper
     }
-
 }
