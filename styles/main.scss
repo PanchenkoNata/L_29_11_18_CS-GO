@@ -883,48 +883,73 @@ html {
                         } //.player
 
                         .win-rate {
-                            padding: 0.9vw 1.1vw 1vw 1.1vw;
+                            padding: 0.9vw 1.2vw 1.5vw 1.1vw;
                             display: grid;
-                            grid-template-columns: 27.8% 10.2% 27.8% 10.2%;
+                            grid-template-columns: 46% 46%;
                             grid-template-rows: auto;
-                            grid-column-gap: 
-                            grid-gap: 8%;
+                            grid-column-gap: 8%; 
+                            // grid-gap: ;
                            
                             .header-info {
                                 grid-column-start: 1;
-                                grid-column-end: 5;
+                                grid-column-end: 3;
                                 margin-top: 0;
-                                margin-bottom: 0.3vw;
+                                margin-bottom: 0.4vw;
                             }
 
                             .scale {
-                                grid-column-start: 1;
-                                grid-column-end: 4;
+                                // grid-column-start: 1;
+                                // grid-column-end: 2;
                                 height: 6px;
-                                width: 103.29%;
-
+                                width: 182%;
+                                margin-top: 0.3vw;
                                 background: #1B1D21;
                                 border: 1px solid #2A2B31;
                                 box-sizing: border-box;
                                 border-radius: 3px;
 
                                 .scale-data {
-                                    width: 68.5%;
+                                    width: 69%;
                                     height: 100%;
                                     background: linear-gradient(270deg, #FFD128 0%, #FFAE25 100%), #1B1D21;
                                     border-radius: 3px;
                                 }
                             }
                             .scale-info {
-                                margin-top: -0.25vw;
+                                // margin-top: -0.25vw;
                             }
-                            .tab-info {
-                                margin: 0.25vw 0 0;
-                            }
-                            .first-line {
-                                margin: 0.75vw 0 0;
+                            .col {
+                                display: flex;
+                                flex-wrap: wrap;
+                                align-items: center;
+                                // justify-content: space-between;
+
+                                .left {
+                                    width: 70%;
+                                    text-align: left;
+                                    color: #{$text-color-altern};
+                                }
+
+                                .right {
+                                    width: 30%;
+                                    text-align: right;
+                                    letter-spacing: 0.05em;
+                                }
+
+                                .tab-info {
+                                    margin: 0.85vw 0 0;
+                                }
+                                .first-line {
+                                    margin: 1.4vw 0 0;
+                                }
                             }
                         }//win-rate
+
+                        .full-profile {
+                            padding-top: 0.7vw;
+                            letter-spacing: 0.05em;
+                            font-size: #{$f-s-sm};
+                        }
                     }//player-profile
 
                     .player-rating {
@@ -1290,6 +1315,11 @@ html {
                                 }  
                             }
                         }
+
+                        .empty {
+                            height: 2.7vw;
+                        }
+                        
                     }
                 }//result-of-games
             } //main
