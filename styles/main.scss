@@ -1220,12 +1220,12 @@ html {
                             
                             .bg-link-1 {
                                 background: url(../images/result-of-games/Rectangle_bg-img_1.png) no-repeat;
-                                // background-size: contain;
+                                background-size: auto 100%;
                                 background-position-x: right;
                             }
                             .bg-link-2 {
                                 background: url(../images/result-of-games/Rectangle_bg-img_2.png) no-repeat;
-                                // background-size: contain;
+                                background-size: auto 100%;
                                 background-position-x: right;
                             }
 
@@ -1242,7 +1242,14 @@ html {
                                 border: 2px solid rgba(249, 190, 22, 0);
                                 position: relative;
                                 
-                                &:hover {
+                                &:hover::after {
+                                    display: block;
+                                    content: " ";
+                                    width: 100%;
+                                    height: 100%;
+                                    position: absolute;
+                                    top: 0;
+                                    left: 0;
                                     border: 2px solid #FFD128;
                                     color: #{$text-color-main};
                                     background: url("../images/hover/hover-bg-mode-options.png") no-repeat;

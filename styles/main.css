@@ -1361,11 +1361,13 @@ html body .wrapper .main .result-of-games .content .game-rezult {
 
 html body .wrapper .main .result-of-games .content .game-rezult .bg-link-1 {
   background: url(../images/result-of-games/Rectangle_bg-img_1.png) no-repeat;
+  background-size: auto 100%;
   background-position-x: right;
 }
 
 html body .wrapper .main .result-of-games .content .game-rezult .bg-link-2 {
   background: url(../images/result-of-games/Rectangle_bg-img_2.png) no-repeat;
+  background-size: auto 100%;
   background-position-x: right;
 }
 
@@ -1382,7 +1384,14 @@ html body .wrapper .main .result-of-games .content .game-rezult a {
   position: relative;
 }
 
-html body .wrapper .main .result-of-games .content .game-rezult a:hover {
+html body .wrapper .main .result-of-games .content .game-rezult a:hover::after {
+  display: block;
+  content: " ";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
   border: 2px solid #FFD128;
   color: #ffffff;
   background: url("../images/hover/hover-bg-mode-options.png") no-repeat;
