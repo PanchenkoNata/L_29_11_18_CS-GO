@@ -349,7 +349,7 @@ html {
 
             .main {
                 display: grid;
-                grid-template-columns: 7.03vw 73.78vw 2.05vw 16.54vw;
+                grid-template-columns: 7.03vw 73.7vw 2.13vw 16.54vw;
                 grid-template-rows: auto;
 
                 .nav {
@@ -1118,9 +1118,10 @@ html {
 
                     .scroll-item {
                         width: 5px;
-                        height: 6.62vw;
+                        height: 6.8vw;
                         background: linear-gradient(0deg, #FFD128 -38.68%, #FFAE25 100%), #F4AC26;
                         border-radius: 2px;
+                        margin: 0 auto;
                     }
                 }
 
@@ -1136,20 +1137,18 @@ html {
 
                         .game-rezult {
                             width: 100%;
-                            height: 6.62vw;
-                            margin: 0 0 0.97vw 0;
-                            // box-sizing: padding-box;
-                            // border: 1px solid $color-border-1;
+                            height: 6.8vw;
+                            margin: 0 0 0.8vw 0;
                             background: #{$color_rect-bg};
                             
                             .bg-link-1 {
                                 background: url(../images/result-of-games/Rectangle_bg-img_1.png) no-repeat;
-                                background-size: contain;
+                                // background-size: contain;
                                 background-position-x: right;
                             }
                             .bg-link-2 {
                                 background: url(../images/result-of-games/Rectangle_bg-img_2.png) no-repeat;
-                                background-size: contain;
+                                // background-size: contain;
                                 background-position-x: right;
                             }
 
@@ -1184,6 +1183,7 @@ html {
                                     .gamer-info {
                                         width: 41%;
                                         text-align: center;
+                                        padding-top: 0.3vw;
 
                                         .av-br-rez-game-l {
                                             background: url("../images/avatars/av-bd-rez-game-l.svg") no-repeat;
@@ -1199,7 +1199,6 @@ html {
                                             display: flex;
                                             justify-content: center;
                                             align-items: center;
-                                            // position: relative;
                                             width: 3vw;
                                             height: 3vw;
                                             margin: 0 auto;
@@ -1242,7 +1241,6 @@ html {
                                                 background-size: 100%;
                                                 background-position: 0% 50%;
                                             }
-                                            
                                         }
                                         
                                         .br-av-col-1 {
@@ -1251,27 +1249,32 @@ html {
                                                 background: url("../images/avatars/av-bg-yellow.svg") no-repeat;
                                         }
                                         
-                                        p {
-                                            margin: 0.25vw 0 0.15vw;
+                                        .gamer-name {
+                                            margin: 0.25vw 0 0.1vw;
+                                            padding: 0;
                                             color: #{$text-color-main};
+                                            letter-spacing: 0.05em;
                                         }
                                         .points {
                                             font-size: #{$f-s-sm};
                                             color: #{$text-color-warning};
-                                            margin: 0.05vw 0;
+                                            margin: 0;
+                                            padding: 0;
                                         }
                                     }
 
                                     .result-of-game {
                                         width: 18%;
                                         p {
-                                            margin: 1vw 0 0;
+                                            margin: 1.7vw 0 0;
                                             color: #{$text-color-2};
                                         }
                                         .score {
-                                            margin: 0.25vw 0 0;
+                                            margin: 0.15vw 0 0;
                                             font-size: #{$f-s-xxl}; 
                                             color: #{$text-color-main};
+                                            letter-spacing: 0.05em;
+                                            font-weight: bold;
                                         }
                                     }
                                 }  

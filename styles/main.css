@@ -370,8 +370,8 @@ html body .wrapper .header .short-profile .player-info .list-of-profile .polygon
 html body .wrapper .main {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 7.03vw 73.78vw 2.05vw 16.54vw;
-      grid-template-columns: 7.03vw 73.78vw 2.05vw 16.54vw;
+  -ms-grid-columns: 7.03vw 73.7vw 2.13vw 16.54vw;
+      grid-template-columns: 7.03vw 73.7vw 2.13vw 16.54vw;
   -ms-grid-rows: auto;
       grid-template-rows: auto;
 }
@@ -1271,10 +1271,11 @@ html body .wrapper .main .scroll-line {
 
 html body .wrapper .main .scroll-line .scroll-item {
   width: 5px;
-  height: 6.62vw;
+  height: 6.8vw;
   background: -webkit-gradient(linear, left bottom, left top, color-stop(-38.68%, #FFD128), to(#FFAE25)), #F4AC26;
   background: linear-gradient(0deg, #FFD128 -38.68%, #FFAE25 100%), #F4AC26;
   border-radius: 2px;
+  margin: 0 auto;
 }
 
 html body .wrapper .main .result-of-games {
@@ -1284,20 +1285,18 @@ html body .wrapper .main .result-of-games {
 
 html body .wrapper .main .result-of-games .content .game-rezult {
   width: 100%;
-  height: 6.62vw;
-  margin: 0 0 0.97vw 0;
+  height: 6.8vw;
+  margin: 0 0 0.8vw 0;
   background: #24272B;
 }
 
 html body .wrapper .main .result-of-games .content .game-rezult .bg-link-1 {
   background: url(../images/result-of-games/Rectangle_bg-img_1.png) no-repeat;
-  background-size: contain;
   background-position-x: right;
 }
 
 html body .wrapper .main .result-of-games .content .game-rezult .bg-link-2 {
   background: url(../images/result-of-games/Rectangle_bg-img_2.png) no-repeat;
-  background-size: contain;
   background-position-x: right;
 }
 
@@ -1337,6 +1336,7 @@ html body .wrapper .main .result-of-games .content .game-rezult a .content {
 html body .wrapper .main .result-of-games .content .game-rezult a .content .gamer-info {
   width: 41%;
   text-align: center;
+  padding-top: 0.3vw;
 }
 
 html body .wrapper .main .result-of-games .content .game-rezult a .content .gamer-info .av-br-rez-game-l {
@@ -1417,15 +1417,18 @@ html body .wrapper .main .result-of-games .content .game-rezult a .content .game
   background: url("../images/avatars/av-bg-yellow.svg") no-repeat;
 }
 
-html body .wrapper .main .result-of-games .content .game-rezult a .content .gamer-info p {
-  margin: 0.25vw 0 0.15vw;
+html body .wrapper .main .result-of-games .content .game-rezult a .content .gamer-info .gamer-name {
+  margin: 0.25vw 0 0.1vw;
+  padding: 0;
   color: #ffffff;
+  letter-spacing: 0.05em;
 }
 
 html body .wrapper .main .result-of-games .content .game-rezult a .content .gamer-info .points {
   font-size: 0.6vw;
   color: #F4AE26;
-  margin: 0.05vw 0;
+  margin: 0;
+  padding: 0;
 }
 
 html body .wrapper .main .result-of-games .content .game-rezult a .content .result-of-game {
@@ -1433,13 +1436,15 @@ html body .wrapper .main .result-of-games .content .game-rezult a .content .resu
 }
 
 html body .wrapper .main .result-of-games .content .game-rezult a .content .result-of-game p {
-  margin: 1vw 0 0;
+  margin: 1.7vw 0 0;
   color: rgba(255, 255, 255, 0.41);
 }
 
 html body .wrapper .main .result-of-games .content .game-rezult a .content .result-of-game .score {
-  margin: 0.25vw 0 0;
+  margin: 0.15vw 0 0;
   font-size: 1.1vw;
   color: #ffffff;
+  letter-spacing: 0.05em;
+  font-weight: bold;
 }
 /*# sourceMappingURL=main.css.map */
