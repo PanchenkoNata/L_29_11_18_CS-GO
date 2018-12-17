@@ -217,8 +217,8 @@ html {
                             border: none;
                             background: #{$color_dark};
                             color: #717278;
-                            font-size: #{$font-size-base};
-                            padding: 0 0.9vw 0 0;
+                            font-size: 0.55vw;
+                            padding: 0.3vw 0.7vw 0 0;
                         }
                     }
 
@@ -325,7 +325,6 @@ html {
                             .win-points-container {
                                 display: flex;
                                 align-items: center;
-                                // margin-top: 0.35vw;
                                 
                                 .win-points {
                                     font-size: #{$f-s-l};

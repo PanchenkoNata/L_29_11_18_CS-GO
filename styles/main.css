@@ -215,8 +215,8 @@ html body .wrapper .header .info .search button {
   border: none;
   background: #1D2024;
   color: #717278;
-  font-size: 0.5vw;
-  padding: 0 0.9vw 0 0;
+  font-size: 0.55vw;
+  padding: 0.3vw 0.7vw 0 0;
 }
 
 html body .wrapper .header .info .gamers-counter {
