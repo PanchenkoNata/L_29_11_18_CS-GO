@@ -44,6 +44,7 @@ html {
         margin: 0;
         padding: 0;
         font-size: #{$f-s-norm};
+        letter-spacing: 0.02em;
         // background: #{$color_dark};
 
         * {
@@ -168,7 +169,6 @@ html {
                 }
         
                 .logo {
-                    // background: linear-gradient(90deg, #{$color_dark} 0%, #18191D 100%);
                     display: flex;
                     justify-content: center;
                     align-items: center;
@@ -186,14 +186,13 @@ html {
                     grid-gap: 0%;
                     align-items: center;
                     background: linear-gradient(90deg, #{$color_dark} 0%, #18191D 100%);
-                    // padding-left: 1.6vw;
                     
                     .game {
                         display: flex;
                         align-items: center;
 
                         .game-logo {
-                            margin: 0.55vw 0.1vw 0 1.55vw;
+                            margin: 0.55vw 0.1vw 0 1.6vw;
 
                             img {
                                 width: 10.2vw;
@@ -238,6 +237,7 @@ html {
                             font-size: #{$f-s-l};
                             color: #{$text-color-warning};
                             margin: 0.35vw 0 0.1vw;
+                            letter-spacing: 0.05em;
                         }
                     }
 
@@ -250,7 +250,7 @@ html {
                     align-items: center;
                     
                     .avatar {
-                        width: 30.6%;
+                        width: 30.9%;
                         text-align: center;
                         margin-left: 0.05vw;
                     
@@ -316,22 +316,20 @@ html {
                         align-items: center;
 
                         .about-player {
-                            width: 75.55%;
+                            width: 77.5%;
 
                             p {
-                                margin: 0;
-                                letter-spacing: 0.02em;
+                                margin: 0.2vw 0 0.3vw 0;
                             }
 
                             .win-points-container {
                                 display: flex;
                                 align-items: center;
-                                margin-top: 0.35vw;
+                                // margin-top: 0.35vw;
                                 
                                 .win-points {
                                     font-size: #{$f-s-l};
                                     font-weight: bold;
-                                    letter-spacing: 0.02em;
                                     color: #{$text-color-warning};
                                     margin-left: 0.35vw;
                                 }
@@ -354,7 +352,6 @@ html {
                 display: grid;
                 grid-template-columns: 7.03vw 73.78vw 2.05vw 16.54vw;
                 grid-template-rows: auto;
-                padding-top: 2.1vw;
 
                 .nav {
                     background: #{$color_dark};
@@ -363,18 +360,17 @@ html {
 
                     ul {
                         width: 100%;
-                        padding-top: 0.45vw;
+                        margin-top: 0.55vw;
 
                         li {
                             width: 100%;
-                            height:  5.31vw;
+                            height: 5.31vw;
+                            letter-spacing: 0.05em;
                                                         
                             &:first-child {
-                                // height:  5.77vw;
                                 div {
-                                    padding: 0.7vw 0 0;
                                     p {
-                                        margin: 0.6vw 0 0;
+                                        margin: 0.7vw 0 0;
                                     }
                                 }
                                 
@@ -411,8 +407,7 @@ html {
                                     background-size: contain;
                                     background-position: bottom center;
 
-                                    div { 
-                                        // position: relative;   
+                                    div {  
                                         svg {
                                             path {
                                                 fill: #{$text-color-warning};
@@ -451,7 +446,7 @@ html {
 
 
                 .main-info {
-                    padding: 0 0 2.1vw 2.1vw;
+                    padding: 2.1vw 0 2.1vw 2.1vw;
                     display: grid;
                     grid-template-columns: 49.27vw 18.85vw;
                     grid-template-rows: 21.88vw 20.68vw;;
@@ -1120,6 +1115,7 @@ html {
                     height: 44.46vw;
                     background: #2E2F35;
                     margin: 0 auto;
+                    margin-top: 2.1vw;
 
                     .scroll-item {
                         width: 5px;
@@ -1130,7 +1126,7 @@ html {
                 }
 
                 .result-of-games {
-                    // padding-top: 2.5rem;
+                    padding-top: 2.1vw;
                     padding-right: 0.1vw;
 
                     .content {

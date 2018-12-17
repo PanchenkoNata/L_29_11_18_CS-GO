@@ -23,6 +23,7 @@ html body {
   margin: 0;
   padding: 0;
   font-size: 0.7vw;
+  letter-spacing: 0.02em;
 }
 
 html body * {
@@ -185,7 +186,7 @@ html body .wrapper .header .info .game {
 }
 
 html body .wrapper .header .info .game .game-logo {
-  margin: 0.55vw 0.1vw 0 1.55vw;
+  margin: 0.55vw 0.1vw 0 1.6vw;
 }
 
 html body .wrapper .header .info .game .game-logo img {
@@ -235,6 +236,7 @@ html body .wrapper .header .info .gamers-counter .count {
   font-size: 0.9vw;
   color: #F4AE26;
   margin: 0.35vw 0 0.1vw;
+  letter-spacing: 0.05em;
 }
 
 html body .wrapper .header .short-profile {
@@ -249,7 +251,7 @@ html body .wrapper .header .short-profile {
 }
 
 html body .wrapper .header .short-profile .avatar {
-  width: 30.6%;
+  width: 30.9%;
   text-align: center;
   margin-left: 0.05vw;
 }
@@ -334,12 +336,11 @@ html body .wrapper .header .short-profile .player-info {
 }
 
 html body .wrapper .header .short-profile .player-info .about-player {
-  width: 75.55%;
+  width: 77.5%;
 }
 
 html body .wrapper .header .short-profile .player-info .about-player p {
-  margin: 0;
-  letter-spacing: 0.02em;
+  margin: 0.2vw 0 0.3vw 0;
 }
 
 html body .wrapper .header .short-profile .player-info .about-player .win-points-container {
@@ -349,13 +350,11 @@ html body .wrapper .header .short-profile .player-info .about-player .win-points
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-top: 0.35vw;
 }
 
 html body .wrapper .header .short-profile .player-info .about-player .win-points-container .win-points {
   font-size: 0.9vw;
   font-weight: bold;
-  letter-spacing: 0.02em;
   color: #F4AE26;
   margin-left: 0.35vw;
 }
@@ -375,7 +374,6 @@ html body .wrapper .main {
       grid-template-columns: 7.03vw 73.78vw 2.05vw 16.54vw;
   -ms-grid-rows: auto;
       grid-template-rows: auto;
-  padding-top: 2.1vw;
 }
 
 html body .wrapper .main .nav {
@@ -389,20 +387,17 @@ html body .wrapper .main .nav {
 
 html body .wrapper .main .nav ul {
   width: 100%;
-  padding-top: 0.45vw;
+  margin-top: 0.55vw;
 }
 
 html body .wrapper .main .nav ul li {
   width: 100%;
   height: 5.31vw;
-}
-
-html body .wrapper .main .nav ul li:first-child div {
-  padding: 0.7vw 0 0;
+  letter-spacing: 0.05em;
 }
 
 html body .wrapper .main .nav ul li:first-child div p {
-  margin: 0.6vw 0 0;
+  margin: 0.7vw 0 0;
 }
 
 html body .wrapper .main .nav ul li .active-link {
@@ -479,7 +474,7 @@ html body .wrapper .main .nav ul li a div p {
 }
 
 html body .wrapper .main .main-info {
-  padding: 0 0 2.1vw 2.1vw;
+  padding: 2.1vw 0 2.1vw 2.1vw;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 49.27vw 18.85vw;
@@ -1271,6 +1266,7 @@ html body .wrapper .main .scroll-line {
   height: 44.46vw;
   background: #2E2F35;
   margin: 0 auto;
+  margin-top: 2.1vw;
 }
 
 html body .wrapper .main .scroll-line .scroll-item {
@@ -1282,6 +1278,7 @@ html body .wrapper .main .scroll-line .scroll-item {
 }
 
 html body .wrapper .main .result-of-games {
+  padding-top: 2.1vw;
   padding-right: 0.1vw;
 }
 
