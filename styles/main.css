@@ -842,7 +842,7 @@ html body .wrapper .main .main-info .player-profile .player {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 0.7vw 1.3vw 0.9vw 1vw;
+  padding: 0.85vw 1.3vw 0.9vw 0.9vw;
   background: rgba(42, 43, 49, 0.25);
 }
 
@@ -938,8 +938,8 @@ html body .wrapper .main .main-info .player-profile .player .about-player {
 
 html body .wrapper .main .main-info .player-profile .player .about-player .name {
   font-size: 1vw;
-  margin-top: 0.2vw;
-  margin-bottom: 0.5vw;
+  margin-top: 0.55vw;
+  margin-bottom: 0.65vw;
 }
 
 html body .wrapper .main .main-info .player-profile .player .about-player .status {
@@ -956,7 +956,7 @@ html body .wrapper .main .main-info .player-profile .player .about-player .statu
   background-color: #33cf74;
   border: 0.2em solid #044d22;
   border-radius: 50%;
-  margin: 0.2em 0.3em;
+  margin: 0.2em 0.4em;
 }
 
 html body .wrapper .main .main-info .player-profile .player .about-player .rank {
@@ -986,16 +986,16 @@ html body .wrapper .main .main-info .player-profile .player .about-player .rank 
 
 html body .wrapper .main .main-info .player-profile .player .about-player .rank .player-rank-points img {
   height: 100%;
-  margin-left: 0.5vw;
+  margin-left: 0.55vw;
 }
 
 html body .wrapper .main .main-info .player-profile .player .about-player .rank .player-rank-points span {
   font-size: 0.6vw;
-  margin-left: 0.2vw;
+  margin-left: 0.35vw;
 }
 
 html body .wrapper .main .main-info .player-profile .win-rate {
-  padding: 1vw 1.1vw 1vw 1.3vw;
+  padding: 0.9vw 1.1vw 1vw 1.1vw;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 27.8% 10.2% 27.8% 10.2%;
@@ -1010,14 +1010,14 @@ html body .wrapper .main .main-info .player-profile .win-rate .header-info {
       grid-column-start: 1;
   grid-column-end: 5;
   margin-top: 0;
-  margin-bottom: 0.1vw;
+  margin-bottom: 0.3vw;
 }
 
 html body .wrapper .main .main-info .player-profile .win-rate .scale {
   -ms-grid-column: 1;
       grid-column-start: 1;
   grid-column-end: 4;
-  height: 0.3vw;
+  height: 6px;
   width: 103.29%;
   background: #1B1D21;
   border: 1px solid #2A2B31;
@@ -1237,32 +1237,30 @@ html body .wrapper .main .main-info .daily-rate .gift-container {
 
 html body .wrapper .main .main-info .daily-rate .gift-container .info1 {
   color: rgba(255, 255, 255, 0.78);
-  letter-spacing: -0.03em;
-  margin: 0.8vw 0 0;
+  margin: 0.9vw 0 0;
 }
 
 html body .wrapper .main .main-info .daily-rate .gift-container .timer {
   font-size: 1.4vw;
-  letter-spacing: 0.07em;
-  margin: 0.35vw 0 0;
+  letter-spacing: 0.11em;
+  margin: 0.55vw 0 0 0.2vw;
 }
 
 html body .wrapper .main .main-info .daily-rate .gift-container img {
   width: 61.33%;
   height: auto;
-  margin: 0.3vw 0 0;
+  margin: 0.3vw 0.3vw 0 0;
 }
 
 html body .wrapper .main .main-info .daily-rate .gift-container .gift-name {
   font-size: 0.9vw;
-  letter-spacing: -0.03em;
+  letter-spacing: 0.11em;
   color: #EB5757;
-  margin: 0.2vw 0 0;
+  margin: 0.3vw 0 0 0.2vw;
 }
 
 html body .wrapper .main .main-info .daily-rate .gift-container .info2 {
-  letter-spacing: -0.03em;
-  margin: 0.5vw 0 0;
+  margin: 0.6vw 0 0;
 }
 
 html body .wrapper .main .main-info .daily-rate .gift-container .info2 span {

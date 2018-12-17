@@ -762,7 +762,7 @@ html {
 
                         .player {
                             display: flex;
-                            padding: 0.7vw 1.3vw 0.9vw 1vw;
+                            padding: 0.85vw 1.3vw 0.9vw 0.9vw;
                             background: rgba(42, 43, 49, 0.25);
                             
                             .av-border-slim {
@@ -836,8 +836,8 @@ html {
 
                                 .name {
                                     font-size: #{$f-s-xl};
-                                    margin-top: 0.2vw;
-                                    margin-bottom: 0.5vw;
+                                    margin-top: 0.55vw;
+                                    margin-bottom: 0.65vw;
                                 }
 
                                 .status {
@@ -850,7 +850,7 @@ html {
                                         background-color: rgba(51, 207, 116, 1);
                                         border: 0.2em solid rgb(4, 77, 34);
                                         border-radius: 50%;
-                                        margin: 0.2em 0.3em;
+                                        margin: 0.2em 0.4em;
                                     }
                                 }
 
@@ -871,11 +871,11 @@ html {
 
                                         img {
                                             height: 100%;
-                                            margin-left: 0.5vw;
+                                            margin-left: 0.55vw;
                                         }
                                         span {
                                             font-size: #{$f-s-sm};
-                                            margin-left: 0.2vw;
+                                            margin-left: 0.35vw;
                                         }
                                     }
                                 }
@@ -883,23 +883,24 @@ html {
                         } //.player
 
                         .win-rate {
-                            padding: 1vw 1.1vw 1vw 1.3vw;
+                            padding: 0.9vw 1.1vw 1vw 1.1vw;
                             display: grid;
                             grid-template-columns: 27.8% 10.2% 27.8% 10.2%;
                             grid-template-rows: auto;
+                            grid-column-gap: 
                             grid-gap: 8%;
                            
                             .header-info {
                                 grid-column-start: 1;
                                 grid-column-end: 5;
                                 margin-top: 0;
-                                margin-bottom: 0.1vw;
+                                margin-bottom: 0.3vw;
                             }
 
                             .scale {
                                 grid-column-start: 1;
                                 grid-column-end: 4;
-                                height: 0.3vw;
+                                height: 6px;
                                 width: 103.29%;
 
                                 background: #1B1D21;
@@ -908,7 +909,7 @@ html {
                                 border-radius: 3px;
 
                                 .scale-data {
-                                    width: 62%;
+                                    width: 68.5%;
                                     height: 100%;
                                     background: linear-gradient(270deg, #FFD128 0%, #FFAE25 100%), #1B1D21;
                                     border-radius: 3px;
@@ -1076,7 +1077,6 @@ html {
 
                     .daily-rate {
                         grid-area: "daily-rate";
-
                         background: rgba(29, 32, 36, 0.6);
 
                         .gift-container {
@@ -1087,29 +1087,30 @@ html {
 
                             .info1 {
                                 color: rgba(255, 255, 255, 0.78);
-                                letter-spacing: -0.03em;
-                                margin: 0.8vw 0 0;
+                                margin: 0.9vw 0 0;
                             }
+
                             .timer {
                                 font-size: #{$f-s-xxxl};
-                                letter-spacing: 0.07em;
-                                margin: 0.35vw 0 0;
+                                letter-spacing: 0.11em;
+                                margin: 0.55vw 0 0 0.2vw;
                             }
 
                             img {
                                 width: 61.33%;
                                 height: auto;
-                                margin: 0.3vw 0 0;
+                                margin: 0.3vw 0.3vw 0 0;
                             }
+
                             .gift-name {
                                 font-size: #{$f-s-l};
-                                letter-spacing: -0.03em;
+                                letter-spacing: 0.11em;
                                 color: #EB5757;
-                                margin: 0.2vw 0 0;
+                                margin: 0.3vw 0 0 0.2vw;
                             }
+
                             .info2 {
-                                letter-spacing: -0.03em;
-                                margin: 0.5vw 0 0;
+                                margin: 0.6vw 0 0;
                                 span {
                                     color: #{$text-color-warning};
                                 }
