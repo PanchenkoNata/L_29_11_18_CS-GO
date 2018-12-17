@@ -121,7 +121,6 @@ html {
             width: 0.5vw;
         }
         
-
         .wrapper {
             width: 100vw;
             min-height: 100vh;
@@ -318,6 +317,7 @@ html {
 
                         .about-player {
                             width: 75.55%;
+
                             p {
                                 margin: 0;
                             }
@@ -367,9 +367,9 @@ html {
                             &:first-child {
                                 // height:  5.77vw;
                                 div {
-                                    padding: 0;
+                                    padding: 0.7vw 0 0 0;
                                     p {
-                                        margin: -0.6vw 0 0;
+                                        margin: 0.6vw 0 0;
                                     }
                                 }
                                 

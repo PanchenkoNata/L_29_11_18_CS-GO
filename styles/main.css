@@ -394,11 +394,11 @@ html body .wrapper .main .nav ul li {
 }
 
 html body .wrapper .main .nav ul li:first-child div {
-  padding: 0;
+  padding: 0.7vw 0 0 0;
 }
 
 html body .wrapper .main .nav ul li:first-child div p {
-  margin: -0.6vw 0 0;
+  margin: 0.6vw 0 0;
 }
 
 html body .wrapper .main .nav ul li .active-link {
