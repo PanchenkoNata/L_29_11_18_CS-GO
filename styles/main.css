@@ -570,6 +570,9 @@ html body .wrapper .main .main-info .game-varieties .select-game-mode .mode-opti
 html body .wrapper .main .main-info .game-varieties .select-game-mode .mode-options a .content .mode-name {
   color: #F4AE26;
   text-align: center;
+  letter-spacing: 0.04vw;
+  font-weight: bold;
+  padding-right: 0.1vw;
 }
 
 html body .wrapper .main .main-info .game-varieties .select-game-mode .mode-options a .content .partners {
@@ -736,28 +739,29 @@ html body .wrapper .main .main-info .game-varieties .select-game-mode .mode-opti
 
 html body .wrapper .main .main-info .game-varieties .select-game-mode .mode-options a .content .partners .gamer-name {
   font-size: 0.6vw;
-  margin: 0.4vw 0 1.2vw 0;
+  margin: 0.2vw 0 1.2vw 0;
+  font-weight: bold;
 }
 
 html body .wrapper .main .main-info .game-varieties .rate-place {
   background: rgba(29, 32, 36, 0.6);
   border: 1px solid #2A2B31;
   border-radius: 0px 0px 3px 3px;
-  padding: 1vw 1.1vw 1vw 1.3vw;
+  padding: 1.2vw 1vw 1.1vw 1.3vw;
 }
 
 html body .wrapper .main .main-info .game-varieties .rate-place .header-info {
-  margin: 0 0 1.55vw;
+  margin: 0 0 1.09vw;
 }
 
 html body .wrapper .main .main-info .game-varieties .rate-place .rate-info {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 42.6% 55.1%;
-      grid-template-columns: 42.6% 55.1%;
+  -ms-grid-columns: 42.4% 55%;
+      grid-template-columns: 42.4% 55%;
   -ms-grid-rows: auto;
       grid-template-rows: auto;
-  grid-gap: 2.3%;
+  grid-gap: 2.6%;
 }
 
 html body .wrapper .main .main-info .game-varieties .rate-place .rate-info .rate-values {
@@ -780,7 +784,7 @@ html body .wrapper .main .main-info .game-varieties .rate-place .rate-info .rate
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 2vw;
+  height: 2.7vw;
   padding: 1.27vw 0;
   font-size: 0.6vw;
   color: #ffffff;
@@ -808,15 +812,17 @@ html body .wrapper .main .main-info .game-varieties .rate-place .rate-info .rate
 
 html body .wrapper .main .main-info .game-varieties .rate-place .rate-info .rate-input .you-rate input {
   font-size: 0.6vw;
-  letter-spacing: 0.02em;
+  letter-spacing: 0.07em;
   color: rgba(121, 122, 124, 0.5);
   width: 100%;
   border: none;
   background: none;
-  padding: 0.85vw 0 0 1vw;
+  padding: 1vw 0 0 1vw;
 }
 
 html body .wrapper .main .main-info .game-varieties .rate-place .rate-info .rate-input button {
+  font-weight: bold;
+  letter-spacing: 0.03em;
   color: #1C1E23;
   background: -webkit-gradient(linear, left bottom, left top, color-stop(-38.68%, #FFD128), to(#FFAE25)), #1B1D21;
   background: linear-gradient(0deg, #FFD128 -38.68%, #FFAE25 100%), #1B1D21;
@@ -824,6 +830,7 @@ html body .wrapper .main .main-info .game-varieties .rate-place .rate-info .rate
           box-shadow: 1px 1px 20px rgba(255, 194, 38, 0.3);
   border-radius: 3px;
   border: none;
+  padding: 0;
 }
 
 html body .wrapper .main .main-info .player-profile {
@@ -1263,7 +1270,7 @@ html body .wrapper .main .main-info .daily-rate .gift-container .info2 span {
 
 html body .wrapper .main .scroll-line {
   width: 3px;
-  height: 44.46vw;
+  height: 44.86vw;
   background: #2E2F35;
   margin: 0 auto;
   margin-top: 2.1vw;

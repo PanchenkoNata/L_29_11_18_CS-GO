@@ -530,6 +530,9 @@ html {
                                         .mode-name {
                                             color: #{$text-color-warning};    
                                             text-align: center;
+                                            letter-spacing: 0.04vw;
+                                            font-weight: bold;
+                                            padding-right: 0.1vw;
                                         }
                                         
                                         .partners {
@@ -667,7 +670,8 @@ html {
 
                                             .gamer-name {
                                                 font-size: #{$f-s-sm};
-                                                margin: 0.4vw 0 1.2vw 0;
+                                                margin: 0.2vw 0 1.2vw 0;
+                                                font-weight: bold;
                                             }
                                         }
                                     }
@@ -679,17 +683,17 @@ html {
                             background: rgba(29, 32, 36, 0.6);
                             border: 1px solid #2A2B31;
                             border-radius: 0px 0px 3px 3px;
-                            padding: 1vw 1.1vw 1vw 1.3vw;
+                            padding: 1.2vw 1vw 1.1vw 1.3vw;
 
                             .header-info {
-                                margin: 0 0 1.55vw;
+                                margin: 0 0 1.09vw;
                             }
 
                             .rate-info {
                                 display: grid;
-                                grid-template-columns: 42.6% 55.1%;
+                                grid-template-columns: 42.4% 55%;
                                 grid-template-rows: auto;
-                                grid-gap: 2.3%;
+                                grid-gap: 2.6%;
 
                                 .rate-values {
                                     display: grid;
@@ -702,7 +706,7 @@ html {
                                             display: flex;
                                             justify-content: center;
                                             align-items: center;
-                                            height: 2vw;
+                                            height: 2.7vw;
                                             padding: 1.27vw 0;
                                             font-size: #{$f-s-sm};
                                             color: #{$text-color-main};
@@ -728,21 +732,24 @@ html {
                                     .you-rate {
                                         input {
                                             font-size: #{$f-s-sm};
-                                            letter-spacing: 0.02em;
+                                            letter-spacing: 0.07em;
                                             color: rgba(121, 122, 124, 0.5);
                                             width: 100%;
                                             border: none;
                                             background: none;
-                                            padding: 0.85vw 0 0 1vw;
+                                            padding: 1vw 0 0 1vw;
                                         }
                                     }
 
                                     button {
+                                        font-weight: bold;
+                                        letter-spacing: 0.03em;
                                         color: #1C1E23;
                                         background: linear-gradient(0deg, #FFD128 -38.68%, #FFAE25 100%), #1B1D21;
                                         box-shadow: 1px 1px 20px rgba(255, 194, 38, 0.3);
                                         border-radius: 3px;
                                         border: none;
+                                        padding: 0;
                                     }
                                 }
                             }
@@ -1111,7 +1118,7 @@ html {
 
                 .scroll-line {
                     width: 3px;
-                    height: 44.46vw;
+                    height: 44.86vw;
                     background: #2E2F35;
                     margin: 0 auto;
                     margin-top: 2.1vw;
