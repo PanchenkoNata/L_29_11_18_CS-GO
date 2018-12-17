@@ -117,13 +117,12 @@ html {
             width: 0.45vw;
         }
         
-        
+
         .wrapper {
             width: 100vw;
             min-height: 100vh;
-            
-            background: url(../images/wrapper-bg-img_2.png) no-repeat;
-            background-size: cover;
+            background: url(../images/wrapper-bg-img_min.jpg) no-repeat;
+            background-size: 100% auto;
             position: relative;
             
             .header {
@@ -1240,6 +1239,7 @@ html {
                                                 height: 78%;
                                                 background: url(../images/av3.png) no-repeat;
                                                 background-size: cover;
+                                                -webkit-clip-path: polygon(0% 50%, 25% 10%, 75% 10%, 100% 50%, 75% 90%, 25% 90%);
                                                 clip-path: polygon(0% 50%, 25% 10%, 75% 10%, 100% 50%, 75% 90%, 25% 90%);
                                             }
                                            
