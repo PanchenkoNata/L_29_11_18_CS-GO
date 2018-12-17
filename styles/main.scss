@@ -199,18 +199,17 @@ html {
                                 height: auto;
                             }
                         }
+                        
                         .drop-down-list-btn {
                             position: relative;
 
                             .menu-games-chois {
-                                // display: none;
-                                opacity: 0;
-                                
+                                display: none;
                                 position: absolute;
                                 top: 100%;
                                 left: 0;
                                 padding: 20px;
-                                z-index: 10;
+                                z-index: 100;
                                 -webkit-transition: 0.5s ease-in-out;
                                 -moz-transition: 0.5s ease-in-out;
                                 -o-transition: 0.5s ease-in-out;
@@ -227,28 +226,21 @@ html {
 
                                             img {
                                                 width: 250px;
+                                                height: auto;
                                             }
                                         }
                                     }
                                 }
                                 .line-horiz {
-                                    height: 2px;
+                                    height: 3px;
                                 }
                             }
-                            .active {
-                                .menu-games-chois {
-                                    visibility: visible;
-                                    opacity: 1;
-                                }
-                            }
+
                             &:hover {
                                 .menu-games-chois {
-                                    visibility: visible;
-                                    opacity: 1;
+                                    display: block;
                                 }
                             }
-                            
-
                         }    
                     }
 
