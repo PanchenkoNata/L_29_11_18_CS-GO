@@ -1283,24 +1283,25 @@ html body .wrapper .main .result-of-games .content .game-rezult .bg-link-2 {
   background-position-x: right;
 }
 
+html body .wrapper .main .result-of-games .content .game-rezult .active-link {
+  border: 2px solid #FFD128;
+  color: #ffffff;
+  background: url("../images/hover/hover-bg-mode-options.png") no-repeat;
+  background-size: contain;
+  background-position: bottom center;
+}
+
 html body .wrapper .main .result-of-games .content .game-rezult a {
   border: 2px solid rgba(249, 190, 22, 0);
   position: relative;
 }
 
 html body .wrapper .main .result-of-games .content .game-rezult a:hover {
-  border: 2px solid #f9be16;
-}
-
-html body .wrapper .main .result-of-games .content .game-rezult a:hover a::after {
-  display: block;
-  content: " ";
-  position: absolute;
-  top: 0;
-  left: 0;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(249, 190, 22, 0.5)), to(rgba(249, 190, 22, 0)));
-  background: linear-gradient(rgba(249, 190, 22, 0.5) 0%, rgba(249, 190, 22, 0) 100%);
-  background: red;
+  border: 2px solid #FFD128;
+  color: #ffffff;
+  background: url("../images/hover/hover-bg-mode-options.png") no-repeat;
+  background-size: contain;
+  background-position: bottom center;
 }
 
 html body .wrapper .main .result-of-games .content .game-rezult a .content {

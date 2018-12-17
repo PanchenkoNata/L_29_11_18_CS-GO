@@ -1126,11 +1126,6 @@ html {
                             // box-sizing: padding-box;
                             // border: 1px solid $color-border-1;
                             background: #{$color_rect-bg};
-
-                            // .game-rezult-bg {
-                                
-                            // }
-
                             
                             .bg-link-1 {
                                 background: url(../images/result-of-games/Rectangle_bg-img_1.png) no-repeat;
@@ -1142,22 +1137,26 @@ html {
                                 background-size: contain;
                                 background-position-x: right;
                             }
+
+                            .active-link {
+                                border: 2px solid #FFD128;
+                                color: #{$text-color-main};
+                                background: url("../images/hover/hover-bg-mode-options.png") no-repeat;
+                                background-size: contain;
+                                background-position: bottom center;
+                            }
+                           
+                                
                             a {
                                 border: 2px solid rgba(249, 190, 22, 0);
                                 position: relative;
                                 
                                 &:hover {
-                                    border: 2px solid rgba(249, 190, 22, 1);
-
-                                    a::after {
-                                        display: block;
-                                        content: " ";
-                                        position: absolute;
-                                        top: 0;
-                                        left: 0;
-                                        background: linear-gradient(rgba(249, 190, 22, 0.5) 0%, rgba(249, 190, 22, 0) 100%);
-                                        background: red;
-                                    }
+                                    border: 2px solid #FFD128;
+                                    color: #{$text-color-main};
+                                    background: url("../images/hover/hover-bg-mode-options.png") no-repeat;
+                                    background-size: contain;
+                                    background-position: bottom center;
                                 }
 
                                 .content {
