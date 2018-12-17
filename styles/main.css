@@ -109,13 +109,6 @@ html body .wrapper {
   position: relative;
 }
 
-html body .wrapper .container-xl {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 7.03vw 75.83vw 16.54vw;
-      grid-template-columns: 7.03vw 75.83vw 16.54vw;
-}
-
 html body .wrapper .header {
   display: -ms-grid;
   display: grid;
@@ -370,8 +363,11 @@ html body .wrapper .header .short-profile .player-info .list-of-profile .polygon
 html body .wrapper .main {
   display: -ms-grid;
   display: grid;
+  -ms-grid-columns: 7.03vw 73.78vw 2.05vw 16.54vw;
+      grid-template-columns: 7.03vw 73.78vw 2.05vw 16.54vw;
   -ms-grid-rows: auto;
       grid-template-rows: auto;
+  padding-top: 2.1vw;
 }
 
 html body .wrapper .main .nav {
@@ -394,7 +390,7 @@ html body .wrapper .main .nav ul li {
 }
 
 html body .wrapper .main .nav ul li:first-child div {
-  padding: 0.7vw 0 0 0;
+  padding: 0.7vw 0 0;
 }
 
 html body .wrapper .main .nav ul li:first-child div p {
@@ -475,7 +471,7 @@ html body .wrapper .main .nav ul li a div p {
 }
 
 html body .wrapper .main .main-info {
-  padding: 2.1vw 2.1vw 2.1vw 2.1vw;
+  padding: 0 0 2.1vw 2.1vw;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 49.27vw 18.85vw;
@@ -741,6 +737,9 @@ html body .wrapper .main .main-info .game-varieties .select-game-mode .mode-opti
 }
 
 html body .wrapper .main .main-info .game-varieties .rate-place {
+  background: rgba(29, 32, 36, 0.6);
+  border: 1px solid #2A2B31;
+  border-radius: 0px 0px 3px 3px;
   padding: 1vw 1.1vw 1vw 1.3vw;
 }
 
@@ -1259,15 +1258,29 @@ html body .wrapper .main .main-info .daily-rate .gift-container .info2 span {
   color: #F4AE26;
 }
 
+html body .wrapper .main .scroll-line {
+  width: 3px;
+  height: 44.46vw;
+  background: #2E2F35;
+  margin: 0 auto;
+}
+
+html body .wrapper .main .scroll-line .scroll-item {
+  width: 5px;
+  height: 6.62vw;
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(-38.68%, #FFD128), to(#FFAE25)), #F4AC26;
+  background: linear-gradient(0deg, #FFD128 -38.68%, #FFAE25 100%), #F4AC26;
+  border-radius: 2px;
+}
+
 html body .wrapper .main .result-of-games {
-  padding-top: 2.5rem;
   padding-right: 0.2rem;
 }
 
 html body .wrapper .main .result-of-games .content .game-rezult {
   width: 100%;
-  min-height: 6.62vw;
-  margin: 2rem 0;
+  height: 6.62vw;
+  margin: 0 0 0.97vw 0;
   background: #24272B;
 }
 
