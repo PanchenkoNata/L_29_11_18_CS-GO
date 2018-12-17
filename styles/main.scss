@@ -409,30 +409,30 @@ html {
                                         svg {
                                             path {
                                                 fill: #{$text-color-warning};
-                                                filter: url("#filter0_d");
-                                                fill: url("#paint0_linear");
+                                                // filter: url("#filter0_d");
+                                                // fill: url("#paint0_linear");
                                             }
                                         }
                                     }
                                 }
                                 div {
-                                    // height: 100%;
-                                    // display: flex;
-                                    // flex-direction: column;
-                                    // justify-content: center;
-                                    // align-items: center;
-                                    // text-align: center;
-                                    
-                                    padding-top: 0.3vw;
+                                    height: 100%;
+                                    display: flex;
+                                    flex-direction: column;
+                                    justify-content: start;
+                                    align-items: center;
+                                    padding: 0.6vw 0 0.6vw;
 
                                     svg {
+                                        width: 2.3vw;
+                                        height: auto;
+                                        
                                         path {
                                             fill: #{$text-color-altern};
                                         }
                                     }
                                     p {
-                                        //text-align: center;
-                                        margin: 0.3vw 0 0;
+                                        margin: 0.5vw 0 0;
                                     }
                                 }
                             }
