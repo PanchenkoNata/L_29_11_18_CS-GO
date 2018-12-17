@@ -27,7 +27,7 @@ $text-color-2: rgba(255, 255, 255, 0.41);
 $text-color-warning: #F4AE26;
 // $text-color-warning: linear-gradient(0deg, #FFD128 -38.68%, #FFAE25 100%), #1B1D21;
 
-$font-size-base: 0.55vw;
+$font-size-base: 0.5vw;
 $f-s-sm: $font-size-base * 1.2;
 $f-s-norm: $font-size-base * 1.4;
 $f-s-l: $font-size-base * 1.8;
@@ -72,6 +72,7 @@ html {
             width: 100%;
             border: none;
             background: none;
+            letter-spacing: 0.05em;
 
             &::-moz-placeholder {
                 color: #717278; /* Цвет подсказывающего текста */
@@ -96,8 +97,9 @@ html {
         }
         .header-info {
             padding: 0;
-            margin: 1.9rem 0 1.6rem;
+            margin: 0.95vw 0 0.8vw;
             text-align: center;
+            letter-spacing: 0.05em;
         }
         
         .align-c {
@@ -118,7 +120,7 @@ html {
             height: 2.5vw;
         }
         .polygon-bullet {
-            width: 0.5vw;
+            width: 0.45vw;
         }
         
         .wrapper {
@@ -191,7 +193,7 @@ html {
                         align-items: center;
 
                         .game-logo {
-                            margin: 0.65vw 0.1vw 0 1.6vw;
+                            margin: 0.55vw 0.1vw 0 1.55vw;
 
                             img {
                                 width: 10.2vw;
@@ -209,32 +211,33 @@ html {
                         height: 2.5vw;
 
                         input {
-                            padding: 0.2vw 0 0 1.1vw
+                            padding: 0.1vw 0 0 1.1vw
                         }
 
                         button {
                             border: none;
                             background: #{$color_dark};
                             color: #717278;
-                            padding: 0 2rem 0 0;
+                            font-size: #{$font-size-base};
+                            padding: 0 0.9vw 0 0;
                         }
                     }
 
                     .gamers-counter {
                         border-left: 3px solid #2A2B31;
                         height: 2.5vw;
-                        
-                        // padding: 0 1.5vw;
+                        padding: 0 3px 0 0;
 
                         p {
                             padding: 0;
                             margin: 0;
                             text-align: center;
+                            letter-spacing: 0.03em;
                         }
                         .count {
                             font-size: #{$f-s-l};
                             color: #{$text-color-warning};
-                            margin: 0.25vw 0 0.1vw;
+                            margin: 0.35vw 0 0.1vw;
                         }
                     }
 
@@ -247,7 +250,7 @@ html {
                     align-items: center;
                     
                     .avatar {
-                        width: 31.4%;
+                        width: 30.6%;
                         text-align: center;
                         margin-left: 0.05vw;
                     
@@ -317,17 +320,20 @@ html {
 
                             p {
                                 margin: 0;
+                                letter-spacing: 0.02em;
                             }
 
                             .win-points-container {
                                 display: flex;
                                 align-items: center;
-                                margin-top: 0.3vw;
+                                margin-top: 0.35vw;
                                 
                                 .win-points {
                                     font-size: #{$f-s-l};
+                                    font-weight: bold;
+                                    letter-spacing: 0.02em;
                                     color: #{$text-color-warning};
-                                    margin-left: 0.6rem;
+                                    margin-left: 0.35vw;
                                 }
                             }
                         }
@@ -499,7 +505,7 @@ html {
                             padding: 1vw 1.1vw 1vw 1.3vw;
 
                             .header-info {
-                                margin: 0 0 2.1rem;
+                                margin: 0 0 1.05vw;
                             }
 
                             .mode-options {
@@ -536,7 +542,7 @@ html {
                                             display: flex;
                                             flex-wrap: nowrap;
                                             justify-content: center;
-                                            padding-top: 1.7rem;
+                                            padding-top: 0.85vw;
 
                                             .partner {
                                                 display: flex;
@@ -667,7 +673,7 @@ html {
 
                                             .gamer-name {
                                                 font-size: #{$f-s-sm};
-                                                margin: 0.8rem 0 2.4rem 0;
+                                                margin: 0.4vw 0 1.2vw 0;
                                             }
                                         }
                                     }
@@ -682,7 +688,7 @@ html {
                             padding: 1vw 1.1vw 1vw 1.3vw;
 
                             .header-info {
-                                margin: 0 0 2.1rem;
+                                margin: 0 0 1.55vw;
                             }
 
                             .rate-info {
@@ -733,7 +739,7 @@ html {
                                             width: 100%;
                                             border: none;
                                             background: none;
-                                            padding: 1.7rem 0 0 2rem;
+                                            padding: 0.85vw 0 0 1vw;
                                         }
                                     }
 
@@ -829,8 +835,8 @@ html {
 
                                 .name {
                                     font-size: #{$f-s-xl};
-                                    margin-top: 0.4rem;
-                                    margin-bottom: 1rem;
+                                    margin-top: 0.2vw;
+                                    margin-bottom: 0.5vw;
                                 }
 
                                 .status {
@@ -848,7 +854,7 @@ html {
                                 }
 
                                 .rank {
-                                    margin-top: 1rem;
+                                    margin-top: 0.5vw;
                                     display: flex;
                                     align-items: center;
 
@@ -886,13 +892,13 @@ html {
                                 grid-column-start: 1;
                                 grid-column-end: 5;
                                 margin-top: 0;
-                                margin-bottom: 0.2rem;
+                                margin-bottom: 0.1vw;
                             }
 
                             .scale {
                                 grid-column-start: 1;
                                 grid-column-end: 4;
-                                height: 0.6rem;
+                                height: 0.3vw;
                                 width: 103.29%;
 
                                 background: #1B1D21;
@@ -908,13 +914,13 @@ html {
                                 }
                             }
                             .scale-info {
-                                margin-top: -0.5rem;
+                                margin-top: -0.25vw;
                             }
                             .tab-info {
-                                margin: 0.5rem 0 0;
+                                margin: 0.25vw 0 0;
                             }
                             .first-line {
-                                margin: 1.5rem 0 0;
+                                margin: 0.75vw 0 0;
                             }
                         }//win-rate
                     }//player-profile
@@ -1079,28 +1085,28 @@ html {
                             .info1 {
                                 color: rgba(255, 255, 255, 0.78);
                                 letter-spacing: -0.03em;
-                                margin: 1.6rem 0 0;
+                                margin: 0.8vw 0 0;
                             }
                             .timer {
                                 font-size: #{$f-s-xxxl};
                                 letter-spacing: 0.07em;
-                                margin: 0.7rem 0 0;
+                                margin: 0.35vw 0 0;
                             }
 
                             img {
                                 width: 61.33%;
                                 height: auto;
-                                margin: 0.6rem 0 0;
+                                margin: 0.3vw 0 0;
                             }
                             .gift-name {
                                 font-size: #{$f-s-l};
                                 letter-spacing: -0.03em;
                                 color: #EB5757;
-                                margin: 0.4rem 0 0;
+                                margin: 0.2vw 0 0;
                             }
                             .info2 {
                                 letter-spacing: -0.03em;
-                                margin: 1rem 0 0;
+                                margin: 0.5vw 0 0;
                                 span {
                                     color: #{$text-color-warning};
                                 }
@@ -1125,7 +1131,7 @@ html {
 
                 .result-of-games {
                     // padding-top: 2.5rem;
-                    padding-right: 0.2rem;
+                    padding-right: 0.1vw;
 
                     .content {
                         // display: grid;
@@ -1251,24 +1257,24 @@ html {
                                         }
                                         
                                         p {
-                                            margin: 0.5rem 0 0.3rem;
+                                            margin: 0.25vw 0 0.15vw;
                                             color: #{$text-color-main};
                                         }
                                         .points {
                                             font-size: #{$f-s-sm};
                                             color: #{$text-color-warning};
-                                            margin: 0.1rem 0;
+                                            margin: 0.05vw 0;
                                         }
                                     }
 
                                     .result-of-game {
                                         width: 18%;
                                         p {
-                                            margin: 2rem 0 0;
+                                            margin: 1vw 0 0;
                                             color: #{$text-color-2};
                                         }
                                         .score {
-                                            margin: 0.5rem 0 0;
+                                            margin: 0.25vw 0 0;
                                             font-size: #{$f-s-xxl}; 
                                             color: #{$text-color-main};
                                         }
