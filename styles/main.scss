@@ -956,15 +956,15 @@ html {
 
                         .list-rating {
                             display: grid;
-                            grid-template-columns: 6.02% 25.80% 8% 44.20% 15.98%;
-                            grid-template-rows: 1.5vw auto repeat(5, 2.5vw) auto 2.4vw auto auto;
+                            grid-template-columns: 6.0% 26.8% 5% 46.20% 16%;
+                            grid-template-rows: 1.7vw 1px repeat(5, 2.35vw) 1px 2.35vw 1px auto;
                             align-items: center;
                             font-size: #{$f-s-sm};
                             
                             .light-row {
                                 background:  rgba(42, 43, 49, 0.39);
                             }
-                            .line-horiz, .footer {
+                            .line-horiz, .full-rating {
                                 grid-column-start: 1;
                                 grid-column-end: 6;
                             }
@@ -987,9 +987,6 @@ html {
                                         display: flex;
                                         justify-content: center;
                                         align-items: center;
-                                        // position: relative;
-                                        // width: 2vw;
-                                        // height: 2vw;
                                         margin: 0 auto;
                                         
                                         .avatar {
@@ -999,6 +996,7 @@ html {
                                             background-size: cover;
                                             clip-path: polygon(0% 50%, 25% 7%, 75% 7%, 100% 50%, 75% 93%, 25% 93%);   
                                         }
+
                                         .invite {
                                             &::after {
                                                 display: block;
@@ -1008,7 +1006,6 @@ html {
                                                 background: url("../images/avatars/plus.svg") no-repeat;
                                                 background-size: 32%;
                                                 background-position:  center center;
-
                                             }
                                         }
                                         
@@ -1043,6 +1040,7 @@ html {
                                             background-position: 0% 50%;
                                         }
                                     }
+
                                     .av-list-rating {
                                         width: 1.7vw;
                                         height: 1.7vw;
@@ -1055,19 +1053,23 @@ html {
                                         padding-left: 0.3vw;
                                     }
                                 }
+
                                 .rating-emblem {
                                     width: 3.2vw;
                                 }
+
                                 .rank-points {
-                                    margin-left: 0.2vw;
+                                    margin-left: 0.15vw;
                                 }
+
                                 .win-points {
                                     margin-left: 0.2vw;
                                 }
+                            }
 
-                                .footer {
-                                    padding-top: 0.2vw;
-                                }
+                            .full-rating {
+                                padding-top: 0.7vw;
+                                letter-spacing: 0.05em;
                             }
                         }
                     }//player-rating
