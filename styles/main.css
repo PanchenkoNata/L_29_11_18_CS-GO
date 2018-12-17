@@ -194,6 +194,51 @@ html body .wrapper .header .info .game .game-logo img {
   height: auto;
 }
 
+html body .wrapper .header .info .game .drop-down-list-btn {
+  position: relative;
+}
+
+html body .wrapper .header .info .game .drop-down-list-btn .menu-games-chois {
+  opacity: 0;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  padding: 20px;
+  z-index: 10;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+}
+
+html body .wrapper .header .info .game .drop-down-list-btn .menu-games-chois li a .game-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 10px;
+  color: #ffffff;
+  font-size: 14px;
+}
+
+html body .wrapper .header .info .game .drop-down-list-btn .menu-games-chois li a .game-item img {
+  width: 250px;
+}
+
+html body .wrapper .header .info .game .drop-down-list-btn .menu-games-chois .line-horiz {
+  height: 2px;
+}
+
+html body .wrapper .header .info .game .drop-down-list-btn .active .menu-games-chois {
+  visibility: visible;
+  opacity: 1;
+}
+
+html body .wrapper .header .info .game .drop-down-list-btn:hover .menu-games-chois {
+  visibility: visible;
+  opacity: 1;
+}
+
 html body .wrapper .header .info .search {
   background: #1D2024;
   display: -webkit-box;
@@ -439,7 +484,7 @@ html body .wrapper .main .nav ul li a:hover {
 }
 
 html body .wrapper .main .nav ul li a:hover div svg path {
-  fill: #F4AE26;
+  fill: url("#SVGID_1_");
 }
 
 html body .wrapper .main .nav ul li a div {

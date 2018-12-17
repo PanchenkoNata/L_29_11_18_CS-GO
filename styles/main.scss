@@ -198,6 +198,57 @@ html {
                                 width: 10.2vw;
                                 height: auto;
                             }
+                        }
+                        .drop-down-list-btn {
+                            position: relative;
+
+                            .menu-games-chois {
+                                // display: none;
+                                opacity: 0;
+                                
+                                position: absolute;
+                                top: 100%;
+                                left: 0;
+                                padding: 20px;
+                                z-index: 10;
+                                -webkit-transition: 0.5s ease-in-out;
+                                -moz-transition: 0.5s ease-in-out;
+                                -o-transition: 0.5s ease-in-out;
+                                transition: 0.5s ease-in-out;
+
+                                li {
+                                    a {
+                                        .game-item {
+                                            display: flex;
+                                            align-items: center;
+                                            margin-top: 10px;
+                                            color: #{$text-color-main};
+                                            font-size: 14px;
+
+                                            img {
+                                                width: 250px;
+                                            }
+                                        }
+                                    }
+                                }
+                                .line-horiz {
+                                    height: 2px;
+                                }
+                            }
+                            .active {
+                                .menu-games-chois {
+                                    visibility: visible;
+                                    opacity: 1;
+                                }
+                            }
+                            &:hover {
+                                .menu-games-chois {
+                                    visibility: visible;
+                                    opacity: 1;
+                                }
+                            }
+                            
+
                         }    
                     }
 
@@ -372,7 +423,6 @@ html {
                                         margin: 0.7vw 0 0;
                                     }
                                 }
-                                
                             }
 
                             .active-link {
@@ -409,9 +459,9 @@ html {
                                     div {  
                                         svg {
                                             path {
-                                                fill: #{$text-color-warning};
+                                                // fill: #{$text-color-warning};
                                                 // filter: url("#filter0_d");
-                                                // fill: url("#paint0_linear");
+                                                fill: url("#SVGID_1_");
                                             }
                                         }
                                     }
