@@ -24,7 +24,8 @@ html body {
   padding: 0;
   font-size: 0.7vw;
   letter-spacing: 0.02em;
-  background: #1D2024;
+  background: url(../images/wrapper-bg-img_min.jpg) no-repeat;
+  background-size: 100% auto;
 }
 
 html body * {
@@ -48,9 +49,12 @@ html body a {
 
 html body input {
   width: 100%;
+  height: 100%;
   border: none;
   background: none;
   letter-spacing: 0.05em;
+  color: #797A7C;
+  outline: none;
 }
 
 html body input::-moz-placeholder {
@@ -101,18 +105,17 @@ html body .polygon-bullet {
 }
 
 html body .wrapper {
-  width: 100vw;
+  width: 99vw;
   min-height: 100vh;
-  background: url(../images/wrapper-bg-img_min.jpg) no-repeat;
-  background-size: 100% auto;
+  margin: 0 auto;
   position: relative;
 }
 
 html body .wrapper .header {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 7.03vw 75.83vw 17.14vw;
-      grid-template-columns: 7.03vw 75.83vw 17.14vw;
+  -ms-grid-columns: 7vw 74.86vw 17.14vw;
+      grid-template-columns: 7vw 74.86vw 17.14vw;
   -ms-grid-rows: 5.02vw;
       grid-template-rows: 5.02vw;
   background: -webkit-gradient(linear, left top, right top, from(#1D2024), to(#18191D));
@@ -245,11 +248,12 @@ html body .wrapper .header .info .search input {
 }
 
 html body .wrapper .header .info .search button {
+  height: 100%;
   border: none;
   background: #1D2024;
   color: #717278;
   font-size: 0.55vw;
-  padding: 0.3vw 0.7vw 0 0;
+  padding: 0.3vw 0.7vw 0;
 }
 
 html body .wrapper .header .info .gamers-counter {
@@ -403,8 +407,8 @@ html body .wrapper .header .short-profile .player-info .list-of-profile .polygon
 html body .wrapper .main {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 7.03vw 73.7vw 2.13vw 16.54vw;
-      grid-template-columns: 7.03vw 73.7vw 2.13vw 16.54vw;
+  -ms-grid-columns: 7vw 73vw 2.13vw 16.54vw;
+      grid-template-columns: 7vw 73vw 2.13vw 16.54vw;
   -ms-grid-rows: auto;
       grid-template-rows: auto;
 }
@@ -853,11 +857,10 @@ html body .wrapper .main .main-info .game-varieties .rate-place .rate-info .rate
 html body .wrapper .main .main-info .game-varieties .rate-place .rate-info .rate-input .you-rate input {
   font-size: 0.6vw;
   letter-spacing: 0.07em;
-  color: rgba(121, 122, 124, 0.5);
   width: 100%;
   border: none;
   background: none;
-  padding: 1vw 0 0 1vw;
+  padding: 0 0 0 1vw;
 }
 
 html body .wrapper .main .main-info .game-varieties .rate-place .rate-info .rate-input button {

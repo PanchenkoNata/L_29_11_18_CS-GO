@@ -47,7 +47,8 @@ html {
         padding: 0;
         font-size: #{$f-s-norm};
         letter-spacing: 0.02em;
-        background: #{$color_dark};
+        background: url(../images/wrapper-bg-img_min.jpg) no-repeat;
+        background-size: 100% auto;
 
         * {
             -moz-box-sizing: border-box;
@@ -71,9 +72,12 @@ html {
 
         input {
             width: 100%;
+            height: 100%;
             border: none;
             background: none;
             letter-spacing: 0.05em;
+            color: #{$text-color-altern};
+            outline: none;
 
             &::-moz-placeholder {
                 color: #717278; /* Цвет подсказывающего текста */
@@ -119,15 +123,14 @@ html {
         
 
         .wrapper {
-            width: 100vw;
+            width: 99vw;
             min-height: 100vh;
-            background: url(../images/wrapper-bg-img_min.jpg) no-repeat;
-            background-size: 100% auto;
+            margin: 0 auto;
             position: relative;
             
             .header {
                 display: grid;
-                grid-template-columns: 7.03vw 75.83vw 17.14vw;
+                grid-template-columns: 7vw 74.86vw 17.14vw;
                 grid-template-rows: 5.02vw;
                 background: linear-gradient(90deg, #1D2024 0%, #18191D 100%);
                 border-bottom: 1px solid #{$color-border-1};
@@ -236,11 +239,12 @@ html {
                         }
 
                         button {
+                            height: 100%;
                             border: none;
                             background: #{$color_dark};
                             color: #717278;
                             font-size: 0.55vw;
-                            padding: 0.3vw 0.7vw 0 0;
+                            padding: 0.3vw 0.7vw 0;
                         }
                     }
 
@@ -369,7 +373,7 @@ html {
 
             .main {
                 display: grid;
-                grid-template-columns: 7.03vw 73.7vw 2.13vw 16.54vw;
+                grid-template-columns: 7vw 73vw 2.13vw 16.54vw;
                 grid-template-rows: auto;
 
                 .nav {
@@ -749,11 +753,10 @@ html {
                                         input {
                                             font-size: #{$f-s-sm};
                                             letter-spacing: 0.07em;
-                                            color: rgba(121, 122, 124, 0.5);
                                             width: 100%;
                                             border: none;
                                             background: none;
-                                            padding: 1vw 0 0 1vw;
+                                            padding: 0 0 0 1vw;
                                         }
                                     }
 
