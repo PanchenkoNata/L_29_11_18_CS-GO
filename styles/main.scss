@@ -36,6 +36,12 @@ $f-s-xxxl: $font-size-base * 2.8;
     position: $pos;
 }
 
+@mixin flex-box-align-center-center() { 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 
 html {
     font-size: 0.55vw;
@@ -77,11 +83,10 @@ html {
             background: none;
             letter-spacing: 0.05em;
             color: #{$text-color-altern};
-            outline: none;
-
             &::-moz-placeholder {
                 color: #717278; /* Цвет подсказывающего текста */
-               }
+            }
+            outline: none;
         }
 
         .link-block {
@@ -121,7 +126,6 @@ html {
             width: 0.45vw;
         }
         
-
         .wrapper {
             width: 99vw;
             min-height: 100vh;
@@ -132,6 +136,9 @@ html {
                 display: grid;
                 grid-template-columns: 7vw 74.86vw 17.14vw;
                 grid-template-rows: 5.02vw;
+                background: -webkit-gradient(linear, left top, right top, from(#1D2024), to(#18191D));
+                background: -webkit-linear-gradient(left, #1D2024 0%, #18191D 100%);
+                background: -o-linear-gradient(left, #1D2024 0%, #18191D 100%);
                 background: linear-gradient(90deg, #1D2024 0%, #18191D 100%);
                 border-bottom: 1px solid #{$color-border-1};
 
@@ -152,9 +159,7 @@ html {
                 }
         
                 .logo {
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
+                    @include flex-box-align-center-center;
 
                     img {
                         width: 2.7vw;
@@ -286,9 +291,7 @@ html {
                         }
 
                         .av-border {
-                            display: flex;
-                            justify-content: center;
-                            align-items: center;
+                            @include flex-box-align-center-center;
                             width: 3.7vw;
                             height: 3.7vw;
                             margin: 0 auto;
@@ -415,11 +418,9 @@ html {
                             }
                             
                             a {
-                                border-bottom: 2px solid #{$color_darc-bg};
-                                display: flex;
+                                @include flex-box-align-center-center;
                                 flex-direction: column;
-                                justify-content: center;
-                                align-items: center;
+                                border-bottom: 2px solid #{$color_darc-bg};
                                 text-align: center;
                                 
                                 &:hover {
@@ -596,9 +597,7 @@ html {
                                                     }
                                                     
                                                     .av-border {
-                                                        display: flex;
-                                                        justify-content: center;
-                                                        align-items: center;
+                                                        @include flex-box-align-center-center;
                                                         width: 3vw;
                                                         height: 3vw;
                                                         margin: 0 auto;
@@ -723,9 +722,7 @@ html {
 
                                     a {
                                         .item-rate {
-                                            display: flex;
-                                            justify-content: center;
-                                            align-items: center;
+                                            @include flex-box-align-center-center;
                                             height: 2.7vw;
                                             padding: 1.27vw 0;
                                             font-size: #{$f-s-sm};
@@ -790,9 +787,7 @@ html {
                                 background-position: 0% 50%;
                             }
                             .av-border {
-                                display: flex;
-                                justify-content: center;
-                                align-items: center;
+                                @include flex-box-align-center-center;
                                 margin: 0 auto;
                                 width: 5.6vw;
                                 height: 5.6vw;
@@ -803,11 +798,9 @@ html {
                                     background-position: 0% 50%;
                                 }
                                 .av-border-no-padding {
+                                    @include flex-box-align-center-center;
                                     width: 97.5%;
                                     height: 97.5%;
-                                    display: flex;
-                                    justify-content: center;
-                                    align-items: center;
                                     margin: 0 auto;
                                 
                                     .avatar {
@@ -1022,9 +1015,7 @@ html {
                                     justify-content: start;
                                     
                                     .av-border {
-                                        display: flex;
-                                        justify-content: center;
-                                        align-items: center;
+                                        @include flex-box-align-center-center;
                                         margin: 0 auto;
                                         
                                         .avatar {
@@ -1230,9 +1221,7 @@ html {
                                             background-position: center center;
                                         }
                                         .av-border {
-                                            display: flex;
-                                            justify-content: center;
-                                            align-items: center;
+                                            @include flex-box-align-center-center;
                                             width: 3vw;
                                             height: 3vw;
                                             margin: 0 auto;

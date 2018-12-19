@@ -450,20 +450,20 @@ html body .wrapper .main .nav ul li .active-link div svg path {
 }
 
 html body .wrapper .main .nav ul li a {
-  border-bottom: 2px solid #1B1D21;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border-bottom: 2px solid #1B1D21;
   text-align: center;
 }
 
@@ -917,8 +917,6 @@ html body .wrapper .main .main-info .player-profile .player .av-border .av-br-pr
 }
 
 html body .wrapper .main .main-info .player-profile .player .av-border .av-border-no-padding {
-  width: 97.5%;
-  height: 97.5%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -928,6 +926,8 @@ html body .wrapper .main .main-info .player-profile .player .av-border .av-borde
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  width: 97.5%;
+  height: 97.5%;
   margin: 0 auto;
 }
 
